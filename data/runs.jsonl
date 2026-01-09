@@ -1,0 +1,1 @@
+{"run_id": "r0001", "model": "gpt-x", "temperature": 0.7, "condition": "temporal", "topic_id": "t001", "question": "What are the main approaches for ...?", "time_window": {"start_year": 2023, "end_year": 2025}, "prompt": "....", "output": ".... model raw output text ...."}
