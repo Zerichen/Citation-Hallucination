@@ -66,16 +66,10 @@ def _topic_id(row_idx: int, claim_id: Optional[str]) -> str:
     return f"t_{cid}"
 
 
-def _question_with_domain_and_seeds(
-    question: str,
-    domain: Optional[str],
-    seed_anchors: Optional[str],
-) -> str:
+def _question_with_domain(question: str, domain: Optional[str]) -> str:
     q = question.strip()
     if domain:
         q = f"{q}\n\nDomain: {domain}"
-    if seed_anchors:
-        q = f"{q}\n\nSeed_Anchors:\n{seed_anchors.strip()}"
     return q
 
 
@@ -102,7 +96,7 @@ def main() -> int:
             claim_id = _optional_field(row, "claim_id")
 
             topic_id = _topic_id(i, claim_id)
-            q = _question_with_domain_and_seeds(question, domain, seed_anchors)
+            q = _question_with_domain(question, domain)
 
             for cond in CONDITIONS:
                 n_papers = FIXED_CITES[cond]
@@ -112,6 +106,7 @@ def main() -> int:
                     n_papers=n_papers,
                     start_year=start_year,
                     end_year=end_year,
+                    seed_anchors=seed_anchors,
                 )
                 run = {
                     "run_id": str(uuid.uuid4()),
