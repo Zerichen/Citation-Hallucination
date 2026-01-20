@@ -29,6 +29,8 @@ Write ONE concise academic paragraph answering the question below.
 Question:
 {question}
 
+{seed_anchors_block}
+
 Requirements:
 - Provide exactly {n_papers} citations.
 - Keep the paragraph under 150 words.
@@ -46,6 +48,8 @@ Write ONE concise academic paragraph answering the question below.
 Question:
 {question}
 
+{seed_anchors_block}
+
 Requirements:
 - Provide exactly {n_papers} citations.
 - Keep the paragraph under 150 words.
@@ -58,7 +62,6 @@ Rules:
 
 Additional constraint:
 - Focus specifically on research published between {start_year} and {end_year} (inclusive).
-- If any seed anchors are outside the time window, use them only to understand the topic; do NOT cite them.
 """,
     "survey": """You are writing the related work section of an academic survey.
 
@@ -66,6 +69,8 @@ Summarize the main research approaches for the topic below, organized into 3–4
 
 Topic:
 {question}
+
+{seed_anchors_block}
 
 Requirements:
 - Provide exactly {n_papers} citations.
@@ -88,6 +93,8 @@ Write ONE concise academic paragraph answering the question below.
 Question:
 {question}
 
+{seed_anchors_block}
+
 Requirements:
 - Provide exactly {n_papers} citations.
 - Keep the paragraph under 150 words.
@@ -109,6 +116,8 @@ Summarize the main research approaches for the topic below, organized into 3–4
 Topic:
 {question}
 
+{seed_anchors_block}
+
 Requirements:
 - Provide exactly {n_papers} citations.
 - Keep the related-work text under 220 words.
@@ -121,7 +130,6 @@ Rules:
 
 Additional constraint:
 - Focus specifically on research published between {start_year} and {end_year} (inclusive).
-- If any seed anchors are outside the time window, use them only to understand the topic; do NOT cite them.
 """,
 }
 
@@ -133,6 +141,7 @@ def render_prompt(
     n_papers: int,
     start_year: Optional[int] = None,
     end_year: Optional[int] = None,
+    seed_anchors: Optional[str] = None,
 ) -> str:
     if condition not in SUPPORTED_CONDITIONS:
         raise ValueError(f"Unsupported condition: {condition}")
@@ -152,10 +161,22 @@ def render_prompt(
             raise ValueError("start_year must be <= end_year")
 
     template = TEMPLATES[condition]
+    seed_block = ""
+    if seed_anchors and seed_anchors.strip():
+        seed_block = (
+            "Seed anchors (topic hints):\n"
+            f"{seed_anchors.strip()}\n\n"
+            "These are topic hints only; they are NOT required to be cited."
+        )
+        if condition in {"temporal", "combo"}:
+            seed_block += (
+                "\nFor temporal/combo: any seed anchor outside the time window MUST NOT appear in the final citations."
+            )
     data: Dict[str, Any] = {
         "question": question.strip(),
         "n_papers": n_papers,
         "citation_block": CITATION_BLOCK.strip(),
+        "seed_anchors_block": seed_block,
     }
 
     if condition in {"temporal", "combo"}:
