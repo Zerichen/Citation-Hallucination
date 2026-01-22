@@ -33,7 +33,7 @@ Question:
 
 Requirements:
 - Provide exactly {n_papers} citations.
-- Keep the paragraph under 150 words.
+- Keep the paragraph under 300 words.
 
 {citation_block}
 
@@ -52,7 +52,7 @@ Question:
 
 Requirements:
 - Provide exactly {n_papers} citations.
-- Keep the paragraph under 150 words.
+- Keep the paragraph under 300 words.
 
 {citation_block}
 
@@ -74,7 +74,7 @@ Topic:
 
 Requirements:
 - Provide exactly {n_papers} citations.
-- Keep the related-work text under 220 words.
+- Keep the related-work text under 300 words.
 
 {citation_block}
 
@@ -97,7 +97,7 @@ Question:
 
 Requirements:
 - Provide exactly {n_papers} citations.
-- Keep the paragraph under 150 words.
+- Keep the paragraph under 300 words.
 
 {citation_block}
 
@@ -120,7 +120,7 @@ Topic:
 
 Requirements:
 - Provide exactly {n_papers} citations.
-- Keep the related-work text under 220 words.
+- Keep the related-work text under 300 words.
 
 {citation_block}
 
@@ -128,8 +128,6 @@ Rules:
 - Do not invent DOIs. If unknown, write "N/A".
 - Use real academic papers (journal or top-tier conference).
 
-Additional constraint:
-- Focus specifically on research published between {start_year} and {end_year} (inclusive).
 """,
 }
 
@@ -152,7 +150,7 @@ def render_prompt(
     if not isinstance(n_papers, int) or n_papers <= 0:
         raise ValueError("n_papers must be a positive int")
 
-    if condition in {"temporal", "combo"}:
+    if condition == "temporal":
         if start_year is None or end_year is None:
             raise ValueError(f"{condition} requires start_year and end_year")
         if not isinstance(start_year, int) or not isinstance(end_year, int):
@@ -168,9 +166,9 @@ def render_prompt(
             f"{seed_anchors.strip()}\n\n"
             "These are topic hints only; they are NOT required to be cited."
         )
-        if condition in {"temporal", "combo"}:
+        if condition == "temporal":
             seed_block += (
-                "\nFor temporal/combo: any seed anchor outside the time window MUST NOT appear in the final citations."
+                "\nFor temporal: any seed anchor outside the time window MUST NOT appear in the final citations."
             )
     data: Dict[str, Any] = {
         "question": question.strip(),
@@ -179,7 +177,7 @@ def render_prompt(
         "seed_anchors_block": seed_block,
     }
 
-    if condition in {"temporal", "combo"}:
+    if condition == "temporal":
         data["start_year"] = int(start_year)
         data["end_year"] = int(end_year)
 
