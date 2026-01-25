@@ -13,16 +13,22 @@ from openai import OpenAI
 # Config
 # ----------------------------
 
-OUT_PATH = "data/runs.jsonl"
+OUT_PATH = "out/qwen2_5_14b_runs_result.jsonl"
+TOPICS_PATH = "data/qwen2_5_14b_runs.jsonl"
 
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")  # 你也可以改成 gpt-5
-TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.7"))
+MODEL = os.getenv("OPENAI_MODEL", "Qwen/Qwen2.5-14B-Instruct")  # 你也可以改成 gpt-5
+TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.0"))
 
-# Temporal window for temporal/combo conditions
-TEMPORAL_WINDOW = {"start_year": 2023, "end_year": 2025}
+MAX_TOKENS = 2048
 
 # Initialize OpenAI client (uses OPENAI_API_KEY)
-client = OpenAI()
+other_client = OpenAI(
+    api_key=os.getenv("SILICONFLOW_API_KEY", ""), base_url="https://api.siliconflow.cn/v1",
+)
+
+llama_client = OpenAI(
+    api_key=os.getenv("TOGETHER_API_KEY", ""), base_url="https://api.together.xyz/v1",
+)
 
 # ----------------------------
 # Prompt templates
@@ -122,31 +128,32 @@ TOPICS: List[Dict[str, str]] = [
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
-def build_prompt(question: str, cond: Condition) -> str:
-    prompt = cond.template.format(
-        question=question,
-        n_cites=cond.n_cites,
-        max_words=cond.max_words,
-        citation_format=CITATION_FORMAT.strip(),
-    )
-    if cond.add_privacy:
-        prompt = PRIVACY_PREAMBLE.strip() + "\n\n" + prompt
-    if cond.add_temporal:
-        prompt = prompt.strip() + "\n\n" + TEMPORAL_APPENDIX.strip()
-    return prompt.strip()
-
 def call_openai(prompt: str, model: str, temperature: float, max_retries: int = 6) -> str:
     backoff = 1.0
     last_err: Optional[Exception] = None
 
     for _ in range(max_retries):
+        if "llama" in model:
+            client = llama_client
+        else:
+            client = other_client
+
         try:
-            resp = client.responses.create(
+            resp = client.chat.completions.create(
                 model=model,
-                input=prompt,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are a research assistant. "
+                        )
+                    },
+                    {"role": "user", "content": prompt}
+                ],
                 temperature=temperature,
+                max_tokens=MAX_TOKENS,
             )
-            return resp.output_text
+            return resp.choices[0].message.content
         except Exception as e:
             last_err = e
             # 打印一次错误，避免“无输出卡住”
@@ -175,30 +182,32 @@ def main():
     # Ensure output directory exists
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
 
-    total = len(TOPICS) * len(CONDITIONS)
-    print(f"Generating {total} runs -> {OUT_PATH}")
-    print(f"Model={MODEL}, temperature={TEMPERATURE}")
+    # read from TOPICS_PATH
+    results = []
+    with open(TOPICS_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()  # remove trailing newline
+            if not line:
+                continue  # skip empty lines
+            single_run = json.loads(line)  # parse JSON
+            model = single_run["model"]
+            temp = single_run["temperature"]
+            prompt = single_run["prompt"]
+            output = call_openai(prompt, model, temp)
+            run = {
+                "run_id": str(uuid.uuid4()),
+                "timestamp": utc_now_iso(),
+                "model": model,
+                "temperature": temp,
+                "condition": single_run["condition"],
+                "topic_id": single_run["topic_id"],
+                "question": single_run["question"],
+                "prompt": prompt,
+                "output": output,
+            }
+            results.append(run)
 
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        for cond in tqdm(CONDITIONS, desc="Conditions"):
-            for t in tqdm(TOPICS, desc=f"Topics ({cond.name})", leave=False):
-                prompt = build_prompt(t["question"], cond)
-                output = call_openai(prompt, MODEL, TEMPERATURE)
-
-                run = {
-                    "run_id": str(uuid.uuid4()),
-                    "timestamp": utc_now_iso(),
-                    "model": MODEL,
-                    "temperature": TEMPERATURE,
-                    "condition": cond.name,
-                    "topic_id": t["topic_id"],
-                    "question": t["question"],
-                    "prompt": prompt,
-                    "output": output,
-                }
-                if cond.add_temporal:
-                    run["time_window"] = TEMPORAL_WINDOW
-
+            with open(OUT_PATH, "a", encoding="utf-8") as f:
                 write_jsonl_line(f, run)
 
     validate_jsonl(OUT_PATH)
