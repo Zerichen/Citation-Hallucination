@@ -2,6 +2,7 @@ import os
 import json
 import uuid
 import time
+import logging
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Any
@@ -13,16 +14,103 @@ from openai import OpenAI
 # Config
 # ----------------------------
 
-OUT_PATH = "out/qwen2_5_14b_runs_result.jsonl"
-TOPICS_PATH = "data/qwen2_5_14b_runs.jsonl"
+OUT_PATH = "out/gpt-4o_runs_result.jsonl"
+TOPICS_PATH = "data/gpt-4o.jsonl"
+LOG_PATH = os.getenv("RUNS_LOG_PATH", "out/generate_runs.log")
 
-MODEL = os.getenv("OPENAI_MODEL", "Qwen/Qwen2.5-14B-Instruct")  # 你也可以改成 gpt-5
+MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")  # 你也可以改成 gpt-5
 TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.0"))
 
 MAX_TOKENS = 2048
 
-# Initialize OpenAI client (uses OPENAI_API_KEY)
-other_client = OpenAI(
+# Initialize OpenAI-compatible clients
+openai_client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY", ""),
+    base_url=os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
+)
+
+CLAUDE_API_URL = os.getenv("CLAUDE_API_URL", "https://api.anthropic.com/v1/messages")
+CLAUDE_API_VERSION = os.getenv("CLAUDE_API_VERSION", "2023-06-01")
+
+@dataclass
+class _ClaudeMessage:
+    content: str
+
+@dataclass
+class _ClaudeChoice:
+    message: _ClaudeMessage
+
+@dataclass
+class _ClaudeResponse:
+    choices: List[_ClaudeChoice]
+
+class _ClaudeChatCompletions:
+    def __init__(self, api_url: str, api_version: str, api_key: str) -> None:
+        self._api_url = api_url
+        self._api_version = api_version
+        self._api_key = api_key
+
+    def create(self, model: str, messages: List[Dict[str, str]], temperature: float, max_tokens: int) -> _ClaudeResponse:
+        if not messages:
+            raise ValueError("Claude messages cannot be empty.")
+        system_text = ""
+        user_text = ""
+        for msg in messages:
+            role = msg.get("role")
+            if role == "system":
+                system_text = msg.get("content", "")
+            elif role == "user":
+                user_text = msg.get("content", "")
+
+        payload = {
+            "model": model,
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+            "system": system_text,
+            "messages": [{"role": "user", "content": user_text}],
+        }
+        body = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            self._api_url,
+            data=body,
+            headers={
+                "x-api-key": self._api_key,
+                "anthropic-version": self._api_version,
+                "content-type": "application/json",
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.load(resp)
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8", errors="replace")
+            raise RuntimeError(f"Claude API HTTP {e.code}: {err_body}") from e
+        except urllib.error.URLError as e:
+            raise RuntimeError(f"Claude API request failed: {e}") from e
+
+        content = data.get("content", [])
+        if isinstance(content, list):
+            text_parts = [blk.get("text", "") for blk in content if blk.get("type") == "text"]
+            text = "".join(text_parts).strip()
+        elif isinstance(content, str):
+            text = content.strip()
+        else:
+            text = ""
+
+        return _ClaudeResponse(choices=[_ClaudeChoice(message=_ClaudeMessage(content=text))])
+
+class _ClaudeClient:
+    def __init__(self, api_url: str, api_version: str, api_key: str) -> None:
+        self.chat = type("Chat", (), {"completions": _ClaudeChatCompletions(api_url, api_version, api_key)})()
+
+claude_client = _ClaudeClient(
+    api_url=CLAUDE_API_URL,
+    api_version=CLAUDE_API_VERSION,
+    api_key=os.getenv("CLAUDE_API_KEY", ""),
+)
+
+qwen_client = OpenAI(
     api_key=os.getenv("SILICONFLOW_API_KEY", ""), base_url="https://api.siliconflow.cn/v1",
 )
 
@@ -133,12 +221,16 @@ def call_openai(prompt: str, model: str, temperature: float, max_retries: int = 
     last_err: Optional[Exception] = None
 
     for _ in range(max_retries):
-        if "llama" in model:
-            client = llama_client
-        else:
-            client = other_client
-
         try:
+            if model.startswith(("gpt-", "o1", "o3", "o4")):
+                client = openai_client
+            elif model.startswith("claude-"):
+                client = claude_client
+            elif "llama" in model:
+                client = llama_client
+            else:
+                client = qwen_client
+
             resp = client.chat.completions.create(
                 model=model,
                 messages=[
@@ -181,11 +273,24 @@ def validate_jsonl(path: str) -> None:
 def main():
     # Ensure output directory exists
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[
+            logging.FileHandler(LOG_PATH, encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
+    logging.info("Starting runs: topics=%s output=%s", TOPICS_PATH, OUT_PATH)
 
     # read from TOPICS_PATH
     results = []
     with open(TOPICS_PATH, "r", encoding="utf-8") as f:
-        for line in f:
+        lines = [ln.strip() for ln in f if ln.strip()]
+    progress = tqdm(lines, desc="Generating runs", unit="run")
+    for line in progress:
             line = line.strip()  # remove trailing newline
             if not line:
                 continue  # skip empty lines
@@ -193,6 +298,18 @@ def main():
             model = single_run["model"]
             temp = single_run["temperature"]
             prompt = single_run["prompt"]
+            progress.set_postfix(
+                topic_id=single_run.get("topic_id"),
+                condition=single_run.get("condition"),
+                model=model,
+            )
+            logging.info(
+                "Running topic_id=%s condition=%s model=%s temp=%s",
+                single_run.get("topic_id"),
+                single_run.get("condition"),
+                model,
+                temp,
+            )
             output = call_openai(prompt, model, temp)
             run = {
                 "run_id": str(uuid.uuid4()),
@@ -209,9 +326,15 @@ def main():
 
             with open(OUT_PATH, "a", encoding="utf-8") as f:
                 write_jsonl_line(f, run)
+            logging.info(
+                "Wrote run_id=%s topic_id=%s output_chars=%d",
+                run["run_id"],
+                run["topic_id"],
+                len(output or ""),
+            )
 
     validate_jsonl(OUT_PATH)
-    print("Done. JSONL validated OK.")
+    logging.info("Done. JSONL validated OK.")
 
 if __name__ == "__main__":
     main()

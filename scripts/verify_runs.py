@@ -77,8 +77,8 @@ def main():
         for line in f:
             runs.append(json.loads(line))
 
-    with open(citations_path, "w", encoding="utf-8") as cit_out, \
-         open(metrics_path, "w", encoding="utf-8") as met_out:
+    with open(citations_path, "a", encoding="utf-8") as cit_out, \
+         open(metrics_path, "a", encoding="utf-8") as met_out:
 
         for run in tqdm(runs, desc="Verifying runs"):
             run_id = run["run_id"]

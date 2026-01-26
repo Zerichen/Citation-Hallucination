@@ -12,10 +12,10 @@ if ROOT_DIR not in sys.path:
 
 from src.prompts import render_prompt
 
-OUT_PATH = "data/qwen2_5_14b_runs.jsonl"
+OUT_PATH = "data/claude_sonnet_3.5.jsonl"
 CLAIMS_PATH = "data/claims.csv"
 
-MODEL = os.getenv("OPENAI_MODEL", "Qwen/Qwen2.5-14B-Instruct")
+MODEL = os.getenv("OPENAI_MODEL", "claude-3-5-sonnet-2024")
 TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", "0.0"))
 
 CONDITIONS: List[str] = ["baseline", "temporal", "survey", "privacy", "combo"]
