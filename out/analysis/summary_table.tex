@@ -1,0 +1,30 @@
+\begin{table}
+\caption{Citation quality metrics with 95\% bootstrap confidence intervals.}
+\label{tab:citation_metrics}
+\begin{tabular}{llrrlrlrrr}
+\toprule
+Model & Condition & N & Fabricated $\downarrow$ & CI & Exists $\uparrow$ & CI & Ambiguous & Temporal Viol. & \#Citations \\
+\midrule
+Qwen/Qwen2.5-14B-Instruct & baseline & 20 & 0.340 & [0.240, 0.440] & 0.190 & [0.120, 0.270] & 0.470 & 0.000 & 5.000 \\
+claude-sonnet-4-5-20250929 & baseline & 20 & 0.270 & [0.170, 0.380] & 0.380 & [0.250, 0.510] & 0.350 & 0.000 & 5.000 \\
+gpt-4o & baseline & 20 & 0.300 & [0.200, 0.410] & 0.320 & [0.200, 0.460] & 0.380 & 0.000 & 5.000 \\
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo & baseline & 20 & 0.275 & [0.200, 0.350] & 0.173 & [0.097, 0.253] & 0.552 & 0.000 & 4.950 \\
+Qwen/Qwen2.5-14B-Instruct & combo & 20 & 0.436 & [0.315, 0.556] & 0.116 & [0.071, 0.166] & 0.448 & 0.000 & 7.450 \\
+claude-sonnet-4-5-20250929 & combo & 20 & 0.256 & [0.150, 0.369] & 0.444 & [0.331, 0.550] & 0.300 & 0.000 & 8.000 \\
+gpt-4o & combo & 20 & 0.406 & [0.331, 0.475] & 0.169 & [0.100, 0.244] & 0.425 & 0.000 & 8.000 \\
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo & combo & 20 & 0.406 & [0.312, 0.494] & 0.096 & [0.044, 0.158] & 0.498 & 0.000 & 7.950 \\
+Qwen/Qwen2.5-14B-Instruct & privacy & 20 & 0.325 & [0.210, 0.440] & 0.195 & [0.130, 0.265] & 0.480 & 0.000 & 4.850 \\
+claude-sonnet-4-5-20250929 & privacy & 20 & 0.240 & [0.140, 0.340] & 0.390 & [0.280, 0.510] & 0.370 & 0.000 & 5.000 \\
+gpt-4o & privacy & 20 & 0.350 & [0.260, 0.440] & 0.240 & [0.150, 0.330] & 0.410 & 0.000 & 5.000 \\
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo & privacy & 20 & 0.350 & [0.270, 0.430] & 0.190 & [0.110, 0.270] & 0.460 & 0.000 & 5.000 \\
+Qwen/Qwen2.5-14B-Instruct & survey & 20 & 0.386 & [0.285, 0.477] & 0.161 & [0.075, 0.265] & 0.453 & 0.000 & 7.100 \\
+claude-sonnet-4-5-20250929 & survey & 20 & 0.263 & [0.175, 0.356] & 0.431 & [0.325, 0.544] & 0.306 & 0.000 & 8.000 \\
+gpt-4o & survey & 20 & 0.356 & [0.281, 0.444] & 0.212 & [0.112, 0.325] & 0.431 & 0.000 & 8.000 \\
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo & survey & 20 & 0.394 & [0.319, 0.469] & 0.094 & [0.044, 0.144] & 0.512 & 0.000 & 8.000 \\
+Qwen/Qwen2.5-14B-Instruct & temporal & 20 & 0.440 & [0.300, 0.590] & 0.060 & [0.020, 0.100] & 0.500 & 0.000 & 4.850 \\
+claude-sonnet-4-5-20250929 & temporal & 20 & 0.340 & [0.240, 0.450] & 0.070 & [0.020, 0.130] & 0.590 & 0.000 & 5.000 \\
+gpt-4o & temporal & 20 & 0.490 & [0.380, 0.600] & 0.060 & [0.020, 0.100] & 0.450 & 0.000 & 5.000 \\
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo & temporal & 20 & 0.350 & [0.240, 0.470] & 0.050 & [0.020, 0.090] & 0.600 & 0.000 & 4.950 \\
+\bottomrule
+\end{tabular}
+\end{table}
