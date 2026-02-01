@@ -239,3 +239,51 @@ Anchor2: meta-analysis; causal identification; balance; innovation; rights; Just
 Anchor2: survey; benchmark; arise; behave; features; Justification: Evidence and method cues to keep the answer grounded."
 120,"What evidence supports competing interpretations of a major historical turning point, and how do historians adjudicate source reliability?",HUM_History,10,2021,2025,"Anchor1: competing; historical; interpretations; major; point; turning; Justification: Core topic terms for scope and terminology.
 Anchor2: literature review; case study; adjudicate; historians; reliability; Justification: Evidence and method cues to keep the answer grounded."
+121,Which peer-reviewed studies since 2023 quantitatively evaluate citation hallucination in large language models under closed-book settings,CS_AI_ML,3,2023,2025,"Anchor1: citation hallucination; large language models; Justification: Core topic terms for scope and terminology.
+Anchor2: quantitative evaluation; closed-book setting; Justification: Evidence and method cues to keep the answer grounded."
+122,Which experimental papers after 2023 compare retrieval-augmented generation and non-retrieval models for citation accuracy,CS_Data_HCI,5,2023,2025,"Anchor1: retrieval-augmented generation; citation accuracy; Justification: Core topic terms for scope and terminology.
+Anchor2: comparative experiment; retrieval vs closed-book; Justification: Evidence and method cues to keep the answer grounded."
+123,Which studies published since 2024 report statistically significant effects of decoding strategies on fabricated citations,CS_Systems,3,2024,2025,"Anchor1: decoding strategies; language model inference; Justification: Core topic terms for scope and terminology.
+Anchor2: effect size analysis; statistical significance; Justification: Evidence and method cues to keep the answer grounded."
+124,Which peer-reviewed works after 2023 analyze citation hallucination under privacy or security constraints in language models,CS_Security,5,2023,2025,"Anchor1: privacy constraints; secure language models; Justification: Core topic terms for scope and terminology.
+Anchor2: empirical evaluation; citation error analysis; Justification: Evidence and method cues to keep the answer grounded."
+125,Which studies since 2023 quantitatively analyze fabricated citations in computational linguistics or literary text generation,HUM_Linguistics,3,2023,2025,"Anchor1: computational linguistics; text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: fabricated citation analysis; empirical study; Justification: Evidence and method cues to keep the answer grounded."
+126,Which peer-reviewed works after 2023 report citation errors in automated literary or cultural analysis systems,HUM_CulturalStudies,5,2023,2025,"Anchor1: cultural analysis; automated interpretation; Justification: Core topic terms for scope and terminology.
+Anchor2: citation error measurement; system evaluation; Justification: Evidence and method cues to keep the answer grounded."
+127,Which experimental studies since 2024 quantify hallucinated references in historical text summarization systems,HUM_History,3,2024,2025,"Anchor1: historical text summarization; Justification: Core topic terms for scope and terminology.
+Anchor2: hallucinated reference analysis; empirical evaluation; Justification: Evidence and method cues to keep the answer grounded."
+128,Which papers after 2023 empirically evaluate citation reliability in philosophy-oriented language model outputs,HUM_Philosophy,5,2023,2025,"Anchor1: philosophical text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: citation reliability assessment; evaluation study; Justification: Evidence and method cues to keep the answer grounded."
+129,Which peer-reviewed studies after 2023 empirically compare hallucinated citations across multiple scientific domains,INT_STS,3,2023,2025,"Anchor1: science and technology studies; cross-domain analysis; Justification: Core topic terms for scope and terminology.
+Anchor2: comparative hallucination evaluation; Justification: Evidence and method cues to keep the answer grounded."
+130,Which studies since 2024 introduce metrics for detecting fabricated citations in interdisciplinary research synthesis,INT_ResearchEthics,5,2024,2025,"Anchor1: research ethics; interdisciplinary synthesis; Justification: Core topic terms for scope and terminology.
+Anchor2: fabricated citation detection metric; Justification: Evidence and method cues to keep the answer grounded."
+131,Which experimental papers after 2023 analyze citation hallucination in sustainability or climate-related text generation,INT_Sustainability_Climate,3,2023,2025,"Anchor1: sustainability and climate research; Justification: Core topic terms for scope and terminology.
+Anchor2: citation hallucination analysis; empirical study; Justification: Evidence and method cues to keep the answer grounded."
+132,Which peer-reviewed works since 2024 evaluate citation errors in technology policy or governance summarization systems,INT_TechPolicy_Governance,5,2024,2025,"Anchor1: technology policy and governance; Justification: Core topic terms for scope and terminology.
+Anchor2: citation error evaluation; summarization task; Justification: Evidence and method cues to keep the answer grounded."
+133,Which studies published after 2023 quantify hallucinated citations in clinical decision support language models,MH_ClinicalMedicine,3,2023,2025,"Anchor1: clinical decision support systems; Justification: Core topic terms for scope and terminology.
+Anchor2: hallucination rate measurement; empirical evaluation; Justification: Evidence and method cues to keep the answer grounded."
+134,Which peer-reviewed works since 2024 evaluate citation reliability in health informatics or medical QA systems,MH_HealthInformatics,5,2024,2025,"Anchor1: health informatics; medical QA; Justification: Core topic terms for scope and terminology.
+Anchor2: citation reliability evaluation; Justification: Evidence and method cues to keep the answer grounded."
+135,Which experimental studies after 2023 report fabricated references in mental health–related text generation systems,MH_MentalHealth,3,2023,2025,"Anchor1: mental health text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: fabricated reference analysis; Justification: Evidence and method cues to keep the answer grounded."
+136,Which studies since 2024 quantitatively analyze citation errors in epidemiology or public health summarization tasks,MH_Epidemiology_PublicHealth,5,2024,2025,"Anchor1: public health summarization; Justification: Core topic terms for scope and terminology.
+Anchor2: citation error quantification; Justification: Evidence and method cues to keep the answer grounded."
+137,Which peer-reviewed studies after 2023 empirically evaluate hallucinated citations in biological research text generation,NS_Biology,3,2023,2025,"Anchor1: biological research text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: hallucinated citation analysis; Justification: Evidence and method cues to keep the answer grounded."
+138,Which experimental papers since 2024 quantify citation fabrication in chemistry-related language model outputs,NS_Chemistry,5,2024,2025,"Anchor1: chemistry-related language models; Justification: Core topic terms for scope and terminology.
+Anchor2: fabricated citation measurement; Justification: Evidence and method cues to keep the answer grounded."
+139,Which studies published after 2023 analyze citation hallucination in earth science or geoscience text generation systems,NS_EarthScience,3,2023,2025,"Anchor1: earth and geoscience text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: hallucination evaluation; Justification: Evidence and method cues to keep the answer grounded."
+140,Which peer-reviewed works since 2024 report citation errors in environmental science literature summarization,NS_EnvironmentalScience,5,2024,2025,"Anchor1: environmental science summarization; Justification: Core topic terms for scope and terminology.
+Anchor2: citation error assessment; Justification: Evidence and method cues to keep the answer grounded."
+141,Which studies after 2023 quantitatively evaluate fabricated citations in economic forecasting language models,SS_Economics,3,2023,2025,"Anchor1: economic forecasting language models; Justification: Core topic terms for scope and terminology.
+Anchor2: fabricated citation analysis; Justification: Evidence and method cues to keep the answer grounded."
+142,Which peer-reviewed papers since 2024 analyze citation hallucination in political science or governance text generation,SS_PoliticalScience,5,2024,2025,"Anchor1: political science text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: citation hallucination evaluation; Justification: Evidence and method cues to keep the answer grounded."
+143,Which experimental studies after 2023 report citation errors in psychology-related language model outputs,SS_Psychology,3,2023,2025,"Anchor1: psychology-related language models; Justification: Core topic terms for scope and terminology.
+Anchor2: citation error measurement; Justification: Evidence and method cues to keep the answer grounded."
+144,Which studies since 2024 quantify hallucinated citations in sociological or social analysis text generation systems,SS_Sociology,5,2024,2025,"Anchor1: sociological text generation; Justification: Core topic terms for scope and terminology.
+Anchor2: hallucinated citation analysis; Justification: Evidence and method cues to keep the answer grounded."
