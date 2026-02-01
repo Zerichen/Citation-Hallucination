@@ -1,0 +1,241 @@
+candidate_id	question	domain	major
+1	What is close reading, and how do different critical traditions justify close reading as a method?	HUM_Literature	Humanities
+2	How do vaccine platform differences (mRNA, viral vector, protein subunit) affect immune response profiles and durability?	NS_Biology	NaturalSciences
+3	Why can case-control studies suffer from selection bias, and what design choices reduce bias in practice?	MH_Epidemiology_PublicHealth	MedicineHealth
+4	What is the relationship between syntax and semantics, and how do linguistic theories model compositional meaning?	HUM_Linguistics	Humanities
+5	What studies evaluate how uncertainty communication in scientific reports affects policy uptake, and what framing choices matter most?	INT_STS	Interdisciplinary
+6	How do difference-in-differences designs evaluate public health policies, and what assumptions are required for causal interpretation?	MH_Epidemiology_PublicHealth	MedicineHealth
+7	What evidence supports that climate-driven changes in precipitation alter landslide frequency, and how are confounders handled?	NS_EarthScience	NaturalSciences
+8	How do coastal ecosystems respond to sea level rise, and what restoration strategies show durable protection benefits?	NS_EnvironmentalScience	NaturalSciences
+9	What are common approaches to interpreting primary sources, and how do historians evaluate source credibility and bias?	HUM_History	Humanities
+10	What evidence supports that algorithmic impact assessments improve accountability in public-sector automated decision systems?	INT_TechPolicy_Governance	Interdisciplinary
+11	Why can software-defined networking control-plane centralization introduce security and scalability tradeoffs in large enterprise networks?	CS_Systems	ComputerScience
+12	What factors contribute to burnout in healthcare workers, and what interventions reduce burnout effectively?	MH_MentalHealth	MedicineHealth
+13	Why does quantum decoherence limit the maintenance of superposition in macroscopic systems, and how is decoherence modeled experimentally?	NS_Physics	NaturalSciences
+14	What evidence supports that minimum wage increases affect employment differently across industries, and what identification strategies are used?	SS_Economics	SocialSciences
+15	How do different imaging modalities (MRI, CT, ultrasound) compare for early cancer detection in terms of sensitivity and specificity?	MH_ClinicalMedicine	MedicineHealth
+16	How do changes in search-ranking algorithms affect traffic distribution and market power, and what empirical designs estimate the effect?	INT_DigitalSociety	Interdisciplinary
+17	How do gravitational wave observations constrain models of compact object formation and merger rates?	NS_Physics	NaturalSciences
+18	What evidence links gut microbiome composition to metabolic disease risk, and how robust are findings across cohorts?	NS_Biology	NaturalSciences
+19	What governance mechanisms in national AI strategies are associated with measurable increases in public-sector AI transparency and reporting?	INT_TechPolicy_Governance	Interdisciplinary
+20	How do cultural studies approaches define ideology, and what methods are used to study ideological reproduction in everyday life?	HUM_CulturalStudies	Humanities
+21	What is intertextuality, and how do scholars use it to analyze influence and adaptation across literary works?	HUM_Literature	Humanities
+22	What mechanisms explain learning loss during school closures, and which remediation strategies show measurable recovery?	SS_Policy_Law_Edu_Bus	SocialSciences
+23	How have historians explained the causes of the Industrial Revolution, and what debates shape current interpretations?	HUM_History	Humanities
+24	How do trauma exposures affect long-term mental health, and what protective factors reduce risk?	MH_MentalHealth	MedicineHealth
+25	How do electronic health records enable clinical prediction models, and what data quality issues limit model performance?	MH_HealthInformatics	MedicineHealth
+26	How do platform governance choices (API access, ranking transparency, moderation rules) influence complementor participation and innovation in platform ecosystems?	INT_DigitalSociety	Interdisciplinary
+27	How do QUIC and TCP differ in congestion control behavior on mobile networks, and what empirical evidence supports performance claims?	CS_Systems	ComputerScience
+28	How do remote sensing methods measure land deformation, and what limits the accuracy of InSAR measurements?	NS_EarthScience	NaturalSciences
+29	What studies quantify rebound effects from energy-efficiency interventions, and how do these effects change estimated net emissions reductions?	INT_Sustainability_Climate	Interdisciplinary
+30	How do epigenetic modifications influence gene expression variability, and what experiments establish causal effects?	NS_Biology	NaturalSciences
+31	How do gender and sexuality studies analyze identity formation, and what methods support intersectional analysis?	HUM_CulturalStudies	Humanities
+32	How do calibration methods affect the reliability of probabilistic outputs from modern classifiers in real-world decision-making?	CS_AI_ML	ComputerScience
+33	Why do volcanic eruptions vary in explosivity, and what geophysical signals indicate magma movement?	NS_EarthScience	NaturalSciences
+34	How do sociolinguists study language variation, and what methods measure variation across social groups?	HUM_Linguistics	Humanities
+35	What evidence supports that mindfulness-based interventions improve anxiety outcomes, and what moderators are identified?	SS_Psychology	SocialSciences
+36	How do feminist literary theories analyze gender representation, and what methodological approaches are commonly used?	HUM_Literature	Humanities
+37	How do secure enclaves affect the threat model for sensitive computation, and what side-channel risks remain?	CS_Security	ComputerScience
+38	What evidence supports induced seismicity links to wastewater injection, and what modeling approaches predict risk?	NS_EarthScience	NaturalSciences
+39	Why do microservice architectures create observability challenges compared with monoliths, and what techniques are most effective for tracing?	CS_Systems	ComputerScience
+40	How do cognitive biases influence decision making, and what experimental paradigms measure bias reliably?	SS_Psychology	SocialSciences
+41	How do social media recommendation algorithms influence political polarization, and what evidence distinguishes selection from influence?	SS_Sociology	SocialSciences
+42	Why can schema design choices amplify data quality issues in analytics pipelines, and what constraints reduce downstream errors?	CS_Data_HCI	ComputerScience
+43	Why can side-channel attacks leak sensitive information in shared hardware, and what mitigations are commonly applied in cloud environments?	CS_Security	ComputerScience
+44	What evidence supports that value-sensitive design practices reduce downstream ethical issues in deployed technologies, and how is impact measured?	INT_STS	Interdisciplinary
+45	How do digital mental health interventions compare with in-person therapy, and what evidence supports their effectiveness?	MH_MentalHealth	MedicineHealth
+46	Why do interoperability standards such as HL7 and FHIR matter for health data exchange, and what implementation challenges persist?	MH_HealthInformatics	MedicineHealth
+47	What are common root causes of technical debt accumulation, and which refactoring strategies are most effective for managing it?	CS_SoftwareEngineering	ComputerScience
+48	How do monoclonal antibodies differ from small molecules in distribution and clearance, and what implications follow for dosing?	MH_Pharmacology	MedicineHealth
+49	How does algorithmic bias manifest in healthcare models, and what auditing methods detect disparities across groups?	MH_HealthInformatics	MedicineHealth
+50	Which metrics best capture biodiversity impacts in sustainability assessments, and what comparative studies support their validity?	INT_Sustainability_Climate	Interdisciplinary
+51	How do container isolation mechanisms differ across Linux namespaces and cgroups, and what security implications follow?	CS_Systems	ComputerScience
+52	How do federated learning approaches support collaborative medical modeling, and what privacy risks remain?	MH_HealthInformatics	MedicineHealth
+53	How effective are differential privacy mechanisms in protecting training data against membership inference attacks in practice?	CS_Security	ComputerScience
+54	How do green chemistry metrics evaluate sustainability of synthetic routes, and what tradeoffs appear between yield and footprint?	NS_Chemistry	NaturalSciences
+55	How do cultural norms shape gender gaps in labor participation, and what cross-national evidence supports the claims?	SS_Sociology	SocialSciences
+56	How do trade shocks affect regional labor markets, and what methods identify exposure to trade competition?	SS_Economics	SocialSciences
+57	What studies quantify the impact of privacy-regulation enforcement on targeted-advertising effectiveness and user welfare outcomes?	INT_DigitalSociety	Interdisciplinary
+58	What factors drive hallucination in summarization models, and how do evaluation protocols affect measured hallucination rates?	CS_Data_HCI	ComputerScience
+59	How do workplace remote policies affect productivity and employee well-being, and what measurement approaches are used?	SS_Sociology	SocialSciences
+60	Why do inflation expectations influence monetary policy effectiveness, and how are expectations measured empirically?	SS_Economics	SocialSciences
+61	How do de-identification techniques protect patient privacy, and what re-identification risks remain in practice?	MH_HealthInformatics	MedicineHealth
+62	How do historians use quantitative data in social history, and what limitations arise from historical data quality?	HUM_History	Humanities
+63	What are common sources of dataset shift in medical AI, and what monitoring strategies detect performance degradation in deployment?	MH_ClinicalMedicine	MedicineHealth
+64	How do international sanctions affect state behavior, and what research designs estimate sanction effectiveness?	SS_PoliticalScience	SocialSciences
+65	How do electoral systems (plurality, proportional) affect party fragmentation and governance stability, and what comparative evidence exists?	SS_PoliticalScience	SocialSciences
+66	How do data portability or interoperability mandates affect competition among platforms, and what evidence supports the impact?	INT_DigitalSociety	Interdisciplinary
+67	How do single-cell RNA sequencing studies revise understanding of cell differentiation pathways in development?	NS_Biology	NaturalSciences
+68	How do historical narratives change when new archival evidence becomes available, and what standards govern reinterpretation?	HUM_History	Humanities
+69	What evidence links neighborhood segregation to intergenerational mobility, and what mechanisms are proposed?	SS_Sociology	SocialSciences
+70	How do self-supervised vision methods compare with supervised pretraining in downstream robustness to distribution shift?	CS_Data_HCI	ComputerScience
+71	What methods estimate the causal impact of education on earnings, and how do results vary with instrument choice?	SS_Economics	SocialSciences
+72	How do clinical decision support systems influence clinician behavior, and what factors determine adoption and trust?	MH_HealthInformatics	MedicineHealth
+73	How does interface transparency about model uncertainty influence user reliance and error detection in AI decision support?	CS_Data_HCI	ComputerScience
+74	How can CNN-based deep learning reach dermatologist-level performance for skin lesion classification, and what factors limit generalization across populations?	MH_ClinicalMedicine	MedicineHealth
+75	What experimental results support topological insulators' surface state robustness, and where do real materials deviate?	NS_Physics	NaturalSciences
+76	What methods estimate uncertainty in climate model projections at regional scales, and how does downscaling affect results?	NS_EnvironmentalScience	NaturalSciences
+77	How do calibration methods affect the reliability of probabilistic classifiers in decision-making systems?	CS_AI_ML	ComputerScience
+78	What approaches evaluate the effectiveness of carbon pricing on emissions reductions while accounting for leakage?	NS_EnvironmentalScience	NaturalSciences
+79	How do modern turbulence models compare in predicting boundary-layer flows, and what benchmarks show systematic errors?	NS_Physics	NaturalSciences
+80	Why do antibiotics exhibit time-dependent versus concentration-dependent killing, and how does this affect dosing strategy?	MH_Pharmacology	MedicineHealth
+81	How do ensemble methods improve uncertainty estimation compared with single-model baselines in deep learning?	CS_AI_ML	ComputerScience
+82	What evidence supports that sleep interventions reduce depressive symptoms, and what mediators are identified?	MH_ClinicalMedicine	MedicineHealth
+83	How do social contract theories justify political authority, and what critiques challenge contractarian frameworks?	HUM_Philosophy	Humanities
+84	Why do vision transformers sometimes outperform CNNs on large-scale image recognition, and when do CNNs remain competitive?	CS_Data_HCI	ComputerScience
+85	What mechanisms explain superconductivity in unconventional superconductors, and which competing theories have the strongest empirical support?	NS_Physics	NaturalSciences
+86	In what ways does Zero Trust Architecture change lateral movement risk compared with perimeter-based security models?	CS_Security	ComputerScience
+87	How do climate adaptation plans prioritize equity outcomes, and what evaluations measure distributional impacts?	INT_Sustainability_Climate	Interdisciplinary
+88	How do historians use primary sources to reconstruct everyday life in early modern societies, and what methodological debates persist?	HUM_History	Humanities
+89	How do housing supply constraints influence rent growth, and what evidence supports zoning reform effects?	SS_Economics	SocialSciences
+90	Which policy or incentive designs are associated with higher adoption of circular-economy practices in manufacturing, and what empirical evidence supports them?	INT_Sustainability_Climate	Interdisciplinary
+91	What evidence supports that mandatory incident reporting for AI systems improves detection and remediation of harms?	INT_TechPolicy_Governance	Interdisciplinary
+92	How do theories of justice treat inequality and redistribution, and what are key points of disagreement?	HUM_Philosophy	Humanities
+93	Why does label noise arise in clinical datasets, and what methods improve reliability of outcome definitions?	MH_HealthInformatics	MedicineHealth
+94	How does controlled-access data sharing affect reproducibility and downstream reuse, and what privacy risks are documented for human-subject datasets?	INT_ResearchEthics	Interdisciplinary
+95	How do longitudinal studies evaluate risk factors for mental health disorders, and what challenges arise from attrition bias?	MH_MentalHealth	MedicineHealth
+96	How do sleep disturbances relate to mental health outcomes, and what evidence supports causal pathways?	MH_MentalHealth	MedicineHealth
+97	Why do standardized testing regimes produce unintended consequences, and what evidence documents teaching-to-the-test effects?	SS_Policy_Law_Edu_Bus	SocialSciences
+98	What evidence links inadequate informed consent procedures to higher participant withdrawal or complaint rates in human-subject research?	INT_ResearchEthics	Interdisciplinary
+99	What studies quantify the effect of reproducibility checklists or badges on code/data availability at publication time?	INT_ResearchEthics	Interdisciplinary
+100	How do social determinants of health influence health outcomes, and what study designs quantify their effects?	MH_Epidemiology_PublicHealth	MedicineHealth
+101	Why do democracies experience democratic backsliding, and what indicators are used to measure erosion of democratic norms?	SS_PoliticalScience	SocialSciences
+102	How do adverse drug reaction surveillance systems detect safety signals, and what false-alarm issues arise?	MH_Pharmacology	MedicineHealth
+103	What are the primary causes of performance regressions in query optimizers when workloads shift, and how can adaptive optimization mitigate them?	CS_Data_HCI	ComputerScience
+104	Why can continuous integration reduce integration risk, and what are common failure modes when CI pipelines scale?	CS_SoftwareEngineering	ComputerScience
+105	How do theories of epistemic justification differ, and what are major objections to foundationalism and coherentism?	HUM_Philosophy	Humanities
+106	What methods evaluate ethical, legal, and social implications (ELSI) in emerging-technology assessment, and which studies compare method performance?	INT_STS	Interdisciplinary
+107	What mechanisms explain BGP route leaks, and which mitigation strategies are most effective in practice?	CS_Systems	ComputerScience
+108	How do sociotechnical imaginaries shape policy choices in climate or energy transitions, and what comparative studies support the link?	INT_STS	Interdisciplinary
+109	What is the problem of induction, and what responses have been proposed in modern epistemology?	HUM_Philosophy	Humanities
+110	How do retrieval-augmented generation systems trade off latency, factuality, and hallucination under fixed context limits?	CS_AI_ML	ComputerScience
+111	What design patterns improve user trust in AI-assisted writing tools without increasing cognitive load?	CS_Data_HCI	ComputerScience
+112	How do literary critics analyze narrative voice, and what frameworks are commonly used to interpret unreliable narrators?	HUM_Literature	Humanities
+113	How do phonological rules explain sound patterns, and what evidence supports rule-based versus constraint-based approaches?	HUM_Linguistics	Humanities
+114	How effective are wearable devices for detecting atrial fibrillation compared with standard clinical screening?	MH_ClinicalMedicine	MedicineHealth
+115	Why do residential segregation patterns persist, and what mechanisms maintain neighborhood inequality?	SS_Sociology	SocialSciences
+116	What studies quantify the societal impacts of gig-platform algorithmic management on wages and job stability?	INT_DigitalSociety	Interdisciplinary
+117	How do patient-reported outcomes complement clinical endpoints, and what measurement issues affect validity?	MH_HealthInformatics	MedicineHealth
+118	Why do drug-drug interactions occur via CYP enzymes, and how are interaction risks evaluated clinically?	MH_Pharmacology	MedicineHealth
+119	How does the carbon cycle operate across atmosphere, ocean, and lithosphere, and what observations constrain flux estimates?	NS_EarthScience	NaturalSciences
+120	Why do eutrophication events occur in freshwater systems, and which interventions reduce nutrient loading effectively?	NS_EnvironmentalScience	NaturalSciences
+121	How do satellite remote sensing methods estimate soil moisture, and what are major sources of bias across land covers?	NS_EarthScience	NaturalSciences
+122	What are common failure modes of eventual consistency in geo-distributed databases, and how do systems detect and repair anomalies?	CS_Systems	ComputerScience
+123	How do advances in cryo-electron microscopy improve resolution limits, and what sample preparation factors dominate artifacts?	NS_Physics	NaturalSciences
+124	How do globalization processes influence cultural identity, and what theoretical frameworks explain hybridization?	HUM_CulturalStudies	Humanities
+125	How do randomized controlled trials and real-world evidence studies differ in bias profiles for treatment effectiveness estimation?	MH_ClinicalMedicine	MedicineHealth
+126	How do electoral systems influence party competition, and what evidence supports these institutional effects?	SS_PoliticalScience	SocialSciences
+127	How do languages encode tense and aspect, and what cross-linguistic patterns support typological generalizations?	HUM_Linguistics	Humanities
+128	How do legal scholars evaluate the effectiveness of privacy regulations, and what empirical methods are used?	SS_Policy_Law_Edu_Bus	SocialSciences
+129	How do museums shape collective memory, and what debates exist about curation and public history?	HUM_CulturalStudies	Humanities
+130	How do CRISPR off-target effects arise in mammalian cells, and what methods most reliably quantify off-target editing?	NS_Biology	NaturalSciences
+131	What evidence supports that transparency interventions (explainers, disclosure labels) change user trust and engagement on social platforms?	INT_DigitalSociety	Interdisciplinary
+132	What evidence indicates that continuous integration reduces integration risk, and what metrics best predict build instability?	CS_SoftwareEngineering	ComputerScience
+133	What factors govern battery electrolyte stability in lithium metal batteries, and how do additives change decomposition pathways?	NS_Chemistry	NaturalSciences
+134	How do stress responses affect learning outcomes, and what mechanisms explain stress-related performance changes?	SS_Psychology	SocialSciences
+135	What evidence supports universal basic income effects on labor supply and well-being, and what heterogeneity is observed?	SS_Economics	SocialSciences
+136	What methods evaluate policy impact when randomized experiments are infeasible, and how do synthetic control approaches perform?	SS_PoliticalScience	SocialSciences
+137	How do ethical theories address responsibility for harms caused by automated systems, and what concepts are most contested?	HUM_Philosophy	Humanities
+138	Why do replication failures occur in behavioral research, and what reforms improve reproducibility?	SS_Psychology	SocialSciences
+139	How do digital platforms reshape cultural production, and what concepts explain platformization of culture?	HUM_CulturalStudies	Humanities
+140	How do leader-based and leaderless replication schemes compare in tail latency under bursty write workloads?	CS_Systems	ComputerScience
+141	How do media studies analyze the relationship between representation and power, and what frameworks guide discourse analysis?	HUM_CulturalStudies	Humanities
+142	How do legal institutions influence economic development, and what empirical evidence supports institutional theories?	SS_Policy_Law_Edu_Bus	SocialSciences
+143	How do children acquire grammatical structure, and what evidence supports competing theories of language acquisition?	HUM_Linguistics	Humanities
+144	How do boundary organizations mediate science-policy interfaces, and what case studies quantify effects on decision quality?	INT_STS	Interdisciplinary
+145	How do contact tracing programs reduce infectious disease spread, and what operational factors determine effectiveness?	MH_Epidemiology_PublicHealth	MedicineHealth
+146	How do feature attribution methods such as SHAP or integrated gradients behave under correlated features, and what pitfalls arise?	CS_AI_ML	ComputerScience
+147	How do cohort studies estimate disease incidence, and what biases threaten validity in observational epidemiology?	MH_Epidemiology_PublicHealth	MedicineHealth
+148	Why can reinforcement learning from human feedback reduce toxic outputs while sometimes harming factual accuracy?	CS_AI_ML	ComputerScience
+149	What evidence supports that code review practices improve software quality, and which review signals correlate with defect discovery?	CS_SoftwareEngineering	ComputerScience
+150	Why is the Raft consensus protocol often considered easier to understand than Paxos in distributed systems implementations?	CS_Systems	ComputerScience
+151	Why can class imbalance distort model evaluation, and which metrics are robust under severe imbalance?	CS_AI_ML	ComputerScience
+152	How do digital archives change historiography practices, and what new biases do they introduce?	HUM_History	Humanities
+153	How do environmental exposures contribute to chronic disease risk, and what methods assess exposure-response relationships?	MH_Epidemiology_PublicHealth	MedicineHealth
+154	How do corporate ESG disclosures affect investor behavior and firm performance, and what evidence distinguishes signaling from substantive change?	SS_Policy_Law_Edu_Bus	SocialSciences
+155	How do historians assess causation in large-scale historical events, and what methods support causal claims in historiography?	HUM_History	Humanities
+156	Which mitigation practices reduce demographic skews in recruited study samples, and what evidence shows improved external validity?	INT_ResearchEthics	Interdisciplinary
+157	How do plate tectonics explain earthquake distribution, and what methods estimate seismic hazard in active regions?	NS_EarthScience	NaturalSciences
+158	How do interventions reduce prejudice, and what evidence supports long-term attitude change?	SS_Psychology	SocialSciences
+159	Why do placebo effects occur in antidepressant trials, and how do study designs address expectancy effects?	MH_MentalHealth	MedicineHealth
+160	Why do perovskite solar cells degrade under moisture and heat, and which encapsulation strategies show sustained improvements?	NS_Chemistry	NaturalSciences
+161	How do risk-based AI regulations classify high-risk systems, and what evidence shows changes in organizational compliance practices after adoption?	INT_TechPolicy_Governance	Interdisciplinary
+162	How do postcolonial literary theories interpret representations of power, and what debates shape contemporary postcolonial criticism?	HUM_Literature	Humanities
+163	How do conflict-of-interest disclosure policies affect bias indicators in funded research, and what empirical studies measure the change?	INT_ResearchEthics	Interdisciplinary
+164	How do participatory technology assessment methods influence policy legitimacy, and what evidence compares participatory and expert-only approaches?	INT_STS	Interdisciplinary
+165	What evidence supports typological universals in syntax, and how do exceptions inform theory revision?	HUM_Linguistics	Humanities
+166	How do organizations shape worker outcomes, and what theories explain organizational inequality?	SS_Sociology	SocialSciences
+167	How do catalyst surface structures influence selectivity in CO2 electroreduction, and what characterization methods support causal claims?	NS_Chemistry	NaturalSciences
+168	What methods are used in ethnographic cultural research, and what validity concerns arise in participant observation?	HUM_CulturalStudies	Humanities
+169	What evidence supports competing interpretations of a major historical turning point, and how do historians adjudicate source reliability?	HUM_History	Humanities
+170	What evidence supports that code review improves software quality, and what review practices correlate with defect reduction?	CS_SoftwareEngineering	ComputerScience
+171	What is scientific realism, and how do philosophers of science argue for or against realism using historical case studies?	HUM_Philosophy	Humanities
+172	What studies compare the emissions impacts of different dietary-shift interventions, and what assumptions dominate uncertainty?	INT_Sustainability_Climate	Interdisciplinary
+173	What are the main contemporary arguments about scientific realism, and how do they address underdetermination?	HUM_Philosophy	Humanities
+174	How do school accountability policies affect student achievement, and what empirical designs estimate policy effects?	SS_Policy_Law_Edu_Bus	SocialSciences
+175	What methods estimate excess mortality during epidemics, and how do reporting delays affect estimates?	MH_Epidemiology_PublicHealth	MedicineHealth
+176	How do corpus-based methods study language change, and what limitations arise from sampling and annotation practices?	HUM_Linguistics	Humanities
+177	How do integrated Life Cycle Sustainability Assessment approaches combine environmental, economic, and social indicators, and what validation studies assess internal consistency?	INT_Sustainability_Climate	Interdisciplinary
+178	What studies compare outcomes of centralized versus decentralized data-governance models for AI development in large organizations?	INT_TechPolicy_Governance	Interdisciplinary
+179	How do narrative techniques influence reader interpretation in modern novels, and what critical frameworks are commonly applied?	HUM_Literature	Humanities
+180	What factors explain variations in policy compliance during public health crises across countries?	SS_PoliticalScience	SocialSciences
+181	What mechanisms drive placebo effects in clinical studies, and how do trial designs reduce bias from placebo responses?	MH_Pharmacology	MedicineHealth
+182	How do catalysts lower activation energy in chemical reactions, and what factors determine catalyst selectivity?	NS_Chemistry	NaturalSciences
+183	How does social capital influence economic mobility, and what empirical measures capture social capital in communities?	SS_Sociology	SocialSciences
+184	What methods quantify biodiversity loss at regional scales, and how do different indices change inferred trends?	NS_EnvironmentalScience	NaturalSciences
+185	How are depression and anxiety assessed in clinical research, and what limitations affect common screening instruments?	MH_MentalHealth	MedicineHealth
+186	How do urban heat islands affect local air quality and health outcomes, and what interventions show measurable improvement?	NS_EnvironmentalScience	NaturalSciences
+187	What evidence supports telemedicine improving chronic disease management outcomes, and which patient groups benefit most?	MH_ClinicalMedicine	MedicineHealth
+188	What evidence shows phishing simulation programs reduce click-through rates, and how durable are these effects over time?	CS_Security	ComputerScience
+189	What methods are used in corpus linguistics, and how do corpus design choices affect linguistic inference?	HUM_Linguistics	Humanities
+190	Which enforcement mechanisms for authorship criteria reduce honorary authorship and authorship disputes, and what studies quantify the effect?	INT_ResearchEthics	Interdisciplinary
+191	How do static analysis tools detect security vulnerabilities, and what limitations cause false positives in large codebases?	CS_SoftwareEngineering	ComputerScience
+192	What mechanisms link long COVID symptoms to immune dysregulation, and what biomarkers show the strongest associations?	MH_ClinicalMedicine	MedicineHealth
+193	How do social networks influence health behaviors, and what evidence supports peer effects in health-related decisions?	SS_Sociology	SocialSciences
+194	What is the difference between consequentialism and deontology in moral philosophy, and how do contemporary philosophers argue for each view?	HUM_Philosophy	Humanities
+195	How does pharmacokinetics determine drug dosing, and what factors drive inter-patient variability in clearance?	MH_Pharmacology	MedicineHealth
+196	How do machine-learning guided materials discovery pipelines reduce experimental cycles, and what failure cases are reported?	NS_Chemistry	NaturalSciences
+197	How do civil wars end, and what factors predict negotiated settlement versus military victory?	SS_PoliticalScience	SocialSciences
+198	How do plasmonic nanostructures enhance light-matter interactions, and what applications show reproducible gains?	NS_Physics	NaturalSciences
+199	How do CRISPR-Cas systems enable genome editing, and what factors determine off-target effects?	NS_Biology	NaturalSciences
+200	What evidence shows that life-cycle assessment results for renewable energy vary primarily due to system-boundary and electricity-mix assumptions?	INT_Sustainability_Climate	Interdisciplinary
+201	How do recent experiments test predictions of quantum entanglement over long distances, and what are the main limitations?	NS_Physics	NaturalSciences
+202	How do misinformation correction strategies affect belief updating, and under what conditions do backfire effects appear?	SS_PoliticalScience	SocialSciences
+203	Why does working memory capacity vary across individuals, and what tasks are used to measure working memory?	SS_Psychology	SocialSciences
+204	Why can genetic variants affect drug response, and how does pharmacogenomics inform prescribing decisions?	MH_Pharmacology	MedicineHealth
+205	How do international standards efforts for AI (risk management, documentation) influence organizational governance adoption, and what surveys quantify uptake?	INT_TechPolicy_Governance	Interdisciplinary
+206	How do anticipatory governance approaches integrate foresight and stakeholder deliberation for emerging technologies, and what case studies document outcomes?	INT_STS	Interdisciplinary
+207	Why are supply-chain attacks on software dependencies difficult to detect, and what defenses reduce risk in practice?	CS_Security	ComputerScience
+208	How do instruction-tuned language models differ from base models in factuality and citation behavior under the same prompting constraints?	CS_Data_HCI	ComputerScience
+209	What evidence supports that public procurement requirements (model cards, audits, logging) improve accountability for deployed AI systems?	INT_TechPolicy_Governance	Interdisciplinary
+210	How do wildfire smoke exposures affect cardiopulmonary outcomes, and which exposure assessment methods are most reliable?	NS_EnvironmentalScience	NaturalSciences
+211	What evidence shows that content-moderation policy changes alter the spread of misinformation, and which measurement designs are considered credible?	INT_DigitalSociety	Interdisciplinary
+212	What approaches analyze representation of identity in contemporary literature, and what debates exist about authorial intent?	HUM_Literature	Humanities
+213	What evidence supports that open peer review changes reviewer behavior and review quality compared with single-blind review?	INT_ResearchEthics	Interdisciplinary
+214	How do central bank communication strategies influence inflation expectations, and what empirical measures capture these effects?	SS_Economics	SocialSciences
+215	How do regulatory sandboxes for emerging technologies affect innovation outcomes and safety incidents, according to comparative evaluations?	INT_TechPolicy_Governance	Interdisciplinary
+216	What evidence shows test-driven development reduces defect density, and under what project conditions does it fail to deliver benefits?	CS_SoftwareEngineering	ComputerScience
+217	What evidence supports that responsible-innovation practices change R&D decision-making in technology projects, and which mechanisms drive the change?	INT_STS	Interdisciplinary
+218	How do minimum wage policies affect employment outcomes, and what empirical strategies estimate causal impacts?	SS_Economics	SocialSciences
+219	How do active learning strategies affect STEM course performance, and what study designs provide the strongest evidence?	SS_Policy_Law_Edu_Bus	SocialSciences
+220	What evidence supports that refactoring improves maintainability without harming correctness, and what practices reduce refactoring risk?	CS_SoftwareEngineering	ComputerScience
+221	How do zoonotic spillover risk models integrate ecological and human mobility data, and what validation strategies are used?	NS_Biology	NaturalSciences
+222	What mechanisms drive microplastic adsorption of pollutants in aquatic systems, and how do lab results translate to field conditions?	NS_Chemistry	NaturalSciences
+223	How do protein folding prediction models impact experimental structural biology workflows, and where do they still fail?	NS_Biology	NaturalSciences
+224	What empirical evidence supports that preregistration reduces p-hacking and improves replicability in empirical research?	INT_ResearchEthics	Interdisciplinary
+225	What are the main arguments about algorithmic accountability in law, and how do they balance innovation and rights?	SS_Policy_Law_Edu_Bus	SocialSciences
+226	How do cognitive biases affect risk perception in health decisions, and what interventions reduce bias?	SS_Psychology	SocialSciences
+227	How do audiences interpret media texts, and what research methods study reception and meaning-making?	HUM_CulturalStudies	Humanities
+228	How do particulate matter emissions affect human health, and what methods estimate exposure at population scale?	NS_EnvironmentalScience	NaturalSciences
+229	How do social support networks influence depression outcomes, and how is causality established in longitudinal studies?	SS_Psychology	SocialSciences
+230	How do phishing attacks exploit human factors, and which user training interventions show measurable effectiveness?	CS_Security	ComputerScience
+231	What geological processes shape sedimentary basins, and how are basin histories reconstructed?	NS_EarthScience	NaturalSciences
+232	How does differential privacy reduce membership inference risk in model training, and what utility tradeoffs are commonly observed?	CS_Security	ComputerScience
+233	Why do cognitive behavioral therapy interventions show heterogeneous effects, and what moderators influence outcomes?	MH_MentalHealth	MedicineHealth
+234	What evidence supports proposed mechanisms of PFAS persistence, and which remediation methods are most effective?	NS_Chemistry	NaturalSciences
+235	Why does dataset shift degrade predictive performance, and which detection methods identify shift in deployed models?	CS_AI_ML	ComputerScience
+236	What evidence supports that algorithmic recommender systems contribute to political polarization, and which interventions mitigate the effect?	INT_DigitalSociety	Interdisciplinary
+237	How do genre conventions evolve over time, and what methods do scholars use to study genre change in literary history?	HUM_Literature	Humanities
+238	What evidence supports that carbon pricing increases low-carbon technology adoption, and which designs minimize regressive impacts?	INT_Sustainability_Climate	Interdisciplinary
+239	Why does vaccine hesitancy persist, and which interventions show measurable improvements in uptake?	MH_Epidemiology_PublicHealth	MedicineHealth
+240	How do dose-response relationships support therapeutic window estimation, and what models are commonly used?	MH_Pharmacology	MedicineHealth
