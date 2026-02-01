@@ -61,7 +61,7 @@ Rules:
 - Use real academic papers (journal or top-tier conference).
 
 Additional constraint:
-- Focus specifically on research published between {start_year} and {end_year} (inclusive).
+- Temporal rule: every cited paper MUST be within the time window ({start_year}–{end_year}).
 """,
     "survey": """You are writing the related work section of an academic survey.
 
@@ -162,14 +162,10 @@ def render_prompt(
     seed_block = ""
     if seed_anchors and seed_anchors.strip():
         seed_block = (
-            "Seed anchors (topic hints):\n"
+            "Seed anchors (keywords only, topic hints):\n"
             f"{seed_anchors.strip()}\n\n"
-            "These are topic hints only; they are NOT required to be cited."
+            "Seed anchors are NOT sources. Do NOT cite them. All citations must be real academic papers found independently."
         )
-        if condition == "temporal":
-            seed_block += (
-                "\nFor temporal: any seed anchor outside the time window MUST NOT appear in the final citations."
-            )
     data: Dict[str, Any] = {
         "question": question.strip(),
         "n_papers": n_papers,
