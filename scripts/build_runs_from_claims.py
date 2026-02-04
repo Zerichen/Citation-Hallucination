@@ -102,7 +102,7 @@ def main() -> int:
                 n_papers = FIXED_CITES[cond]
                 start_year = None
                 end_year = None
-                if cond == "temporal":
+                if cond in {"temporal", "combo"}:
                     start_year = _parse_int(temporal_start_year, "temporal_start_year", i)
                     end_year = _parse_int(temporal_end_year, "temporal_end_year", i)
                 prompt = render_prompt(
@@ -124,7 +124,7 @@ def main() -> int:
                     "prompt": prompt,
                     "output": "",
                 }
-                if cond == "temporal":
+                if cond in {"temporal", "combo"}:
                     run["time_window"] = {"start_year": start_year, "end_year": end_year}
                 runs.append(run)
 

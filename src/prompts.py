@@ -128,6 +128,9 @@ Rules:
 - Do not invent DOIs. If unknown, write "N/A".
 - Use real academic papers (journal or top-tier conference).
 
+Additional constraint:
+- Temporal rule: every cited paper MUST be within the time window ({start_year}–{end_year}).
+
 """,
 }
 
@@ -150,7 +153,7 @@ def render_prompt(
     if not isinstance(n_papers, int) or n_papers <= 0:
         raise ValueError("n_papers must be a positive int")
 
-    if condition == "temporal":
+    if condition in {"temporal", "combo"}:
         if start_year is None or end_year is None:
             raise ValueError(f"{condition} requires start_year and end_year")
         if not isinstance(start_year, int) or not isinstance(end_year, int):
@@ -173,7 +176,7 @@ def render_prompt(
         "seed_anchors_block": seed_block,
     }
 
-    if condition == "temporal":
+    if condition in {"temporal", "combo"}:
         data["start_year"] = int(start_year)
         data["end_year"] = int(end_year)
 
