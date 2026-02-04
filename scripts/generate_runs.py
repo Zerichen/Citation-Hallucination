@@ -7,14 +7,14 @@ from typing import Dict, Optional, Any
 
 from tqdm import tqdm
 from openai import OpenAI
-import anthropic
+# import anthropic
 
 # ----------------------------
 # Config
 # ----------------------------
 
-OUT_PATH = "out/claude-sonnet-4-5-20250929_full_runs.jsonl"
-TOPICS_PATH = "data/claude-sonnet-4-5-20250929_full_runs.jsonl"
+OUT_PATH = "out/llama3_8b_full_runs_combo_only.jsonl"
+TOPICS_PATH = "data/llama3_8b_full_runs.jsonl"
 
 GPT4O_OUT_PATH = "out/gpt-4o_full_runs.jsonl"
 GPT4O_TOPICS_PATH = "data/gpt-4o_full_runs.jsonl"
@@ -27,22 +27,22 @@ openai_client = OpenAI(
     base_url=os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
 )
 
-CLAUDE_BASE_URL = os.getenv("CLAUDE_BASE_URL", "https://api.anthropic.com")
-_claude_api_key = (os.getenv("CLAUDE_API_KEY") or os.getenv("ANTHROPIC_API_KEY") or "").strip()
-_claude_auth_token = (os.getenv("CLAUDE_AUTH_TOKEN") or os.getenv("ANTHROPIC_AUTH_TOKEN") or "").strip()
+# CLAUDE_BASE_URL = os.getenv("CLAUDE_BASE_URL", "https://api.anthropic.com")
+# _claude_api_key = (os.getenv("CLAUDE_API_KEY") or os.getenv("ANTHROPIC_API_KEY") or "").strip()
+# _claude_auth_token = (os.getenv("CLAUDE_AUTH_TOKEN") or os.getenv("ANTHROPIC_AUTH_TOKEN") or "").strip()
 
-if _claude_api_key:
-    claude_client = anthropic.Anthropic(
-        api_key=_claude_api_key,
-        base_url=CLAUDE_BASE_URL,
-    )
-elif _claude_auth_token:
-    claude_client = anthropic.Anthropic(
-        auth_token=_claude_auth_token,
-        base_url=CLAUDE_BASE_URL,
-    )
-else:
-    claude_client = None
+# if _claude_api_key:
+#     claude_client = anthropic.Anthropic(
+#         api_key=_claude_api_key,
+#         base_url=CLAUDE_BASE_URL,
+#     )
+# elif _claude_auth_token:
+#     claude_client = anthropic.Anthropic(
+#         auth_token=_claude_auth_token,
+#         base_url=CLAUDE_BASE_URL,
+#     )
+# else:
+#     claude_client = None
 
 qwen_client = OpenAI(
     api_key=os.getenv("SILICONFLOW_API_KEY", ""), base_url="https://api.siliconflow.cn/v1",
@@ -157,6 +157,8 @@ def _process_file(topics_path: str, out_path: str) -> None:
         if not line:
             continue  # skip empty lines
         single_run = json.loads(line)  # parse JSON
+        if single_run["condition"] != 'combo':
+            continue
         model = single_run["model"]
         temp = single_run["temperature"]
         prompt = single_run["prompt"]
@@ -185,7 +187,7 @@ def _process_file(topics_path: str, out_path: str) -> None:
 
 def main():
     _process_file(TOPICS_PATH, OUT_PATH)
-    _process_file(GPT4O_TOPICS_PATH, GPT4O_OUT_PATH)
+    # _process_file(GPT4O_TOPICS_PATH, GPT4O_OUT_PATH)
 
 if __name__ == "__main__":
     main()
