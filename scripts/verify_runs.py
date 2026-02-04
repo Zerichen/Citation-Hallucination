@@ -1,7 +1,7 @@
 import argparse
 import json
 import os
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from tqdm import tqdm
 
 from src.parser import parse_citations, build_citation_objects
@@ -55,33 +55,37 @@ def adapt_s2_item(item: Dict) -> Dict:
         "doi": doi
     }
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--runs", required=True, help="path to runs.jsonl")
-    ap.add_argument("--out_dir", required=True, help="output directory")
-    ap.add_argument("--mailto", default=None, help="mailto for Crossref polite requests")
-    ap.add_argument("--s2_key", default=None, help="Semantic Scholar API key (optional)")
-    ap.add_argument("--k", type=int, default=5, help="top-k candidates per source")
-    args = ap.parse_args()
+def _verify_file(runs_path: str, out_dir: str, mailto: Optional[str], s2_key: Optional[str], k: int) -> None:
+    os.makedirs(out_dir, exist_ok=True)
+    citations_path = os.path.join(out_dir, "citations.jsonl")
+    metrics_path = os.path.join(out_dir, "run_metrics.jsonl")
 
-    os.makedirs(args.out_dir, exist_ok=True)
-    citations_path = os.path.join(args.out_dir, "citations.jsonl")
-    metrics_path = os.path.join(args.out_dir, "run_metrics.jsonl")
+    resume = os.getenv("RESUME", "").strip().lower() in {"1", "true", "yes"}
+    completed_run_ids = set()
+    if resume and os.path.exists(metrics_path):
+        with open(metrics_path, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    completed_run_ids.add(json.loads(line).get("run_id"))
+                except Exception:
+                    continue
 
-    crossref = CrossrefClient(mailto=args.mailto, cache_dir="cache")
-    s2 = SemanticScholarClient(api_key=args.s2_key, cache_dir="cache")
+    crossref = CrossrefClient(mailto=mailto, cache_dir="cache")
+    s2 = SemanticScholarClient(api_key=s2_key, cache_dir="cache")
 
     # Load runs
     runs = []
-    with open(args.runs, "r", encoding="utf-8") as f:
+    with open(runs_path, "r", encoding="utf-8") as f:
         for line in f:
             runs.append(json.loads(line))
 
     with open(citations_path, "a", encoding="utf-8") as cit_out, \
          open(metrics_path, "a", encoding="utf-8") as met_out:
 
-        for run in tqdm(runs, desc="Verifying runs"):
+        for run in tqdm(runs, desc=f"Verifying runs ({os.path.basename(runs_path)})"):
             run_id = run["run_id"]
+            if resume and run_id in completed_run_ids:
+                continue
             output_text = run.get("output", "")
             time_window = run.get("time_window")
 
@@ -97,7 +101,11 @@ def main():
 
                 # 1) DOI lookup (Crossref) if provided
                 if c.norm_doi:
-                    rec = crossref.lookup_doi(c.norm_doi)
+                    try:
+                        rec = crossref.lookup_doi(c.norm_doi)
+                    except Exception as e:
+                        print(f"[WARN] Crossref DOI lookup failed: {c.norm_doi} ({e})")
+                        rec = None
                     if rec is None:
                         doi_failed = True
                     else:
@@ -106,11 +114,19 @@ def main():
                 # 2) Title search if title exists (or DOI failed)
                 if c.norm_title:
                     # Semantic Scholar
-                    s2_items = s2.search_title(c.title, limit=args.k) if c.title else []
+                    try:
+                        s2_items = s2.search_title(c.title, limit=k) if c.title else []
+                    except Exception as e:
+                        print(f"[WARN] S2 title search failed: {c.title} ({e})")
+                        s2_items = []
                     for it in s2_items:
                         candidates.append(("s2", adapt_s2_item(it)))
                     # Crossref
-                    cr_items = crossref.search_title(c.title, rows=args.k) if c.title else []
+                    try:
+                        cr_items = crossref.search_title(c.title, rows=k) if c.title else []
+                    except Exception as e:
+                        print(f"[WARN] Crossref title search failed: {c.title} ({e})")
+                        cr_items = []
                     for it in cr_items:
                         candidates.append(("crossref", adapt_crossref_item(it)))
 
@@ -160,14 +176,36 @@ def main():
 
             # aggregate run metrics
             run_metrics = aggregate_run(per_run_results)
-            run_metrics.update({
-                "run_id": run_id,
-                "condition": run.get("condition"),
-                "topic_id": run.get("topic_id"),
-                "model": run.get("model"),
-                "temperature": run.get("temperature")
-            })
+            # Preserve all keys from input run; keep aggregate fields if any collisions.
+            run_metrics = {**run, **run_metrics}
             met_out.write(json.dumps(run_metrics, ensure_ascii=False) + "\n")
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--runs", default=None, help="path to runs.jsonl")
+    ap.add_argument("--out_dir", default="out/verify", help="output directory")
+    ap.add_argument("--mailto", default=None, help="mailto for Crossref polite requests")
+    ap.add_argument("--s2_key", default=None, help="Semantic Scholar API key (optional)")
+    ap.add_argument("--k", type=int, default=5, help="top-k candidates per source")
+    args = ap.parse_args()
+
+    if args.runs:
+        _verify_file(args.runs, args.out_dir, args.mailto, args.s2_key, args.k)
+        return
+
+    out_root = "out"
+    runs_files = [
+        os.path.join(out_root, name)
+        for name in os.listdir(out_root)
+        if name.endswith("_full_runs_result.jsonl")
+    ]
+    if not runs_files:
+        raise SystemExit("No *_full_runs.jsonl files found in out/")
+
+    for runs_path in sorted(runs_files):
+        stem = os.path.splitext(os.path.basename(runs_path))[0]
+        out_dir = os.path.join(args.out_dir, stem)
+        _verify_file(runs_path, out_dir, args.mailto, args.s2_key, args.k)
 
 if __name__ == "__main__":
     main()

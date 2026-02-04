@@ -12,7 +12,7 @@ if ROOT_DIR not in sys.path:
 
 from src.prompts import render_prompt
 
-OUT_PATH = "data/claude_sonnet_3.5.jsonl"
+OUT_PATH = "data/gpt-4o_full_runs.jsonl"
 CLAIMS_PATH = "data/claims.csv"
 
 MODEL = os.getenv("OPENAI_MODEL", "claude-sonnet-4-5-20250929")
