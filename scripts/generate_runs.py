@@ -3,18 +3,18 @@ import json
 import uuid
 import time
 from datetime import datetime, timezone
-from typing import Dict, Optional, Any
+from typing import Dict, Optional, Any, Iterable
 
 from tqdm import tqdm
 from openai import OpenAI
-# import anthropic
+import anthropic
 
 # ----------------------------
 # Config
 # ----------------------------
 
-OUT_PATH = "out/llama3_8b_full_runs_combo_only.jsonl"
-TOPICS_PATH = "data/llama3_8b_full_runs.jsonl"
+OUT_PATH = "out/claude-sonnet-4-5-20250929_full_runs.jsonl"
+TOPICS_PATH = "data/claude-sonnet-4-5-20250929_full_runs.jsonl"
 
 GPT4O_OUT_PATH = "out/gpt-4o_full_runs.jsonl"
 GPT4O_TOPICS_PATH = "data/gpt-4o_full_runs.jsonl"
@@ -27,22 +27,22 @@ openai_client = OpenAI(
     base_url=os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
 )
 
-# CLAUDE_BASE_URL = os.getenv("CLAUDE_BASE_URL", "https://api.anthropic.com")
-# _claude_api_key = (os.getenv("CLAUDE_API_KEY") or os.getenv("ANTHROPIC_API_KEY") or "").strip()
-# _claude_auth_token = (os.getenv("CLAUDE_AUTH_TOKEN") or os.getenv("ANTHROPIC_AUTH_TOKEN") or "").strip()
+CLAUDE_BASE_URL = os.getenv("CLAUDE_BASE_URL", "https://api.anthropic.com")
+_claude_api_key = (os.getenv("CLAUDE_API_KEY") or os.getenv("ANTHROPIC_API_KEY") or "").strip()
+_claude_auth_token = (os.getenv("CLAUDE_AUTH_TOKEN") or os.getenv("ANTHROPIC_AUTH_TOKEN") or "").strip()
 
-# if _claude_api_key:
-#     claude_client = anthropic.Anthropic(
-#         api_key=_claude_api_key,
-#         base_url=CLAUDE_BASE_URL,
-#     )
-# elif _claude_auth_token:
-#     claude_client = anthropic.Anthropic(
-#         auth_token=_claude_auth_token,
-#         base_url=CLAUDE_BASE_URL,
-#     )
-# else:
-#     claude_client = None
+if _claude_api_key:
+    claude_client = anthropic.Anthropic(
+        api_key=_claude_api_key,
+        base_url=CLAUDE_BASE_URL,
+    )
+elif _claude_auth_token:
+    claude_client = anthropic.Anthropic(
+        auth_token=_claude_auth_token,
+        base_url=CLAUDE_BASE_URL,
+    )
+else:
+    claude_client = None
 
 qwen_client = OpenAI(
     api_key=os.getenv("SILICONFLOW_API_KEY", ""), base_url="https://api.siliconflow.cn/v1",
@@ -132,34 +132,72 @@ def validate_jsonl(path: str) -> None:
 # Main
 # ----------------------------
 
-def _process_file(topics_path: str, out_path: str) -> None:
+def _process_file(
+    topics_path: str,
+    out_path: str,
+    condition_filter: Optional[Iterable[str]] = None,
+    clear_existing: bool = False,
+    resume: bool = False,
+) -> None:
     # Ensure output directory exists
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
-    resume = os.getenv("RESUME", "").strip().lower() in {"1", "true", "yes"}
-    done_count = 0
-    if resume and os.path.exists(out_path):
+    if clear_existing and resume:
+        raise ValueError("Cannot use --clear and --resume together.")
+
+    env_resume = os.getenv("RESUME", "").strip().lower() in {"1", "true", "yes"}
+    if resume and env_resume:
+        raise ValueError("Use either --resume or RESUME env var, not both.")
+    if env_resume:
+        resume = True
+    existing_by_id = {}
+    existing_rows = []
+    if os.path.exists(out_path) and not clear_existing:
         with open(out_path, "r", encoding="utf-8") as f:
-            done_count = sum(1 for _ in f)
+            for line in f:
+                if not line.strip():
+                    continue
+                obj = json.loads(line)
+                if not resume:
+                    existing_rows.append(obj)
+                if obj.get("run_id"):
+                    existing_by_id[obj["run_id"]] = obj
 
     with open(topics_path, "r", encoding="utf-8") as f:
         lines = [ln.strip() for ln in f if ln.strip()]
 
-    if resume and done_count:
-        print(f"[INFO] RESUME enabled: skipping first {done_count} runs already in {out_path}")
-        if done_count >= len(lines):
-            print("[INFO] All runs already completed. Nothing to do.")
-            return
+    # Optional condition filter
+    if condition_filter:
+        allowed = {c.strip() for c in condition_filter if c.strip()}
+        if allowed:
+            filtered = []
+            for ln in lines:
+                try:
+                    obj = json.loads(ln)
+                except Exception:
+                    continue
+                if obj.get("condition") in allowed:
+                    filtered.append(ln)
+            lines = filtered
 
-    progress = tqdm(lines[done_count:], desc=f"Generating runs ({os.path.basename(out_path)})", unit="run")
+    progress = tqdm(lines, desc=f"Generating runs ({os.path.basename(out_path)})", unit="run")
+    updated = 0
+    appended = 0
+    out_fp = None
+    if resume:
+        out_fp = open(out_path, "a", encoding="utf-8")
     for line in progress:
         line = line.strip()  # remove trailing newline
         if not line:
             continue  # skip empty lines
         single_run = json.loads(line)  # parse JSON
-        if single_run["condition"] != 'combo':
-            continue
+        run_id = single_run.get("run_id")
+        if resume and run_id in existing_by_id:
+            if existing_by_id[run_id].get("output"):
+                continue
         model = single_run["model"]
+        if not (model.startswith("claude-") or model.startswith("gpt-")):
+            continue
         temp = single_run["temperature"]
         prompt = single_run["prompt"]
         progress.set_postfix(
@@ -169,7 +207,7 @@ def _process_file(topics_path: str, out_path: str) -> None:
         )
         output = call_openai(prompt, model, temp)
         run = {
-            "run_id": str(uuid.uuid4()),
+            "run_id": run_id or str(uuid.uuid4()),
             "timestamp": utc_now_iso(),
             "model": model,
             "temperature": temp,
@@ -179,15 +217,82 @@ def _process_file(topics_path: str, out_path: str) -> None:
             "prompt": prompt,
             "output": output,
         }
-        with open(out_path, "a", encoding="utf-8") as f:
-            write_jsonl_line(f, run)
+        if "time_window" in single_run:
+            run["time_window"] = single_run["time_window"]
+
+        if run_id and run_id in existing_by_id:
+            if resume:
+                write_jsonl_line(out_fp, run)
+                out_fp.flush()
+                updated += 1
+            else:
+                existing_by_id[run_id].update(run)
+                updated += 1
+        else:
+            if resume:
+                write_jsonl_line(out_fp, run)
+                out_fp.flush()
+                if run_id:
+                    existing_by_id[run_id] = run
+                appended += 1
+            else:
+                existing_rows.append(run)
+                if run_id:
+                    existing_by_id[run_id] = run
+                appended += 1
+
+    if out_fp is not None:
+        out_fp.close()
+        validate_jsonl(out_path)
+        print(f"Done. JSONL validated OK: {out_path} (updated {updated}, appended {appended})")
+        return
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        for obj in existing_rows:
+            write_jsonl_line(f, obj)
     validate_jsonl(out_path)
-    print(f"Done. JSONL validated OK: {out_path}")
+    print(f"Done. JSONL validated OK: {out_path} (updated {updated}, appended {appended})")
+
+
+def _parse_conditions(value: Optional[str]) -> Optional[Iterable[str]]:
+    if value is None:
+        return None
+    text = value.strip()
+    if not text:
+        return None
+    return [c.strip() for c in text.split(",") if c.strip()]
 
 
 def main():
-    _process_file(TOPICS_PATH, OUT_PATH)
-    # _process_file(GPT4O_TOPICS_PATH, GPT4O_OUT_PATH)
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--topics", default=TOPICS_PATH, help="input topics jsonl")
+    ap.add_argument("--out", default=OUT_PATH, help="output jsonl path")
+    ap.add_argument(
+        "--conditions",
+        default=None,
+        help="comma-separated list of conditions to run (default: all)",
+    )
+    ap.add_argument(
+        "--clear",
+        action="store_true",
+        help="clear existing output before writing",
+    )
+    ap.add_argument(
+        "--resume",
+        action="store_true",
+        help="resume by appending new outputs and skipping completed run_ids",
+    )
+    args = ap.parse_args()
+
+    _process_file(
+        args.topics,
+        args.out,
+        condition_filter=_parse_conditions(args.conditions),
+        clear_existing=args.clear,
+        resume=args.resume,
+    )
 
 if __name__ == "__main__":
     main()

@@ -55,10 +55,19 @@ def adapt_s2_item(item: Dict) -> Dict:
         "doi": doi
     }
 
-def _verify_file(runs_path: str, out_dir: str, mailto: Optional[str], s2_key: Optional[str], k: int) -> None:
+def _verify_file(
+    runs_path: str,
+    out_dir: str,
+    mailto: Optional[str],
+    s2_key: Optional[str],
+    k: int,
+    *,
+    citations_path_override: Optional[str] = None,
+    metrics_path_override: Optional[str] = None,
+) -> None:
     os.makedirs(out_dir, exist_ok=True)
-    citations_path = os.path.join(out_dir, "citations.jsonl")
-    metrics_path = os.path.join(out_dir, "run_metrics.jsonl")
+    citations_path = citations_path_override or os.path.join(out_dir, "citations.jsonl")
+    metrics_path = metrics_path_override or os.path.join(out_dir, "run_metrics.jsonl")
 
     resume = os.getenv("RESUME", "").strip().lower() in {"1", "true", "yes"}
     completed_run_ids = set()
@@ -187,9 +196,18 @@ def main():
     ap.add_argument("--mailto", default=None, help="mailto for Crossref polite requests")
     ap.add_argument("--s2_key", default=None, help="Semantic Scholar API key (optional)")
     ap.add_argument("--k", type=int, default=5, help="top-k candidates per source")
+    ap.add_argument("--clear", action="store_true", help="clear output jsonl files before writing")
     args = ap.parse_args()
 
     if args.runs:
+        if args.clear:
+            citations_path = os.path.join(args.out_dir, "citations.jsonl")
+            metrics_path = os.path.join(args.out_dir, "run_metrics.jsonl")
+            os.makedirs(args.out_dir, exist_ok=True)
+            if os.path.exists(citations_path):
+                os.remove(citations_path)
+            if os.path.exists(metrics_path):
+                os.remove(metrics_path)
         _verify_file(args.runs, args.out_dir, args.mailto, args.s2_key, args.k)
         return
 
@@ -202,10 +220,26 @@ def main():
     if not runs_files:
         raise SystemExit("No *_full_runs.jsonl files found in out/")
 
+    citations_path = os.path.join(args.out_dir, "citations.jsonl")
+    metrics_path = os.path.join(args.out_dir, "run_metrics.jsonl")
+    if args.clear:
+        os.makedirs(args.out_dir, exist_ok=True)
+        if os.path.exists(citations_path):
+            os.remove(citations_path)
+        if os.path.exists(metrics_path):
+            os.remove(metrics_path)
     for runs_path in sorted(runs_files):
         stem = os.path.splitext(os.path.basename(runs_path))[0]
-        out_dir = os.path.join(args.out_dir, stem)
-        _verify_file(runs_path, out_dir, args.mailto, args.s2_key, args.k)
+        out_dir = args.out_dir
+        _verify_file(
+            runs_path,
+            out_dir,
+            args.mailto,
+            args.s2_key,
+            args.k,
+            citations_path_override=citations_path,
+            metrics_path_override=metrics_path,
+        )
 
 if __name__ == "__main__":
     main()
