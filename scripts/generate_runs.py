@@ -9,19 +9,10 @@ from tqdm import tqdm
 from openai import OpenAI
 import anthropic
 
-# ----------------------------
-# Config
-# ----------------------------
-
 OUT_PATH = "out/claude-sonnet-4-5-20250929_full_runs.jsonl"
 TOPICS_PATH = "data/claude-sonnet-4-5-20250929_full_runs.jsonl"
-
-GPT4O_OUT_PATH = "out/gpt-4o_full_runs.jsonl"
-GPT4O_TOPICS_PATH = "data/gpt-4o_full_runs.jsonl"
-
 MAX_TOKENS = 2048
 
-# Initialize OpenAI-compatible clients
 openai_client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY", ""),
     base_url=os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
@@ -51,10 +42,6 @@ qwen_client = OpenAI(
 llama_client = OpenAI(
     api_key=os.getenv("TOGETHER_API_KEY", ""), base_url="https://api.together.xyz/v1",
 )
-
-# ----------------------------
-# Helpers
-# ----------------------------
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -96,13 +83,8 @@ def call_openai(prompt: str, model: str, temperature: float, max_retries: int = 
             resp = client.chat.completions.create(
                 model=model,
                 messages=[
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are a research assistant. "
-                        )
-                    },
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": "You are a research assistant."},
+                    {"role": "user", "content": prompt},
                 ],
                 temperature=temperature,
                 max_tokens=MAX_TOKENS,
@@ -110,7 +92,6 @@ def call_openai(prompt: str, model: str, temperature: float, max_retries: int = 
             return resp.choices[0].message.content
         except Exception as e:
             last_err = e
-            # 打印一次错误，避免“无输出卡住”
             print(f"[WARN] Model call failed ({model}): {repr(e)}. Retrying in {backoff:.1f}s...")
             time.sleep(backoff)
             backoff = min(20.0, backoff * 2)
@@ -128,10 +109,6 @@ def validate_jsonl(path: str) -> None:
             except Exception as e:
                 raise RuntimeError(f"Invalid JSON at line {i}: {repr(e)}")
 
-# ----------------------------
-# Main
-# ----------------------------
-
 def _process_file(
     topics_path: str,
     out_path: str,
@@ -139,7 +116,6 @@ def _process_file(
     clear_existing: bool = False,
     resume: bool = False,
 ) -> None:
-    # Ensure output directory exists
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
     if clear_existing and resume:
@@ -166,7 +142,6 @@ def _process_file(
     with open(topics_path, "r", encoding="utf-8") as f:
         lines = [ln.strip() for ln in f if ln.strip()]
 
-    # Optional condition filter
     if condition_filter:
         allowed = {c.strip() for c in condition_filter if c.strip()}
         if allowed:
@@ -187,10 +162,10 @@ def _process_file(
     if resume:
         out_fp = open(out_path, "a", encoding="utf-8")
     for line in progress:
-        line = line.strip()  # remove trailing newline
+        line = line.strip()
         if not line:
-            continue  # skip empty lines
-        single_run = json.loads(line)  # parse JSON
+            continue
+        single_run = json.loads(line)
         run_id = single_run.get("run_id")
         if resume and run_id in existing_by_id:
             if existing_by_id[run_id].get("output"):
