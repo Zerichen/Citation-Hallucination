@@ -1,5 +1,3 @@
-# src/prompts.py
-
 from typing import Optional, Dict, Any
 
 

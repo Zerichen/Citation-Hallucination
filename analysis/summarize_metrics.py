@@ -46,13 +46,11 @@ def main():
 
     df = read_jsonl(args.in_jsonl)
 
-    # --- minimal schema checks ---
     required = {"topic_id", "model", "condition"} | set(METRICS)
     missing = sorted(list(required - set(df.columns)))
     if missing:
         raise ValueError(f"Missing required columns in jsonl: {missing}")
 
-    # Ensure numeric
     for m in METRICS:
         df[m] = pd.to_numeric(df[m], errors="coerce")
 
@@ -72,7 +70,7 @@ def main():
     summary = pd.DataFrame(rows).sort_values(["condition", "model"]).reset_index(drop=True)
     summary.to_csv(args.out_csv, index=False)
 
-    # LaTeX-ready (you can modify columns according to your paper requirements)
+    # Build LaTeX table
     latex_cols = [
         "model", "condition", "n_topics",
         "fabricated_rate_mean", "fabricated_rate_ci",
