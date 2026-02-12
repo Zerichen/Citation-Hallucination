@@ -82,7 +82,6 @@ def _verify_file(
     crossref = CrossrefClient(mailto=mailto, cache_dir="cache")
     s2 = SemanticScholarClient(api_key=s2_key, cache_dir="cache")
 
-    # Load runs
     runs = []
     with open(runs_path, "r", encoding="utf-8") as f:
         for line in f:
@@ -108,7 +107,6 @@ def _verify_file(
                 candidates: List[Tuple[str, Dict]] = []
                 doi_failed = False
 
-                # 1) DOI lookup (Crossref) if provided
                 if c.norm_doi:
                     try:
                         rec = crossref.lookup_doi(c.norm_doi)
@@ -120,9 +118,7 @@ def _verify_file(
                     else:
                         candidates.append(("crossref", adapt_crossref_item(rec)))
 
-                # 2) Title search if title exists (or DOI failed)
                 if c.norm_title:
-                    # Semantic Scholar
                     try:
                         s2_items = s2.search_title(c.title, limit=k) if c.title else []
                     except Exception as e:
@@ -130,7 +126,6 @@ def _verify_file(
                         s2_items = []
                     for it in s2_items:
                         candidates.append(("s2", adapt_s2_item(it)))
-                    # Crossref
                     try:
                         cr_items = crossref.search_title(c.title, rows=k) if c.title else []
                     except Exception as e:
@@ -140,19 +135,7 @@ def _verify_file(
                         candidates.append(("crossref", adapt_crossref_item(it)))
 
                 bm = best_match(c, candidates)
-                # keep top supporting matches (e.g., top 3 by score)
-                supporting = []
-                if candidates:
-                    scored = []
-                    for src, rec in candidates:
-                        # reuse best_match scoring by calling best_match is expensive; keep it simple:
-                        # approximate: just store those with same as best or take first few
-                        # If you want: compute exact scores by importing score_record.
-                        scored.append((src, rec))
-                    # For simplicity, store empty here; you can extend to store top-N matches with scores.
-                    supporting = []
-
-                vr = assign_label(c, bm, supporting, time_window=time_window, doi_lookup_failed=doi_failed)
+                vr = assign_label(c, bm, [], time_window=time_window, doi_lookup_failed=doi_failed)
                 vr_dict = to_dict(vr)
                 vr_dict["run_id"] = run_id
                 vr_dict["condition"] = run.get("condition")
@@ -160,13 +143,9 @@ def _verify_file(
                 vr_dict["model"] = run.get("model")
                 vr_dict["temperature"] = run.get("temperature")
                 vr_dict["parsed"] = {
-                    "title": c.title,
-                    "authors": c.authors,
-                    "venue": c.venue,
-                    "year": c.year,
-                    "doi": c.norm_doi
+                    "title": c.title, "authors": c.authors,
+                    "venue": c.venue, "year": c.year, "doi": c.norm_doi,
                 }
-                # Add canonical metadata if exists
                 if vr.best_match:
                     vr_dict["canonical"] = {
                         "source": vr.best_match.source,
@@ -183,10 +162,7 @@ def _verify_file(
                 cit_out.write(json.dumps(vr_dict, ensure_ascii=False) + "\n")
                 per_run_results.append(vr_dict)
 
-            # aggregate run metrics
-            run_metrics = aggregate_run(per_run_results)
-            # Preserve all keys from input run; keep aggregate fields if any collisions.
-            run_metrics = {**run, **run_metrics}
+            run_metrics = {**run, **aggregate_run(per_run_results)}
             met_out.write(json.dumps(run_metrics, ensure_ascii=False) + "\n")
 
 def main():
