@@ -110,7 +110,7 @@ def call_openai(prompt: str, model: str, temperature: float, max_retries: int = 
             return resp.choices[0].message.content
         except Exception as e:
             last_err = e
-            # 打印一次错误，避免“无输出卡住”
+            # Print error once to avoid hanging with no output
             print(f"[WARN] Model call failed ({model}): {repr(e)}. Retrying in {backoff:.1f}s...")
             time.sleep(backoff)
             backoff = min(20.0, backoff * 2)

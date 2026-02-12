@@ -72,7 +72,7 @@ def main():
     summary = pd.DataFrame(rows).sort_values(["condition", "model"]).reset_index(drop=True)
     summary.to_csv(args.out_csv, index=False)
 
-    # LaTeX-ready (你也可以按你论文口径再改列)
+    # LaTeX-ready (you can modify columns according to your paper requirements)
     latex_cols = [
         "model", "condition", "n_topics",
         "fabricated_rate_mean", "fabricated_rate_ci",
