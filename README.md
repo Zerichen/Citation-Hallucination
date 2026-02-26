@@ -4,9 +4,9 @@ A systematic benchmark for measuring citation hallucination rates in large langu
 
 ## Overview
 
-LLMs frequently fabricate academic citations when asked to produce referenced text. This project quantifies that behavior across four models and five prompting conditions, using 120 research claims spanning 30 academic domains.
+LLMs frequently fabricate academic citations when asked to produce referenced text. This project quantifies that behavior across four models and five prompting conditions, using 144 research claims spanning multiple academic domains.
 
-**Models tested:** Claude Sonnet 3.5, GPT-4o, Llama 3 8B, Qwen 2.5 14B
+**Models tested:** Claude Sonnet 4.5, GPT-4o, Llama 3.1 8B, Qwen 2.5 14B
 
 **Conditions:**
 
@@ -32,11 +32,13 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 │   ├── aggregate.py            # Run-level metric aggregation
 │   └── clients.py              # Crossref and Semantic Scholar API clients with caching
 ├── scripts/
-│   ├── build_runs_from_claims.py   # Step 1: Generate prompts from claims CSV
-│   ├── generate_runs.py            # Step 2: Call LLMs and collect outputs
-│   └── verify_runs.py              # Step 3: Verify citations against academic databases
+│   ├── build_runs_from_claims.py       # Step 1: Generate prompts from claims CSV
+│   ├── generate_runs.py                # Step 2: Call LLMs and collect outputs
+│   ├── verify_runs.py                  # Step 3: Verify citations against academic databases
+│   └── sample_for_manual_validation.py # Sample citations for human annotation
 ├── analysis/
-│   └── summarize_metrics.py        # Step 4: Bootstrap CIs and LaTeX table generation
+│   └── summarize_metrics.py            # Step 4: Bootstrap CIs and LaTeX table generation
+├── manual_validation_100.csv           # 100 stratified-sampled citations with human labels
 ├── data/
 │   ├── claims.csv                  # 120 research claims (input)
 │   └── *_full_runs.jsonl           # Generated prompts per model
@@ -119,9 +121,39 @@ python analysis/summarize_metrics.py \
 
 Computes per-model, per-condition means with 95% bootstrap confidence intervals (1000 resamples). Outputs both CSV and a LaTeX table ready for paper inclusion.
 
+## Manual Validation
+
+To assess the reliability of the automated verification pipeline, we sampled 100 citations stratified by model and label for manual human annotation. The sampling script and completed annotations are included in the repository.
+
+### Sampling
+
+```bash
+python scripts/sample_for_manual_validation.py \
+    --citations out/verify/citations.jsonl \
+    --out manual_validation_100.csv \
+    --n 100 \
+    --seed 42
+```
+
+This produces a CSV with stratified samples across all (model, label) strata. The `human_label` and `reasoning` columns are left blank for the annotator to fill in.
+
+### Results
+
+The completed annotations are in `manual_validation_100.csv`. Each row includes:
+
+| Column | Description |
+|--------|-------------|
+| `pipeline_label` | Automated label (EXISTS, AMBIGUOUS, FABRICATED) |
+| `pipeline_score` | Best-match confidence score |
+| `human_label` | Manual annotation by human reviewer |
+| `agree` | Whether pipeline and human labels match |
+| `reasoning` | Annotator's justification for the human label |
+
+The `agree` column enables direct computation of inter-rater agreement between the pipeline and human judgment.
+
 ## Dataset
 
-The benchmark uses 120 research claims balanced across 6 major academic fields (20 claims each):
+The benchmark uses 144 research claims balanced across multiple academic fields:
 
 | Field | Domains |
 |-------|---------|
