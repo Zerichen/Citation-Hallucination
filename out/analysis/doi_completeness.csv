@@ -1,0 +1,21 @@
+Model,Condition,N_citations,DOI_completeness_rate,CI_lower,CI_upper
+Claude Sonnet,Baseline,720,0.686,0.625,0.742
+Claude Sonnet,Temporal,720,0.736,0.667,0.797
+Claude Sonnet,Survey,1152,0.658,0.598,0.714
+Claude Sonnet,Non-Disclosure,705,0.658,0.593,0.716
+Claude Sonnet,Combo,1096,0.666,0.594,0.737
+GPT-4o,Baseline,715,0.586,0.513,0.657
+GPT-4o,Temporal,720,0.458,0.371,0.540
+GPT-4o,Survey,1093,0.515,0.446,0.588
+GPT-4o,Non-Disclosure,720,0.582,0.517,0.649
+GPT-4o,Combo,1063,0.313,0.231,0.397
+LLaMA 3.1-8B,Baseline,717,0.289,0.229,0.353
+LLaMA 3.1-8B,Temporal,721,0.166,0.115,0.229
+LLaMA 3.1-8B,Survey,1145,0.141,0.091,0.188
+LLaMA 3.1-8B,Non-Disclosure,716,0.175,0.121,0.229
+LLaMA 3.1-8B,Combo,1150,0.088,0.046,0.133
+Qwen 2.5-14B,Baseline,717,0.866,0.823,0.904
+Qwen 2.5-14B,Temporal,718,0.939,0.899,0.972
+Qwen 2.5-14B,Survey,1048,0.763,0.697,0.830
+Qwen 2.5-14B,Non-Disclosure,719,0.848,0.797,0.890
+Qwen 2.5-14B,Combo,1088,0.863,0.800,0.915
