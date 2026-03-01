@@ -37,7 +37,8 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 │   └── verify_runs.py              # Step 3: Verify citations against academic databases
 ├── analysis/
 │   ├── summarize_metrics.py        # Step 4: Bootstrap CIs and LaTeX table generation
-│   └── compute_dual_metrics.py     # Claim-level and citation-level metric aggregation
+│   ├── compute_dual_metrics.py     # Claim-level and citation-level metric aggregation
+│   └── export_fig2a_data.py        # Export per-claim verification fractions for Figure 2a
 ├── data/
 │   ├── claims.csv                  # 144 research claims (input)
 │   └── *_full_runs.jsonl           # Generated prompts per model
@@ -52,7 +53,8 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
     └── analysis/
         ├── summary_table.csv        # Summary statistics
         ├── summary_table.tex        # LaTeX table for paper inclusion
-        └── doi_completeness.csv     # DOI completeness rates by model and condition
+        ├── doi_completeness.csv     # DOI completeness rates by model and condition
+        └── fig2a_frac_existing.csv  # Per-claim verification fractions (Figure 2a source data)
 ```
 
 ## Pipeline
@@ -120,6 +122,14 @@ python analysis/summarize_metrics.py \
 ```
 
 Computes per-model, per-condition means with 95% bootstrap confidence intervals (1000 resamples). Outputs both CSV and a LaTeX table ready for paper inclusion.
+
+### Export Figure Data
+
+```bash
+python analysis/export_fig2a_data.py
+```
+
+Exports a tidy CSV of per-claim verification fractions (`frac_existing = #Existing / #Parsed`) for all 2,880 runs (4 models × 5 conditions × 144 claims). The output at `out/analysis/fig2a_frac_existing.csv` is the source data for the boxplot in Figure 2a of the paper.
 
 ## Dataset
 
