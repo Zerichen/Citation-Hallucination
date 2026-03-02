@@ -38,7 +38,8 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 ├── analysis/
 │   ├── summarize_metrics.py        # Step 4: Bootstrap CIs and LaTeX table generation
 │   ├── compute_dual_metrics.py     # Claim-level and citation-level metric aggregation
-│   └── export_fig2a_data.py        # Export per-claim verification fractions for Figure 2a
+│   ├── export_fig2a_data.py        # Export per-claim verification fractions for Figure 2a
+│   └── plot_fig2a_boxplot.py       # Generate Figure 2a boxplot from exported CSV
 ├── data/
 │   ├── claims.csv                  # 144 research claims (input)
 │   └── *_full_runs.jsonl           # Generated prompts per model
@@ -131,6 +132,16 @@ python analysis/export_fig2a_data.py
 
 Exports a tidy CSV of per-claim verification fractions (`frac_existing = #Existing / #Parsed`) for all 2,880 runs (4 models × 5 conditions × 144 claims). The output at `out/analysis/fig2a_frac_existing.csv` is the source data for the boxplot in Figure 2a of the paper.
 
+### Plot Figure 2a
+
+```bash
+python analysis/plot_fig2a_boxplot.py \
+    --in_csv  out/analysis/fig2a_frac_existing.csv \
+    --out_png out/analysis/fig2a_frac_existing_boxplot.png
+```
+
+Reads the exported CSV and generates a 1×5 horizontal strip of boxplots (one per condition, four models each). Requires `matplotlib` and `pandas`.
+
 ## Dataset
 
 The benchmark uses 144 research claims balanced across 6 major academic fields (24 claims each):
@@ -154,11 +165,12 @@ Each claim includes a research question, domain label, suggested number of paper
 - `rapidfuzz` (fuzzy string matching)
 - `tqdm` (progress bars)
 - `numpy`, `pandas` (analysis)
+- `matplotlib` (figure generation)
 
 Install:
 
 ```bash
-pip install openai anthropic requests rapidfuzz tqdm numpy pandas
+pip install openai anthropic requests rapidfuzz tqdm numpy pandas matplotlib
 ```
 
 ## Environment Variables
