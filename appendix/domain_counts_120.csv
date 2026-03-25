@@ -1,31 +1,31 @@
-major,domain,count
-ComputerScience,CS_AI_ML,4
-ComputerScience,CS_Data_HCI,4
-ComputerScience,CS_Security,4
-ComputerScience,CS_SoftwareEngineering,4
-ComputerScience,CS_Systems,4
-Humanities,HUM_CulturalStudies,4
-Humanities,HUM_History,4
-Humanities,HUM_Linguistics,4
-Humanities,HUM_Literature,4
-Humanities,HUM_Philosophy,4
-Interdisciplinary,INT_DigitalSociety,4
-Interdisciplinary,INT_ResearchEthics,4
-Interdisciplinary,INT_STS,4
-Interdisciplinary,INT_Sustainability_Climate,4
-Interdisciplinary,INT_TechPolicy_Governance,4
-MedicineHealth,MH_ClinicalMedicine,4
-MedicineHealth,MH_Epidemiology_PublicHealth,4
-MedicineHealth,MH_HealthInformatics,4
-MedicineHealth,MH_MentalHealth,4
-MedicineHealth,MH_Pharmacology,4
-NaturalSciences,NS_Biology,4
-NaturalSciences,NS_Chemistry,4
-NaturalSciences,NS_EarthScience,4
-NaturalSciences,NS_EnvironmentalScience,4
-NaturalSciences,NS_Physics,4
-SocialSciences,SS_Economics,4
-SocialSciences,SS_Policy_Law_Edu_Bus,4
-SocialSciences,SS_PoliticalScience,4
-SocialSciences,SS_Psychology,4
-SocialSciences,SS_Sociology,4
+major	domain	count
+ComputerScience	CS_AI_ML	5
+ComputerScience	CS_Data_HCI	5
+ComputerScience	CS_Security	5
+ComputerScience	CS_SoftwareEngineering	4
+ComputerScience	CS_Systems	5
+Humanities	HUM_CulturalStudies	5
+Humanities	HUM_History	5
+Humanities	HUM_Linguistics	5
+Humanities	HUM_Literature	4
+Humanities	HUM_Philosophy	5
+Interdisciplinary	INT_DigitalSociety	4
+Interdisciplinary	INT_ResearchEthics	5
+Interdisciplinary	INT_STS	5
+Interdisciplinary	INT_Sustainability_Climate	5
+Interdisciplinary	INT_TechPolicy_Governance	5
+MedicineHealth	MH_ClinicalMedicine	5
+MedicineHealth	MH_Epidemiology_PublicHealth	5
+MedicineHealth	MH_HealthInformatics	5
+MedicineHealth	MH_MentalHealth	5
+MedicineHealth	MH_Pharmacology	4
+NaturalSciences	NS_Biology	5
+NaturalSciences	NS_Chemistry	5
+NaturalSciences	NS_EarthScience	5
+NaturalSciences	NS_EnvironmentalScience	5
+NaturalSciences	NS_Physics	4
+SocialSciences	SS_Economics	5
+SocialSciences	SS_Policy_Law_Edu_Bus	4
+SocialSciences	SS_PoliticalScience	5
+SocialSciences	SS_Psychology	5
+SocialSciences	SS_Sociology	5
