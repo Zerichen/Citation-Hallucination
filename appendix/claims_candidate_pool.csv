@@ -149,7 +149,7 @@ candidate_id	question	domain	major
 148	Why can reinforcement learning from human feedback reduce toxic outputs while sometimes harming factual accuracy?	CS_AI_ML	ComputerScience
 149	What evidence supports that code review practices improve software quality, and which review signals correlate with defect discovery?	CS_SoftwareEngineering	ComputerScience
 150	Why is the Raft consensus protocol often considered easier to understand than Paxos in distributed systems implementations?	CS_Systems	ComputerScience
-151	Why can class imbalance distort model evaluation, and which metrics are robust under severe imbalance?	CS_AI_ML	ComputerScience
+151	Which peer-reviewed works after 2023 analyze citation hallucination under privacy or security constraints in language models	CS_Security	ComputerScience
 152	How do digital archives change historiography practices, and what new biases do they introduce?	HUM_History	Humanities
 153	How do environmental exposures contribute to chronic disease risk, and what methods assess exposure-response relationships?	MH_Epidemiology_PublicHealth	MedicineHealth
 154	How do corporate ESG disclosures affect investor behavior and firm performance, and what evidence distinguishes signaling from substantive change?	SS_Policy_Law_Edu_Bus	SocialSciences
@@ -174,32 +174,32 @@ candidate_id	question	domain	major
 173	What are the main contemporary arguments about scientific realism, and how do they address underdetermination?	HUM_Philosophy	Humanities
 174	How do school accountability policies affect student achievement, and what empirical designs estimate policy effects?	SS_Policy_Law_Edu_Bus	SocialSciences
 175	What methods estimate excess mortality during epidemics, and how do reporting delays affect estimates?	MH_Epidemiology_PublicHealth	MedicineHealth
-176	How do corpus-based methods study language change, and what limitations arise from sampling and annotation practices?	HUM_Linguistics	Humanities
+176	Which papers after 2023 empirically evaluate citation reliability in philosophy-oriented language model outputs	HUM_Philosophy	Humanities
 177	How do integrated Life Cycle Sustainability Assessment approaches combine environmental, economic, and social indicators, and what validation studies assess internal consistency?	INT_Sustainability_Climate	Interdisciplinary
 178	What studies compare outcomes of centralized versus decentralized data-governance models for AI development in large organizations?	INT_TechPolicy_Governance	Interdisciplinary
-179	How do narrative techniques influence reader interpretation in modern novels, and what critical frameworks are commonly applied?	HUM_Literature	Humanities
+179	Which experimental studies since 2024 quantify hallucinated references in historical text summarization systems	HUM_History	Humanities
 180	What factors explain variations in policy compliance during public health crises across countries?	SS_PoliticalScience	SocialSciences
-181	What mechanisms drive placebo effects in clinical studies, and how do trial designs reduce bias from placebo responses?	MH_Pharmacology	MedicineHealth
+181	Which studies since 2024 quantitatively analyze citation errors in epidemiology or public health summarization tasks	MH_Epidemiology_PublicHealth	MedicineHealth
 182	How do catalysts lower activation energy in chemical reactions, and what factors determine catalyst selectivity?	NS_Chemistry	NaturalSciences
 183	How does social capital influence economic mobility, and what empirical measures capture social capital in communities?	SS_Sociology	SocialSciences
 184	What methods quantify biodiversity loss at regional scales, and how do different indices change inferred trends?	NS_EnvironmentalScience	NaturalSciences
-185	How are depression and anxiety assessed in clinical research, and what limitations affect common screening instruments?	MH_MentalHealth	MedicineHealth
+185	Which experimental studies after 2023 report fabricated references in mental health–related text generation systems	MH_MentalHealth	MedicineHealth
 186	How do urban heat islands affect local air quality and health outcomes, and what interventions show measurable improvement?	NS_EnvironmentalScience	NaturalSciences
 187	What evidence supports telemedicine improving chronic disease management outcomes, and which patient groups benefit most?	MH_ClinicalMedicine	MedicineHealth
 188	What evidence shows phishing simulation programs reduce click-through rates, and how durable are these effects over time?	CS_Security	ComputerScience
 189	What methods are used in corpus linguistics, and how do corpus design choices affect linguistic inference?	HUM_Linguistics	Humanities
 190	Which enforcement mechanisms for authorship criteria reduce honorary authorship and authorship disputes, and what studies quantify the effect?	INT_ResearchEthics	Interdisciplinary
-191	How do static analysis tools detect security vulnerabilities, and what limitations cause false positives in large codebases?	CS_SoftwareEngineering	ComputerScience
-192	What mechanisms link long COVID symptoms to immune dysregulation, and what biomarkers show the strongest associations?	MH_ClinicalMedicine	MedicineHealth
-193	How do social networks influence health behaviors, and what evidence supports peer effects in health-related decisions?	SS_Sociology	SocialSciences
+191	Which studies published since 2024 report statistically significant effects of decoding strategies on fabricated citations	CS_Systems	ComputerScience
+192	Which peer-reviewed works since 2024 evaluate citation reliability in health informatics or medical QA systems	MH_HealthInformatics	MedicineHealth
+193	Which studies since 2024 quantify hallucinated citations in sociological or social analysis text generation systems	SS_Sociology	SocialSciences
 194	What is the difference between consequentialism and deontology in moral philosophy, and how do contemporary philosophers argue for each view?	HUM_Philosophy	Humanities
-195	How does pharmacokinetics determine drug dosing, and what factors drive inter-patient variability in clearance?	MH_Pharmacology	MedicineHealth
+195	Which studies published after 2023 quantify hallucinated citations in clinical decision support language models	MH_ClinicalMedicine	MedicineHealth
 196	How do machine-learning guided materials discovery pipelines reduce experimental cycles, and what failure cases are reported?	NS_Chemistry	NaturalSciences
 197	How do civil wars end, and what factors predict negotiated settlement versus military victory?	SS_PoliticalScience	SocialSciences
 198	How do plasmonic nanostructures enhance light-matter interactions, and what applications show reproducible gains?	NS_Physics	NaturalSciences
-199	How do CRISPR-Cas systems enable genome editing, and what factors determine off-target effects?	NS_Biology	NaturalSciences
+199	Which peer-reviewed works since 2024 report citation errors in environmental science literature summarization	NS_EnvironmentalScience	NaturalSciences
 200	What evidence shows that life-cycle assessment results for renewable energy vary primarily due to system-boundary and electricity-mix assumptions?	INT_Sustainability_Climate	Interdisciplinary
-201	How do recent experiments test predictions of quantum entanglement over long distances, and what are the main limitations?	NS_Physics	NaturalSciences
+201	Which studies published after 2023 analyze citation hallucination in earth science or geoscience text generation systems	NS_EarthScience	NaturalSciences
 202	How do misinformation correction strategies affect belief updating, and under what conditions do backfire effects appear?	SS_PoliticalScience	SocialSciences
 203	Why does working memory capacity vary across individuals, and what tasks are used to measure working memory?	SS_Psychology	SocialSciences
 204	Why can genetic variants affect drug response, and how does pharmacogenomics inform prescribing decisions?	MH_Pharmacology	MedicineHealth
@@ -210,31 +210,31 @@ candidate_id	question	domain	major
 209	What evidence supports that public procurement requirements (model cards, audits, logging) improve accountability for deployed AI systems?	INT_TechPolicy_Governance	Interdisciplinary
 210	How do wildfire smoke exposures affect cardiopulmonary outcomes, and which exposure assessment methods are most reliable?	NS_EnvironmentalScience	NaturalSciences
 211	What evidence shows that content-moderation policy changes alter the spread of misinformation, and which measurement designs are considered credible?	INT_DigitalSociety	Interdisciplinary
-212	What approaches analyze representation of identity in contemporary literature, and what debates exist about authorial intent?	HUM_Literature	Humanities
-213	What evidence supports that open peer review changes reviewer behavior and review quality compared with single-blind review?	INT_ResearchEthics	Interdisciplinary
-214	How do central bank communication strategies influence inflation expectations, and what empirical measures capture these effects?	SS_Economics	SocialSciences
-215	How do regulatory sandboxes for emerging technologies affect innovation outcomes and safety incidents, according to comparative evaluations?	INT_TechPolicy_Governance	Interdisciplinary
-216	What evidence shows test-driven development reduces defect density, and under what project conditions does it fail to deliver benefits?	CS_SoftwareEngineering	ComputerScience
+212	Which peer-reviewed works after 2023 report citation errors in automated literary or cultural analysis systems	HUM_CulturalStudies	Humanities
+213	Which peer-reviewed works since 2024 evaluate citation errors in technology policy or governance summarization systems	INT_TechPolicy_Governance	Interdisciplinary
+214	Which experimental studies after 2023 report citation errors in psychology-related language model outputs	SS_Psychology	SocialSciences
+215	Which experimental papers after 2023 analyze citation hallucination in sustainability or climate-related text generation	INT_Sustainability_Climate	Interdisciplinary
+216	Which experimental papers after 2023 compare retrieval-augmented generation and non-retrieval models for citation accuracy	CS_Data_HCI	ComputerScience
 217	What evidence supports that responsible-innovation practices change R&D decision-making in technology projects, and which mechanisms drive the change?	INT_STS	Interdisciplinary
 218	How do minimum wage policies affect employment outcomes, and what empirical strategies estimate causal impacts?	SS_Economics	SocialSciences
-219	How do active learning strategies affect STEM course performance, and what study designs provide the strongest evidence?	SS_Policy_Law_Edu_Bus	SocialSciences
+219	Which peer-reviewed papers since 2024 analyze citation hallucination in political science or governance text generation	SS_PoliticalScience	SocialSciences
 220	What evidence supports that refactoring improves maintainability without harming correctness, and what practices reduce refactoring risk?	CS_SoftwareEngineering	ComputerScience
-221	How do zoonotic spillover risk models integrate ecological and human mobility data, and what validation strategies are used?	NS_Biology	NaturalSciences
+221	Which experimental papers since 2024 quantify citation fabrication in chemistry-related language model outputs	NS_Chemistry	NaturalSciences
 222	What mechanisms drive microplastic adsorption of pollutants in aquatic systems, and how do lab results translate to field conditions?	NS_Chemistry	NaturalSciences
 223	How do protein folding prediction models impact experimental structural biology workflows, and where do they still fail?	NS_Biology	NaturalSciences
-224	What empirical evidence supports that preregistration reduces p-hacking and improves replicability in empirical research?	INT_ResearchEthics	Interdisciplinary
+224	Which studies since 2024 introduce metrics for detecting fabricated citations in interdisciplinary research synthesis	INT_ResearchEthics	Interdisciplinary
 225	What are the main arguments about algorithmic accountability in law, and how do they balance innovation and rights?	SS_Policy_Law_Edu_Bus	SocialSciences
-226	How do cognitive biases affect risk perception in health decisions, and what interventions reduce bias?	SS_Psychology	SocialSciences
-227	How do audiences interpret media texts, and what research methods study reception and meaning-making?	HUM_CulturalStudies	Humanities
+226	Which studies after 2023 quantitatively evaluate fabricated citations in economic forecasting language models	SS_Economics	SocialSciences
+227	Which studies since 2023 quantitatively analyze fabricated citations in computational linguistics or literary text generation	HUM_Linguistics	Humanities
 228	How do particulate matter emissions affect human health, and what methods estimate exposure at population scale?	NS_EnvironmentalScience	NaturalSciences
 229	How do social support networks influence depression outcomes, and how is causality established in longitudinal studies?	SS_Psychology	SocialSciences
-230	How do phishing attacks exploit human factors, and which user training interventions show measurable effectiveness?	CS_Security	ComputerScience
+230	Which peer-reviewed studies since 2023 quantitatively evaluate citation hallucination in large language models under closed-book settings	CS_AI_ML	ComputerScience
 231	What geological processes shape sedimentary basins, and how are basin histories reconstructed?	NS_EarthScience	NaturalSciences
 232	How does differential privacy reduce membership inference risk in model training, and what utility tradeoffs are commonly observed?	CS_Security	ComputerScience
 233	Why do cognitive behavioral therapy interventions show heterogeneous effects, and what moderators influence outcomes?	MH_MentalHealth	MedicineHealth
-234	What evidence supports proposed mechanisms of PFAS persistence, and which remediation methods are most effective?	NS_Chemistry	NaturalSciences
+234	Which peer-reviewed studies after 2023 empirically evaluate hallucinated citations in biological research text generation	NS_Biology	NaturalSciences
 235	Why does dataset shift degrade predictive performance, and which detection methods identify shift in deployed models?	CS_AI_ML	ComputerScience
-236	What evidence supports that algorithmic recommender systems contribute to political polarization, and which interventions mitigate the effect?	INT_DigitalSociety	Interdisciplinary
+236	Which peer-reviewed studies after 2023 empirically compare hallucinated citations across multiple scientific domains	INT_STS	Interdisciplinary
 237	How do genre conventions evolve over time, and what methods do scholars use to study genre change in literary history?	HUM_Literature	Humanities
 238	What evidence supports that carbon pricing increases low-carbon technology adoption, and which designs minimize regressive impacts?	INT_Sustainability_Climate	Interdisciplinary
 239	Why does vaccine hesitancy persist, and which interventions show measurable improvements in uptake?	MH_Epidemiology_PublicHealth	MedicineHealth
