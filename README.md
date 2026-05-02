@@ -40,9 +40,10 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 │   ├── summarize_metrics.py        # Step 4: Bootstrap CIs and LaTeX table generation
 │   ├── compute_dual_metrics.py     # Claim-level and citation-level metric aggregation
 │   ├── export_fig2a_data.py        # Export per-claim verification fractions for Figure 2a
-│   └── plot_fig2a_boxplot.py       # Generate Figure 2a boxplot from exported CSV
+│   ├── plot_fig2a_boxplot.py       # Generate Figure 2a boxplot from exported CSV
+│   └── domain_metrics.py           # Domain-stratified existence/fabricated/ambiguous rates
 ├── manual_validation_100.csv        # 100-citation stratified sample, human-annotated (batch 1)
-├── manual_validation_200_batch2.csv # 100 additional citations, zero overlap (batch 2, pending annotation)
+├── manual_validation_200_batch2.csv # 100 additional citations, zero overlap (batch 2, annotated)
 ├── data/
 │   ├── claims.csv                  # 144 research claims (input)
 │   └── *_full_runs.jsonl           # Generated prompts per model
@@ -145,6 +146,17 @@ python analysis/plot_fig2a_boxplot.py \
 
 Reads the exported CSV and generates a 1×5 horizontal strip of boxplots (one per condition, four models each). Requires `matplotlib` and `pandas`.
 
+### Domain-Stratified Metrics
+
+```bash
+python analysis/domain_metrics.py \
+    --citations out/verify/citations.jsonl \
+    --claims data/claims.csv \
+    --out_csv out/analysis/domain_metrics.csv
+```
+
+Computes existence, fabricated, and ambiguous rates grouped by the six domain groups (SE & CS, Humanities, Interdisciplinary, Medicine & Health, Natural Sciences, Social Sciences), both aggregated across all models and broken down by model. Outputs a CSV with 95% bootstrap CIs. This is the source data for the domain-stratified analysis in the paper (Figure 3, Section 4).
+
 ### Manual Validation
 
 To sample citations for human annotation:
@@ -164,7 +176,7 @@ Two batches are provided:
 | File | N | Seed | Status |
 |------|---|------|--------|
 | `manual_validation_100.csv` | 100 | 42 | Annotated (batch 1) — 75% agreement, Cohen's κ = 0.627 |
-| `manual_validation_200_batch2.csv` | 100 | 137 | Pending annotation (batch 2, zero overlap with batch 1) |
+| `manual_validation_200_batch2.csv` | 100 | 137 | Annotated (batch 2, zero overlap with batch 1) — combined Cohen's κ = 0.52 |
 
 ## Dataset
 
