@@ -1,0 +1,2881 @@
+model,model_display,condition,condition_display,topic_id,frac_existing
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t001,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t002,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t003,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t004,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t005,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t006,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t007,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t008,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t009,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t010,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t011,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t012,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t013,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t014,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t015,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t016,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t017,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t018,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t019,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t020,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t021,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t022,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t023,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t024,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t025,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t026,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t027,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t028,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t029,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t030,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t031,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t032,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t033,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t034,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t035,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t036,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t037,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t038,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t039,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t040,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t041,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t042,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t043,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t044,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t045,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t046,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t047,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t048,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t049,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t050,0.800000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t051,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t052,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t053,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t054,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t055,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t056,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t057,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t058,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t059,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t060,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t061,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t062,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t063,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t064,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t065,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t066,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t067,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t068,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t069,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t070,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t071,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t072,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t073,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t074,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t075,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t076,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t077,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t078,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t079,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t080,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t081,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t082,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t083,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t084,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t085,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t086,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t087,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t088,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t089,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t090,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t091,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t092,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t093,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t094,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t095,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t096,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t097,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t098,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t099,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t100,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t101,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t102,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t103,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t104,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t105,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t106,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t107,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t108,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t109,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t110,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t111,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t112,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t113,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t114,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t115,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t116,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t117,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t118,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t119,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t120,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t121,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t122,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t123,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t124,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t125,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t126,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t127,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t128,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t129,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t130,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t131,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t132,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t133,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t134,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t135,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t136,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t137,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t138,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t139,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t140,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t141,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t142,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t143,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,baseline,Baseline,t144,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t001,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t002,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t003,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t004,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t005,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t006,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t007,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t008,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t009,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t010,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t011,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t012,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t013,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t014,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t015,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t016,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t017,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t018,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t019,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t020,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t021,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t022,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t023,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t024,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t025,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t026,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t027,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t028,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t029,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t030,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t031,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t032,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t033,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t034,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t035,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t036,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t037,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t038,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t039,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t040,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t041,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t042,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t043,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t044,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t045,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t046,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t047,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t048,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t049,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t050,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t051,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t052,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t053,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t054,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t055,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t056,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t057,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t058,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t059,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t060,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t061,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t062,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t063,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t064,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t065,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t066,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t067,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t068,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t069,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t070,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t071,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t072,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t073,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t074,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t075,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t076,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t077,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t078,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t079,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t080,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t081,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t082,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t083,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t084,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t085,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t086,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t087,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t088,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t089,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t090,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t091,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t092,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t093,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t094,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t095,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t096,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t097,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t098,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t099,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t100,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t101,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t102,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t103,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t104,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t105,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t106,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t107,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t108,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t109,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t110,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t111,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t112,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t113,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t114,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t115,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t116,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t117,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t118,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t119,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t120,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t121,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t122,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t123,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t124,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t125,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t126,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t127,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t128,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t129,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t130,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t131,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t132,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t133,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t134,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t135,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t136,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t137,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t138,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t139,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t140,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t141,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t142,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t143,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,baseline,Baseline,t144,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t001,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t002,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t003,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t004,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t005,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t006,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t007,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t008,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t009,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t010,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t011,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t012,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t013,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t014,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t015,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t016,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t017,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t018,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t019,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t020,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t021,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t022,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t023,1.000000
+gpt-4o,GPT-4o,baseline,Baseline,t024,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t025,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t026,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t027,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t028,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t029,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t030,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t031,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t032,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t033,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t034,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t035,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t036,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t037,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t038,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t039,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t040,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t041,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t042,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t043,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t044,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t045,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t046,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t047,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t048,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t049,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t050,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t051,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t052,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t053,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t054,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t055,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t056,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t057,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t058,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t059,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t060,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t061,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t062,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t063,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t064,1.000000
+gpt-4o,GPT-4o,baseline,Baseline,t065,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t066,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t067,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t068,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t069,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t070,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t071,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t072,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t073,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t074,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t075,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t076,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t077,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t078,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t079,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t080,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t081,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t082,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t083,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t084,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t085,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t086,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t087,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t088,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t089,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t090,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t091,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t092,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t093,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t094,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t095,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t096,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t097,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t098,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t099,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t100,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t101,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t102,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t103,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t104,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t105,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t106,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t107,0.800000
+gpt-4o,GPT-4o,baseline,Baseline,t108,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t109,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t110,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t111,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t112,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t113,0.400000
+gpt-4o,GPT-4o,baseline,Baseline,t114,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t115,0.600000
+gpt-4o,GPT-4o,baseline,Baseline,t116,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t117,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t118,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t119,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t120,0.200000
+gpt-4o,GPT-4o,baseline,Baseline,t121,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t122,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t123,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t124,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t125,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t126,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t127,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t128,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t129,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t130,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t131,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t132,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t133,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t134,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t135,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t136,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t137,nan
+gpt-4o,GPT-4o,baseline,Baseline,t138,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t139,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t140,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t141,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t142,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t143,0.000000
+gpt-4o,GPT-4o,baseline,Baseline,t144,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t001,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t002,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t003,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t004,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t005,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t006,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t007,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t008,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t009,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t010,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t011,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t012,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t013,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t014,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t015,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t016,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t017,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t018,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t019,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t020,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t021,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t022,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t023,0.600000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t024,0.600000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t025,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t026,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t027,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t028,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t029,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t030,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t031,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t032,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t033,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t034,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t035,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t036,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t037,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t038,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t039,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t040,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t041,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t042,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t043,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t044,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t045,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t046,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t047,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t048,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t049,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t050,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t051,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t052,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t053,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t054,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t055,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t056,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t057,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t058,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t059,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t060,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t061,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t062,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t063,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t064,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t065,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t066,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t067,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t068,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t069,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t070,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t071,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t072,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t073,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t074,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t075,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t076,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t077,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t078,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t079,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t080,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t081,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t082,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t083,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t084,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t085,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t086,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t087,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t088,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t089,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t090,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t091,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t092,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t093,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t094,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t095,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t096,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t097,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t098,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t099,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t100,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t101,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t102,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t103,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t104,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t105,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t106,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t107,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t108,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t109,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t110,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t111,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t112,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t113,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t114,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t115,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t116,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t117,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t118,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t119,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t120,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t121,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t122,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t123,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t124,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t125,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t126,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t127,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t128,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t129,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t130,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t131,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t132,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t133,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t134,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t135,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t136,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t137,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t138,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t139,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t140,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t141,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t142,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t143,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,baseline,Baseline,t144,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t001,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t002,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t003,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t004,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t005,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t006,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t007,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t008,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t009,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t010,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t011,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t012,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t013,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t014,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t015,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t016,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t017,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t018,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t019,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t020,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t021,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t022,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t023,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t024,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t025,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t026,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t027,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t028,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t029,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t030,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t031,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t032,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t033,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t034,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t035,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t036,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t037,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t038,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t039,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t040,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t041,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t042,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t043,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t044,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t045,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t046,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t047,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t048,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t049,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t050,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t051,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t052,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t053,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t054,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t055,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t056,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t057,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t058,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t059,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t060,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t061,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t062,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t063,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t064,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t065,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t066,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t067,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t068,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t069,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t070,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t071,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t072,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t073,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t074,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t075,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t076,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t077,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t078,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t079,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t080,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t081,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t082,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t083,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t084,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t085,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t086,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t087,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t088,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t089,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t090,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t091,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t092,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t093,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t094,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t095,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t096,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t097,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t098,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t099,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t100,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t101,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t102,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t103,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t104,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t105,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t106,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t107,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t108,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t109,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t110,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t111,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t112,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t113,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t114,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t115,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t116,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t117,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t118,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t119,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t120,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t121,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t122,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t123,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t124,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t125,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t126,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t127,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t128,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t129,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t130,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t131,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t132,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t133,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t134,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t135,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t136,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t137,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t138,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t139,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t140,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t141,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t142,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t143,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,temporal,Temporal,t144,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t001,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t002,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t003,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t004,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t005,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t006,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t007,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t008,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t009,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t010,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t011,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t012,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t013,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t014,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t015,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t016,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t017,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t018,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t019,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t020,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t021,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t022,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t023,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t024,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t025,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t026,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t027,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t028,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t029,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t030,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t031,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t032,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t033,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t034,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t035,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t036,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t037,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t038,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t039,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t040,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t041,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t042,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t043,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t044,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t045,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t046,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t047,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t048,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t049,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t050,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t051,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t052,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t053,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t054,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t055,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t056,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t057,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t058,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t059,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t060,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t061,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t062,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t063,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t064,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t065,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t066,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t067,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t068,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t069,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t070,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t071,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t072,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t073,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t074,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t075,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t076,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t077,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t078,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t079,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t080,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t081,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t082,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t083,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t084,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t085,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t086,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t087,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t088,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t089,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t090,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t091,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t092,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t093,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t094,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t095,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t096,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t097,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t098,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t099,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t100,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t101,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t102,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t103,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t104,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t105,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t106,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t107,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t108,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t109,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t110,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t111,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t112,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t113,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t114,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t115,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t116,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t117,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t118,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t119,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t120,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t121,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t122,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t123,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t124,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t125,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t126,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t127,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t128,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t129,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t130,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t131,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t132,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t133,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t134,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t135,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t136,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t137,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t138,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t139,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t140,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t141,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t142,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t143,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,temporal,Temporal,t144,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t001,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t002,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t003,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t004,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t005,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t006,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t007,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t008,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t009,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t010,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t011,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t012,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t013,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t014,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t015,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t016,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t017,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t018,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t019,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t020,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t021,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t022,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t023,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t024,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t025,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t026,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t027,0.600000
+gpt-4o,GPT-4o,temporal,Temporal,t028,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t029,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t030,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t031,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t032,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t033,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t034,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t035,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t036,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t037,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t038,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t039,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t040,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t041,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t042,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t043,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t044,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t045,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t046,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t047,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t048,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t049,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t050,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t051,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t052,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t053,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t054,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t055,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t056,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t057,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t058,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t059,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t060,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t061,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t062,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t063,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t064,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t065,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t066,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t067,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t068,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t069,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t070,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t071,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t072,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t073,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t074,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t075,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t076,0.400000
+gpt-4o,GPT-4o,temporal,Temporal,t077,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t078,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t079,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t080,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t081,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t082,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t083,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t084,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t085,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t086,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t087,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t088,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t089,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t090,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t091,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t092,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t093,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t094,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t095,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t096,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t097,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t098,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t099,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t100,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t101,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t102,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t103,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t104,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t105,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t106,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t107,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t108,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t109,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t110,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t111,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t112,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t113,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t114,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t115,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t116,0.200000
+gpt-4o,GPT-4o,temporal,Temporal,t117,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t118,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t119,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t120,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t121,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t122,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t123,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t124,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t125,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t126,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t127,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t128,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t129,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t130,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t131,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t132,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t133,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t134,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t135,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t136,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t137,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t138,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t139,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t140,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t141,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t142,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t143,0.000000
+gpt-4o,GPT-4o,temporal,Temporal,t144,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t001,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t002,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t003,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t004,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t005,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t006,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t007,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t008,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t009,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t010,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t011,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t012,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t013,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t014,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t015,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t016,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t017,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t018,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t019,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t020,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t021,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t022,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t023,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t024,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t025,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t026,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t027,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t028,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t029,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t030,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t031,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t032,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t033,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t034,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t035,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t036,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t037,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t038,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t039,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t040,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t041,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t042,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t043,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t044,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t045,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t046,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t047,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t048,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t049,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t050,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t051,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t052,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t053,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t054,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t055,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t056,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t057,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t058,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t059,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t060,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t061,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t062,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t063,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t064,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t065,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t066,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t067,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t068,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t069,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t070,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t071,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t072,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t073,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t074,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t075,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t076,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t077,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t078,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t079,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t080,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t081,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t082,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t083,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t084,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t085,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t086,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t087,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t088,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t089,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t090,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t091,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t092,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t093,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t094,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t095,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t096,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t097,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t098,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t099,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t100,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t101,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t102,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t103,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t104,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t105,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t106,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t107,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t108,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t109,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t110,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t111,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t112,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t113,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t114,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t115,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t116,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t117,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t118,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t119,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t120,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t121,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t122,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t123,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t124,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t125,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t126,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t127,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t128,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t129,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t130,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t131,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t132,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t133,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t134,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t135,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t136,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t137,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t138,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t139,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t140,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t141,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t142,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t143,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,temporal,Temporal,t144,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t001,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t002,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t003,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t004,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t005,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t006,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t007,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t008,0.500000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t009,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t010,0.250000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t011,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t012,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t013,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t014,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t015,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t016,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t017,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t018,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t019,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t020,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t021,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t022,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t023,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t024,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t025,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t026,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t027,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t028,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t029,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t030,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t031,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t032,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t033,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t034,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t035,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t036,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t037,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t038,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t039,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t040,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t041,0.142857
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t042,0.125000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t043,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t044,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t045,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t046,0.125000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t047,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t048,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t049,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t050,0.125000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t051,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t052,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t053,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t054,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t055,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t056,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t057,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t058,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t059,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t060,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t061,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t062,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t063,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t064,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t065,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t066,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t067,0.125000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t068,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t069,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t070,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t071,0.333333
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t072,0.125000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t073,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t074,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t075,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t076,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t077,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t078,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t079,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t080,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t081,0.250000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t082,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t083,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t084,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t085,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t086,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t087,0.500000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t088,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t089,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t090,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t091,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t092,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t093,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t094,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t095,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t096,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t097,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t098,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t099,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t100,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t101,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t102,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t103,0.250000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t104,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t105,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t106,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t107,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t108,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t109,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t110,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t111,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t112,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t113,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t114,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t115,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t116,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t117,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t118,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t119,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t120,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t121,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t122,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t123,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t124,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t125,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t126,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t127,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t128,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t129,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t130,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t131,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t132,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t133,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t134,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t135,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t136,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t137,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t138,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t139,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t140,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t141,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t142,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t143,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,survey,Survey,t144,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t001,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t002,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t003,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t004,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t005,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t006,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t007,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t008,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t009,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t010,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t011,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t012,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t013,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t014,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t015,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t016,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t017,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t018,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t019,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t020,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t021,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t022,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t023,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t024,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t025,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t026,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t027,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t028,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t029,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t030,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t031,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t032,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t033,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t034,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t035,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t036,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t037,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t038,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t039,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t040,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t041,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t042,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t043,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t044,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t045,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t046,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t047,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t048,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t049,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t050,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t051,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t052,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t053,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t054,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t055,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t056,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t057,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t058,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t059,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t060,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t061,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t062,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t063,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t064,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t065,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t066,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t067,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t068,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t069,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t070,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t071,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t072,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t073,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t074,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t075,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t076,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t077,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t078,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t079,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t080,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t081,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t082,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t083,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t084,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t085,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t086,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t087,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t088,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t089,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t090,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t091,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t092,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t093,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t094,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t095,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t096,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t097,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t098,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t099,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t100,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t101,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t102,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t103,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t104,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t105,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t106,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t107,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t108,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t109,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t110,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t111,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t112,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t113,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t114,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t115,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t116,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t117,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t118,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t119,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t120,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t121,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t122,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t123,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t124,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t125,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t126,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t127,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t128,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t129,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t130,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t131,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t132,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t133,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t134,0.875000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t135,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t136,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t137,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t138,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t139,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t140,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t141,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t142,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t143,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,survey,Survey,t144,0.000000
+gpt-4o,GPT-4o,survey,Survey,t001,0.375000
+gpt-4o,GPT-4o,survey,Survey,t002,0.000000
+gpt-4o,GPT-4o,survey,Survey,t003,0.000000
+gpt-4o,GPT-4o,survey,Survey,t004,0.125000
+gpt-4o,GPT-4o,survey,Survey,t005,0.000000
+gpt-4o,GPT-4o,survey,Survey,t006,0.375000
+gpt-4o,GPT-4o,survey,Survey,t007,0.000000
+gpt-4o,GPT-4o,survey,Survey,t008,0.375000
+gpt-4o,GPT-4o,survey,Survey,t009,0.000000
+gpt-4o,GPT-4o,survey,Survey,t010,0.375000
+gpt-4o,GPT-4o,survey,Survey,t011,0.625000
+gpt-4o,GPT-4o,survey,Survey,t012,0.500000
+gpt-4o,GPT-4o,survey,Survey,t013,0.375000
+gpt-4o,GPT-4o,survey,Survey,t014,0.250000
+gpt-4o,GPT-4o,survey,Survey,t015,0.000000
+gpt-4o,GPT-4o,survey,Survey,t016,0.000000
+gpt-4o,GPT-4o,survey,Survey,t017,0.000000
+gpt-4o,GPT-4o,survey,Survey,t018,0.000000
+gpt-4o,GPT-4o,survey,Survey,t019,0.000000
+gpt-4o,GPT-4o,survey,Survey,t020,0.125000
+gpt-4o,GPT-4o,survey,Survey,t021,0.000000
+gpt-4o,GPT-4o,survey,Survey,t022,0.666667
+gpt-4o,GPT-4o,survey,Survey,t023,0.250000
+gpt-4o,GPT-4o,survey,Survey,t024,0.800000
+gpt-4o,GPT-4o,survey,Survey,t025,1.000000
+gpt-4o,GPT-4o,survey,Survey,t026,0.000000
+gpt-4o,GPT-4o,survey,Survey,t027,0.375000
+gpt-4o,GPT-4o,survey,Survey,t028,0.375000
+gpt-4o,GPT-4o,survey,Survey,t029,0.000000
+gpt-4o,GPT-4o,survey,Survey,t030,0.375000
+gpt-4o,GPT-4o,survey,Survey,t031,0.000000
+gpt-4o,GPT-4o,survey,Survey,t032,0.250000
+gpt-4o,GPT-4o,survey,Survey,t033,0.750000
+gpt-4o,GPT-4o,survey,Survey,t034,0.000000
+gpt-4o,GPT-4o,survey,Survey,t035,0.375000
+gpt-4o,GPT-4o,survey,Survey,t036,0.125000
+gpt-4o,GPT-4o,survey,Survey,t037,0.125000
+gpt-4o,GPT-4o,survey,Survey,t038,0.250000
+gpt-4o,GPT-4o,survey,Survey,t039,0.000000
+gpt-4o,GPT-4o,survey,Survey,t040,0.250000
+gpt-4o,GPT-4o,survey,Survey,t041,0.000000
+gpt-4o,GPT-4o,survey,Survey,t042,0.375000
+gpt-4o,GPT-4o,survey,Survey,t043,0.250000
+gpt-4o,GPT-4o,survey,Survey,t044,0.000000
+gpt-4o,GPT-4o,survey,Survey,t045,0.375000
+gpt-4o,GPT-4o,survey,Survey,t046,0.375000
+gpt-4o,GPT-4o,survey,Survey,t047,0.500000
+gpt-4o,GPT-4o,survey,Survey,t048,0.125000
+gpt-4o,GPT-4o,survey,Survey,t049,0.250000
+gpt-4o,GPT-4o,survey,Survey,t050,0.375000
+gpt-4o,GPT-4o,survey,Survey,t051,0.375000
+gpt-4o,GPT-4o,survey,Survey,t052,0.000000
+gpt-4o,GPT-4o,survey,Survey,t053,0.125000
+gpt-4o,GPT-4o,survey,Survey,t054,0.333333
+gpt-4o,GPT-4o,survey,Survey,t055,0.500000
+gpt-4o,GPT-4o,survey,Survey,t056,0.250000
+gpt-4o,GPT-4o,survey,Survey,t057,0.000000
+gpt-4o,GPT-4o,survey,Survey,t058,0.000000
+gpt-4o,GPT-4o,survey,Survey,t059,0.125000
+gpt-4o,GPT-4o,survey,Survey,t060,0.000000
+gpt-4o,GPT-4o,survey,Survey,t061,0.000000
+gpt-4o,GPT-4o,survey,Survey,t062,0.000000
+gpt-4o,GPT-4o,survey,Survey,t063,0.000000
+gpt-4o,GPT-4o,survey,Survey,t064,0.666667
+gpt-4o,GPT-4o,survey,Survey,t065,0.000000
+gpt-4o,GPT-4o,survey,Survey,t066,0.125000
+gpt-4o,GPT-4o,survey,Survey,t067,0.375000
+gpt-4o,GPT-4o,survey,Survey,t068,0.375000
+gpt-4o,GPT-4o,survey,Survey,t069,0.000000
+gpt-4o,GPT-4o,survey,Survey,t070,0.000000
+gpt-4o,GPT-4o,survey,Survey,t071,0.375000
+gpt-4o,GPT-4o,survey,Survey,t072,1.000000
+gpt-4o,GPT-4o,survey,Survey,t073,0.250000
+gpt-4o,GPT-4o,survey,Survey,t074,0.000000
+gpt-4o,GPT-4o,survey,Survey,t075,0.125000
+gpt-4o,GPT-4o,survey,Survey,t076,0.125000
+gpt-4o,GPT-4o,survey,Survey,t077,0.800000
+gpt-4o,GPT-4o,survey,Survey,t078,0.125000
+gpt-4o,GPT-4o,survey,Survey,t079,0.833333
+gpt-4o,GPT-4o,survey,Survey,t080,0.125000
+gpt-4o,GPT-4o,survey,Survey,t081,0.625000
+gpt-4o,GPT-4o,survey,Survey,t082,0.000000
+gpt-4o,GPT-4o,survey,Survey,t083,0.375000
+gpt-4o,GPT-4o,survey,Survey,t084,0.000000
+gpt-4o,GPT-4o,survey,Survey,t085,0.666667
+gpt-4o,GPT-4o,survey,Survey,t086,0.000000
+gpt-4o,GPT-4o,survey,Survey,t087,0.666667
+gpt-4o,GPT-4o,survey,Survey,t088,0.500000
+gpt-4o,GPT-4o,survey,Survey,t089,0.250000
+gpt-4o,GPT-4o,survey,Survey,t090,0.125000
+gpt-4o,GPT-4o,survey,Survey,t091,0.500000
+gpt-4o,GPT-4o,survey,Survey,t092,0.000000
+gpt-4o,GPT-4o,survey,Survey,t093,0.250000
+gpt-4o,GPT-4o,survey,Survey,t094,0.000000
+gpt-4o,GPT-4o,survey,Survey,t095,0.000000
+gpt-4o,GPT-4o,survey,Survey,t096,0.000000
+gpt-4o,GPT-4o,survey,Survey,t097,0.125000
+gpt-4o,GPT-4o,survey,Survey,t098,0.000000
+gpt-4o,GPT-4o,survey,Survey,t099,0.500000
+gpt-4o,GPT-4o,survey,Survey,t100,0.250000
+gpt-4o,GPT-4o,survey,Survey,t101,0.000000
+gpt-4o,GPT-4o,survey,Survey,t102,0.000000
+gpt-4o,GPT-4o,survey,Survey,t103,1.000000
+gpt-4o,GPT-4o,survey,Survey,t104,0.000000
+gpt-4o,GPT-4o,survey,Survey,t105,0.000000
+gpt-4o,GPT-4o,survey,Survey,t106,0.000000
+gpt-4o,GPT-4o,survey,Survey,t107,0.250000
+gpt-4o,GPT-4o,survey,Survey,t108,0.750000
+gpt-4o,GPT-4o,survey,Survey,t109,0.125000
+gpt-4o,GPT-4o,survey,Survey,t110,0.375000
+gpt-4o,GPT-4o,survey,Survey,t111,0.000000
+gpt-4o,GPT-4o,survey,Survey,t112,0.000000
+gpt-4o,GPT-4o,survey,Survey,t113,0.333333
+gpt-4o,GPT-4o,survey,Survey,t114,0.500000
+gpt-4o,GPT-4o,survey,Survey,t115,0.000000
+gpt-4o,GPT-4o,survey,Survey,t116,0.250000
+gpt-4o,GPT-4o,survey,Survey,t117,0.500000
+gpt-4o,GPT-4o,survey,Survey,t118,0.125000
+gpt-4o,GPT-4o,survey,Survey,t119,0.500000
+gpt-4o,GPT-4o,survey,Survey,t120,0.375000
+gpt-4o,GPT-4o,survey,Survey,t121,0.000000
+gpt-4o,GPT-4o,survey,Survey,t122,0.000000
+gpt-4o,GPT-4o,survey,Survey,t123,0.000000
+gpt-4o,GPT-4o,survey,Survey,t124,0.000000
+gpt-4o,GPT-4o,survey,Survey,t125,0.000000
+gpt-4o,GPT-4o,survey,Survey,t126,0.000000
+gpt-4o,GPT-4o,survey,Survey,t127,0.000000
+gpt-4o,GPT-4o,survey,Survey,t128,0.000000
+gpt-4o,GPT-4o,survey,Survey,t129,0.000000
+gpt-4o,GPT-4o,survey,Survey,t130,0.000000
+gpt-4o,GPT-4o,survey,Survey,t131,0.000000
+gpt-4o,GPT-4o,survey,Survey,t132,0.000000
+gpt-4o,GPT-4o,survey,Survey,t133,0.000000
+gpt-4o,GPT-4o,survey,Survey,t134,0.000000
+gpt-4o,GPT-4o,survey,Survey,t135,0.000000
+gpt-4o,GPT-4o,survey,Survey,t136,0.000000
+gpt-4o,GPT-4o,survey,Survey,t137,nan
+gpt-4o,GPT-4o,survey,Survey,t138,0.000000
+gpt-4o,GPT-4o,survey,Survey,t139,0.000000
+gpt-4o,GPT-4o,survey,Survey,t140,0.000000
+gpt-4o,GPT-4o,survey,Survey,t141,0.000000
+gpt-4o,GPT-4o,survey,Survey,t142,0.000000
+gpt-4o,GPT-4o,survey,Survey,t143,0.000000
+gpt-4o,GPT-4o,survey,Survey,t144,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t001,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t002,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t003,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t004,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t005,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t006,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t007,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t008,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t009,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t010,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t011,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t012,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t013,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t014,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t015,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t016,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t017,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t018,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t019,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t020,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t021,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t022,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t023,0.500000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t024,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t025,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t026,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t027,0.142857
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t028,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t029,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t030,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t031,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t032,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t033,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t034,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t035,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t036,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t037,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t038,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t039,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t040,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t041,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t042,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t043,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t044,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t045,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t046,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t047,0.375000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t048,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t049,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t050,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t051,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t052,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t053,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t054,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t055,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t056,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t057,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t058,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t059,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t060,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t061,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t062,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t063,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t064,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t065,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t066,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t067,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t068,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t069,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t070,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t071,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t072,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t073,0.375000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t074,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t075,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t076,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t077,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t078,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t079,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t080,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t081,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t082,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t083,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t084,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t085,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t086,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t087,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t088,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t089,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t090,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t091,0.285714
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t092,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t093,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t094,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t095,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t096,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t097,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t098,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t099,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t100,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t101,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t102,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t103,0.142857
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t104,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t105,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t106,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t107,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t108,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t109,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t110,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t111,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t112,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t113,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t114,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t115,0.111111
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t116,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t117,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t118,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t119,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t120,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t121,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t122,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t123,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t124,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t125,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t126,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t127,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t128,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t129,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t130,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t131,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t132,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t133,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t134,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t135,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t136,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t137,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t138,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t139,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t140,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t141,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t142,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t143,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,survey,Survey,t144,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t001,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t002,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t003,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t004,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t005,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t006,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t007,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t008,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t009,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t010,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t011,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t012,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t013,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t014,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t015,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t016,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t017,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t018,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t019,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t020,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t021,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t022,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t023,0.800000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t024,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t025,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t026,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t027,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t028,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t029,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t030,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t031,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t032,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t033,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t034,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t035,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t036,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t037,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t038,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t039,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t040,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t041,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t042,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t043,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t044,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t045,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t046,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t047,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t048,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t049,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t050,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t051,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t052,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t053,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t054,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t055,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t056,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t057,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t058,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t059,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t060,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t061,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t062,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t063,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t064,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t065,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t066,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t067,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t068,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t069,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t070,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t071,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t072,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t073,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t074,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t075,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t076,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t077,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t078,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t079,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t080,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t081,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t082,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t083,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t084,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t085,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t086,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t087,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t088,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t089,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t090,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t091,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t092,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t093,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t094,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t095,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t096,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t097,0.600000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t098,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t099,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t100,0.400000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t101,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t102,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t103,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t104,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t105,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t106,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t107,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t108,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t109,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t110,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t111,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t112,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t113,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t114,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t115,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t116,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t117,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t118,0.200000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t119,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t120,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t121,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t122,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t123,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t124,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t125,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t126,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t127,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t128,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t129,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t130,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t131,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t132,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t133,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t134,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t135,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t136,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t137,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t138,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t139,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t140,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t141,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t142,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t143,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,privacy,Non-Disc.,t144,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t001,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t002,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t003,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t004,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t005,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t006,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t007,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t008,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t009,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t010,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t011,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t012,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t013,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t014,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t015,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t016,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t017,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t018,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t019,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t020,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t021,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t022,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t023,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t024,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t025,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t026,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t027,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t028,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t029,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t030,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t031,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t032,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t033,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t034,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t035,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t036,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t037,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t038,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t039,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t040,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t041,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t042,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t043,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t044,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t045,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t046,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t047,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t048,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t049,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t050,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t051,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t052,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t053,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t054,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t055,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t056,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t057,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t058,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t059,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t060,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t061,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t062,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t063,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t064,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t065,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t066,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t067,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t068,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t069,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t070,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t071,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t072,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t073,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t074,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t075,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t076,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t077,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t078,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t079,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t080,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t081,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t082,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t083,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t084,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t085,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t086,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t087,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t088,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t089,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t090,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t091,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t092,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t093,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t094,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t095,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t096,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t097,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t098,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t099,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t100,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t101,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t102,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t103,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t104,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t105,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t106,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t107,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t108,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t109,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t110,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t111,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t112,0.600000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t113,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t114,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t115,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t116,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t117,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t118,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t119,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t120,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t121,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t122,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t123,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t124,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t125,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t126,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t127,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t128,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t129,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t130,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t131,0.800000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t132,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t133,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t134,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t135,0.400000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t136,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t137,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t138,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t139,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t140,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t141,0.200000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t142,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t143,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,privacy,Non-Disc.,t144,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t001,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t002,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t003,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t004,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t005,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t006,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t007,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t008,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t009,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t010,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t011,0.800000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t012,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t013,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t014,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t015,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t016,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t017,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t018,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t019,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t020,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t021,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t022,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t023,1.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t024,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t025,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t026,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t027,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t028,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t029,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t030,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t031,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t032,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t033,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t034,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t035,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t036,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t037,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t038,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t039,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t040,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t041,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t042,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t043,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t044,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t045,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t046,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t047,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t048,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t049,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t050,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t051,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t052,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t053,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t054,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t055,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t056,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t057,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t058,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t059,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t060,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t061,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t062,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t063,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t064,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t065,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t066,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t067,0.800000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t068,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t069,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t070,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t071,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t072,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t073,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t074,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t075,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t076,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t077,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t078,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t079,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t080,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t081,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t082,0.800000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t083,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t084,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t085,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t086,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t087,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t088,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t089,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t090,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t091,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t092,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t093,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t094,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t095,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t096,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t097,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t098,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t099,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t100,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t101,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t102,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t103,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t104,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t105,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t106,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t107,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t108,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t109,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t110,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t111,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t112,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t113,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t114,0.600000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t115,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t116,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t117,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t118,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t119,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t120,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t121,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t122,0.400000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t123,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t124,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t125,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t126,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t127,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t128,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t129,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t130,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t131,0.200000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t132,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t133,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t134,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t135,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t136,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t137,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t138,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t139,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t140,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t141,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t142,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t143,0.000000
+gpt-4o,GPT-4o,privacy,Non-Disc.,t144,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t001,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t002,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t003,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t004,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t005,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t006,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t007,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t008,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t009,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t010,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t011,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t012,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t013,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t014,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t015,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t016,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t017,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t018,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t019,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t020,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t021,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t022,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t023,0.600000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t024,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t025,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t026,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t027,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t028,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t029,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t030,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t031,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t032,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t033,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t034,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t035,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t036,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t037,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t038,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t039,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t040,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t041,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t042,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t043,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t044,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t045,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t046,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t047,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t048,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t049,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t050,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t051,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t052,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t053,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t054,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t055,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t056,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t057,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t058,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t059,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t060,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t061,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t062,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t063,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t064,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t065,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t066,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t067,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t068,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t069,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t070,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t071,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t072,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t073,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t074,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t075,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t076,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t077,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t078,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t079,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t080,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t081,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t082,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t083,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t084,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t085,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t086,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t087,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t088,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t089,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t090,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t091,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t092,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t093,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t094,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t095,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t096,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t097,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t098,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t099,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t100,0.400000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t101,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t102,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t103,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t104,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t105,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t106,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t107,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t108,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t109,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t110,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t111,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t112,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t113,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t114,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t115,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t116,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t117,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t118,0.200000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t119,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t120,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t121,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t122,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t123,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t124,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t125,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t126,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t127,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t128,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t129,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t130,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t131,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t132,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t133,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t134,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t135,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t136,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t137,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t138,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t139,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t140,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t141,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t142,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t143,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,privacy,Non-Disc.,t144,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t001,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t002,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t003,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t004,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t005,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t006,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t007,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t008,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t009,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t010,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t011,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t012,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t013,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t014,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t015,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t016,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t017,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t018,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t019,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t020,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t021,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t022,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t023,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t024,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t025,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t026,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t027,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t028,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t029,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t030,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t031,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t032,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t033,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t034,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t035,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t036,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t037,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t038,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t039,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t040,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t041,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t042,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t043,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t044,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t045,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t046,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t047,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t048,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t049,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t050,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t051,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t052,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t053,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t054,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t055,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t056,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t057,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t058,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t059,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t060,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t061,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t062,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t063,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t064,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t065,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t066,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t067,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t068,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t069,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t070,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t071,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t072,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t073,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t074,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t075,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t076,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t077,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t078,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t079,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t080,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t081,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t082,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t083,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t084,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t085,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t086,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t087,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t088,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t089,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t090,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t091,0.125000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t092,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t093,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t094,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t095,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t096,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t097,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t098,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t099,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t100,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t101,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t102,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t103,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t104,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t105,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t106,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t107,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t108,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t109,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t110,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t111,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t112,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t113,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t114,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t115,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t116,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t117,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t118,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t119,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t120,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t121,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t122,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t123,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t124,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t125,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t126,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t127,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t128,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t129,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t130,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t131,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t132,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t133,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t134,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t135,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t136,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t137,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t138,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t139,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t140,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t141,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t142,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t143,0.000000
+Qwen/Qwen2.5-14B-Instruct,Qwen 2.5-14B,combo,Combo,t144,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t001,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t002,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t003,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t004,1.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t005,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t006,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t007,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t008,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t009,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t010,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t011,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t012,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t013,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t014,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t015,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t016,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t017,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t018,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t019,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t020,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t021,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t022,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t023,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t024,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t025,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t026,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t027,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t028,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t029,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t030,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t031,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t032,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t033,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t034,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t035,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t036,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t037,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t038,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t039,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t040,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t041,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t042,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t043,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t044,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t045,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t046,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t047,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t048,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t049,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t050,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t051,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t052,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t053,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t054,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t055,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t056,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t057,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t058,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t059,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t060,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t061,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t062,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t063,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t064,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t065,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t066,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t067,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t068,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t069,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t070,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t071,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t072,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t073,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t074,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t075,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t076,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t077,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t078,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t079,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t080,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t081,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t082,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t083,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t084,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t085,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t086,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t087,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t088,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t089,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t090,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t091,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t092,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t093,0.375000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t094,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t095,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t096,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t097,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t098,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t099,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t100,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t101,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t102,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t103,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t104,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t105,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t106,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t107,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t108,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t109,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t110,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t111,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t112,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t113,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t114,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t115,0.250000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t116,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t117,0.625000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t118,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t119,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t120,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t121,0.750000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t122,0.500000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t123,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t124,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t125,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t126,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t127,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t128,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t129,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t130,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t131,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t132,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t133,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t134,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t135,nan
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t136,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t137,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t138,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t139,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t140,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t141,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t142,0.000000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t143,0.125000
+claude-sonnet-4-5-20250929,Claude Sonnet,combo,Combo,t144,0.000000
+gpt-4o,GPT-4o,combo,Combo,t001,0.000000
+gpt-4o,GPT-4o,combo,Combo,t002,0.000000
+gpt-4o,GPT-4o,combo,Combo,t003,0.000000
+gpt-4o,GPT-4o,combo,Combo,t004,0.000000
+gpt-4o,GPT-4o,combo,Combo,t005,0.000000
+gpt-4o,GPT-4o,combo,Combo,t006,0.000000
+gpt-4o,GPT-4o,combo,Combo,t007,0.000000
+gpt-4o,GPT-4o,combo,Combo,t008,0.000000
+gpt-4o,GPT-4o,combo,Combo,t009,0.000000
+gpt-4o,GPT-4o,combo,Combo,t010,0.000000
+gpt-4o,GPT-4o,combo,Combo,t011,0.000000
+gpt-4o,GPT-4o,combo,Combo,t012,0.000000
+gpt-4o,GPT-4o,combo,Combo,t013,0.000000
+gpt-4o,GPT-4o,combo,Combo,t014,0.000000
+gpt-4o,GPT-4o,combo,Combo,t015,0.000000
+gpt-4o,GPT-4o,combo,Combo,t016,0.000000
+gpt-4o,GPT-4o,combo,Combo,t017,0.000000
+gpt-4o,GPT-4o,combo,Combo,t018,0.000000
+gpt-4o,GPT-4o,combo,Combo,t019,0.000000
+gpt-4o,GPT-4o,combo,Combo,t020,0.000000
+gpt-4o,GPT-4o,combo,Combo,t021,0.000000
+gpt-4o,GPT-4o,combo,Combo,t022,0.000000
+gpt-4o,GPT-4o,combo,Combo,t023,0.000000
+gpt-4o,GPT-4o,combo,Combo,t024,0.000000
+gpt-4o,GPT-4o,combo,Combo,t025,0.000000
+gpt-4o,GPT-4o,combo,Combo,t026,0.000000
+gpt-4o,GPT-4o,combo,Combo,t027,0.000000
+gpt-4o,GPT-4o,combo,Combo,t028,0.000000
+gpt-4o,GPT-4o,combo,Combo,t029,0.000000
+gpt-4o,GPT-4o,combo,Combo,t030,0.000000
+gpt-4o,GPT-4o,combo,Combo,t031,0.000000
+gpt-4o,GPT-4o,combo,Combo,t032,0.000000
+gpt-4o,GPT-4o,combo,Combo,t033,0.000000
+gpt-4o,GPT-4o,combo,Combo,t034,0.000000
+gpt-4o,GPT-4o,combo,Combo,t035,0.000000
+gpt-4o,GPT-4o,combo,Combo,t036,0.000000
+gpt-4o,GPT-4o,combo,Combo,t037,0.000000
+gpt-4o,GPT-4o,combo,Combo,t038,0.000000
+gpt-4o,GPT-4o,combo,Combo,t039,0.000000
+gpt-4o,GPT-4o,combo,Combo,t040,0.000000
+gpt-4o,GPT-4o,combo,Combo,t041,0.000000
+gpt-4o,GPT-4o,combo,Combo,t042,0.000000
+gpt-4o,GPT-4o,combo,Combo,t043,0.000000
+gpt-4o,GPT-4o,combo,Combo,t044,0.000000
+gpt-4o,GPT-4o,combo,Combo,t045,0.000000
+gpt-4o,GPT-4o,combo,Combo,t046,0.000000
+gpt-4o,GPT-4o,combo,Combo,t047,0.000000
+gpt-4o,GPT-4o,combo,Combo,t048,0.375000
+gpt-4o,GPT-4o,combo,Combo,t049,0.125000
+gpt-4o,GPT-4o,combo,Combo,t050,0.000000
+gpt-4o,GPT-4o,combo,Combo,t051,0.000000
+gpt-4o,GPT-4o,combo,Combo,t052,0.000000
+gpt-4o,GPT-4o,combo,Combo,t053,0.000000
+gpt-4o,GPT-4o,combo,Combo,t054,0.000000
+gpt-4o,GPT-4o,combo,Combo,t055,0.000000
+gpt-4o,GPT-4o,combo,Combo,t056,0.000000
+gpt-4o,GPT-4o,combo,Combo,t057,0.000000
+gpt-4o,GPT-4o,combo,Combo,t058,0.000000
+gpt-4o,GPT-4o,combo,Combo,t059,0.000000
+gpt-4o,GPT-4o,combo,Combo,t060,0.000000
+gpt-4o,GPT-4o,combo,Combo,t061,0.000000
+gpt-4o,GPT-4o,combo,Combo,t062,0.000000
+gpt-4o,GPT-4o,combo,Combo,t063,0.000000
+gpt-4o,GPT-4o,combo,Combo,t064,0.000000
+gpt-4o,GPT-4o,combo,Combo,t065,0.000000
+gpt-4o,GPT-4o,combo,Combo,t066,0.000000
+gpt-4o,GPT-4o,combo,Combo,t067,0.000000
+gpt-4o,GPT-4o,combo,Combo,t068,0.000000
+gpt-4o,GPT-4o,combo,Combo,t069,0.000000
+gpt-4o,GPT-4o,combo,Combo,t070,0.000000
+gpt-4o,GPT-4o,combo,Combo,t071,0.000000
+gpt-4o,GPT-4o,combo,Combo,t072,0.000000
+gpt-4o,GPT-4o,combo,Combo,t073,0.000000
+gpt-4o,GPT-4o,combo,Combo,t074,0.000000
+gpt-4o,GPT-4o,combo,Combo,t075,0.000000
+gpt-4o,GPT-4o,combo,Combo,t076,0.000000
+gpt-4o,GPT-4o,combo,Combo,t077,0.000000
+gpt-4o,GPT-4o,combo,Combo,t078,0.000000
+gpt-4o,GPT-4o,combo,Combo,t079,0.000000
+gpt-4o,GPT-4o,combo,Combo,t080,0.000000
+gpt-4o,GPT-4o,combo,Combo,t081,0.000000
+gpt-4o,GPT-4o,combo,Combo,t082,0.000000
+gpt-4o,GPT-4o,combo,Combo,t083,0.000000
+gpt-4o,GPT-4o,combo,Combo,t084,0.000000
+gpt-4o,GPT-4o,combo,Combo,t085,0.000000
+gpt-4o,GPT-4o,combo,Combo,t086,0.000000
+gpt-4o,GPT-4o,combo,Combo,t087,0.000000
+gpt-4o,GPT-4o,combo,Combo,t088,0.125000
+gpt-4o,GPT-4o,combo,Combo,t089,0.000000
+gpt-4o,GPT-4o,combo,Combo,t090,0.000000
+gpt-4o,GPT-4o,combo,Combo,t091,0.000000
+gpt-4o,GPT-4o,combo,Combo,t092,0.000000
+gpt-4o,GPT-4o,combo,Combo,t093,0.000000
+gpt-4o,GPT-4o,combo,Combo,t094,0.000000
+gpt-4o,GPT-4o,combo,Combo,t095,0.000000
+gpt-4o,GPT-4o,combo,Combo,t096,0.000000
+gpt-4o,GPT-4o,combo,Combo,t097,0.000000
+gpt-4o,GPT-4o,combo,Combo,t098,0.000000
+gpt-4o,GPT-4o,combo,Combo,t099,0.000000
+gpt-4o,GPT-4o,combo,Combo,t100,0.000000
+gpt-4o,GPT-4o,combo,Combo,t101,0.000000
+gpt-4o,GPT-4o,combo,Combo,t102,0.000000
+gpt-4o,GPT-4o,combo,Combo,t103,0.000000
+gpt-4o,GPT-4o,combo,Combo,t104,0.000000
+gpt-4o,GPT-4o,combo,Combo,t105,0.000000
+gpt-4o,GPT-4o,combo,Combo,t106,0.000000
+gpt-4o,GPT-4o,combo,Combo,t107,0.000000
+gpt-4o,GPT-4o,combo,Combo,t108,0.000000
+gpt-4o,GPT-4o,combo,Combo,t109,0.000000
+gpt-4o,GPT-4o,combo,Combo,t110,0.000000
+gpt-4o,GPT-4o,combo,Combo,t111,0.000000
+gpt-4o,GPT-4o,combo,Combo,t112,0.000000
+gpt-4o,GPT-4o,combo,Combo,t113,0.000000
+gpt-4o,GPT-4o,combo,Combo,t114,0.000000
+gpt-4o,GPT-4o,combo,Combo,t115,0.000000
+gpt-4o,GPT-4o,combo,Combo,t116,0.000000
+gpt-4o,GPT-4o,combo,Combo,t117,0.000000
+gpt-4o,GPT-4o,combo,Combo,t118,0.000000
+gpt-4o,GPT-4o,combo,Combo,t119,0.000000
+gpt-4o,GPT-4o,combo,Combo,t120,0.000000
+gpt-4o,GPT-4o,combo,Combo,t121,0.000000
+gpt-4o,GPT-4o,combo,Combo,t122,nan
+gpt-4o,GPT-4o,combo,Combo,t123,0.000000
+gpt-4o,GPT-4o,combo,Combo,t124,0.000000
+gpt-4o,GPT-4o,combo,Combo,t125,0.000000
+gpt-4o,GPT-4o,combo,Combo,t126,0.000000
+gpt-4o,GPT-4o,combo,Combo,t127,0.000000
+gpt-4o,GPT-4o,combo,Combo,t128,nan
+gpt-4o,GPT-4o,combo,Combo,t129,nan
+gpt-4o,GPT-4o,combo,Combo,t130,0.000000
+gpt-4o,GPT-4o,combo,Combo,t131,nan
+gpt-4o,GPT-4o,combo,Combo,t132,0.000000
+gpt-4o,GPT-4o,combo,Combo,t133,0.000000
+gpt-4o,GPT-4o,combo,Combo,t134,0.000000
+gpt-4o,GPT-4o,combo,Combo,t135,0.000000
+gpt-4o,GPT-4o,combo,Combo,t136,0.000000
+gpt-4o,GPT-4o,combo,Combo,t137,nan
+gpt-4o,GPT-4o,combo,Combo,t138,0.000000
+gpt-4o,GPT-4o,combo,Combo,t139,nan
+gpt-4o,GPT-4o,combo,Combo,t140,0.000000
+gpt-4o,GPT-4o,combo,Combo,t141,0.000000
+gpt-4o,GPT-4o,combo,Combo,t142,nan
+gpt-4o,GPT-4o,combo,Combo,t143,0.000000
+gpt-4o,GPT-4o,combo,Combo,t144,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t001,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t002,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t003,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t004,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t005,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t006,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t007,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t008,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t009,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t010,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t011,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t012,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t013,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t014,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t015,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t016,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t017,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t018,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t019,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t020,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t021,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t022,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t023,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t024,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t025,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t026,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t027,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t028,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t029,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t030,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t031,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t032,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t033,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t034,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t035,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t036,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t037,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t038,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t039,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t040,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t041,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t042,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t043,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t044,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t045,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t046,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t047,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t048,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t049,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t050,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t051,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t052,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t053,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t054,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t055,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t056,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t057,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t058,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t059,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t060,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t061,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t062,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t063,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t064,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t065,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t066,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t067,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t068,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t069,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t070,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t071,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t072,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t073,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t074,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t075,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t076,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t077,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t078,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t079,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t080,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t081,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t082,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t083,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t084,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t085,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t086,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t087,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t088,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t089,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t090,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t091,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t092,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t093,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t094,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t095,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t096,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t097,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t098,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t099,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t100,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t101,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t102,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t103,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t104,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t105,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t106,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t107,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t108,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t109,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t110,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t111,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t112,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t113,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t114,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t115,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t116,0.250000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t117,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t118,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t119,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t120,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t121,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t122,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t123,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t124,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t125,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t126,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t127,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t128,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t129,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t130,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t131,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t132,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t133,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t134,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t135,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t136,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t137,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t138,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t139,0.125000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t140,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t141,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t142,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t143,0.000000
+meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo,LLaMA 3.1-8B,combo,Combo,t144,0.000000

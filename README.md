@@ -34,12 +34,15 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 ├── scripts/
 │   ├── build_runs_from_claims.py   # Step 1: Generate prompts from claims CSV
 │   ├── generate_runs.py            # Step 2: Call LLMs and collect outputs
-│   └── verify_runs.py              # Step 3: Verify citations against academic databases
+│   ├── verify_runs.py              # Step 3: Verify citations against academic databases
+│   └── sample_for_manual_validation.py  # Stratified sampling for human annotation
 ├── analysis/
 │   ├── summarize_metrics.py        # Step 4: Bootstrap CIs and LaTeX table generation
 │   ├── compute_dual_metrics.py     # Claim-level and citation-level metric aggregation
 │   ├── export_fig2a_data.py        # Export per-claim verification fractions for Figure 2a
 │   └── plot_fig2a_boxplot.py       # Generate Figure 2a boxplot from exported CSV
+├── manual_validation_100.csv        # 100-citation stratified sample, human-annotated (batch 1)
+├── manual_validation_200_batch2.csv # 100 additional citations, zero overlap (batch 2, pending annotation)
 ├── data/
 │   ├── claims.csv                  # 144 research claims (input)
 │   └── *_full_runs.jsonl           # Generated prompts per model
@@ -141,6 +144,27 @@ python analysis/plot_fig2a_boxplot.py \
 ```
 
 Reads the exported CSV and generates a 1×5 horizontal strip of boxplots (one per condition, four models each). Requires `matplotlib` and `pandas`.
+
+### Manual Validation
+
+To sample citations for human annotation:
+
+```bash
+python scripts/sample_for_manual_validation.py \
+    --citations out/verify/citations.jsonl \
+    --out manual_validation_100.csv \
+    --n 100 \
+    --seed 42
+```
+
+Performs stratified sampling by `(model, label)` to ensure representation across all models and outcome categories (EXISTS, AMBIGUOUS, FABRICATED). The output CSV includes the pipeline's automated label and blank columns for the human annotator (`human_label`, `agree`, `reasoning`).
+
+Two batches are provided:
+
+| File | N | Seed | Status |
+|------|---|------|--------|
+| `manual_validation_100.csv` | 100 | 42 | Annotated (batch 1) — 75% agreement, Cohen's κ = 0.627 |
+| `manual_validation_200_batch2.csv` | 100 | 137 | Pending annotation (batch 2, zero overlap with batch 1) |
 
 ## Dataset
 
