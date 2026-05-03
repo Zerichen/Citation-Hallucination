@@ -1,16 +1,22 @@
 import argparse
 import json
 import os
+import sys
 from typing import Dict, List, Tuple, Optional
 from tqdm import tqdm
 
-from src.parser import parse_citations, build_citation_objects
-from src.normalize import normalize_citation, normalize_title, normalize_venue
-from src.clients import CrossrefClient, SemanticScholarClient
-from src.match import best_match
-from src.label import assign_label
-from src.aggregate import aggregate_run
-from src.schema import to_dict
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+SRC_DIR = os.path.join(ROOT_DIR, "src")
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
+
+from citecheck.parser import parse_citations, build_citation_objects
+from citecheck.normalize import normalize_citation, normalize_title, normalize_venue
+from citecheck.clients import CrossrefClient, SemanticScholarClient
+from citecheck.match import best_match
+from citecheck.label import assign_label
+from citecheck.aggregate import aggregate_run
+from citecheck.schema import to_dict
 
 def adapt_crossref_item(item: Dict) -> Dict:
     title = (item.get("title") or [""])[0]

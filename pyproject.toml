@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citecheck"
+version = "0.1.0"
+description = "Defensive verification of LLM-generated bibliographic citations against scholarly databases"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "citations",
+    "hallucination",
+    "llm",
+    "verification",
+    "scholarly",
+    "crossref",
+    "semantic-scholar",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "requests>=2.31,<3",
+    "rapidfuzz>=3.0,<4",
+    "tqdm>=4.65",
+    "numpy>=1.24",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+llm = [
+    "openai>=1.0",
+    "anthropic>=0.20",
+]
+
+[project.scripts]
+citecheck = "citecheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+citecheck = ["py.typed"]

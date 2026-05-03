@@ -2,6 +2,59 @@
 
 A systematic benchmark for measuring citation hallucination rates in large language models (LLMs). The pipeline prompts models to write citation-backed academic text under controlled conditions, then automatically verifies each citation against Crossref and Semantic Scholar.
 
+The verification logic is shipped as a small installable Python package, **`citecheck`**, with a CLI and a programmatic API. The full LLM-prompting experiment from the paper still lives under `scripts/` and `analysis/`.
+
+## Install
+
+```bash
+pip install -e .
+```
+
+Requires Python 3.9+. Pulls only the verification dependencies (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). To run the full LLM-generation experiment under `scripts/generate_runs.py` you also need the optional extras:
+
+```bash
+pip install -e ".[llm]"   # adds openai, anthropic
+```
+
+## Quick start
+
+```bash
+# Verify a JSONL file of citation records
+citecheck verify examples/sample_references.jsonl --output out/example_results.jsonl
+
+# Or pipe results to stdout
+citecheck verify examples/sample_references.jsonl
+
+# Show version / help
+citecheck --version
+citecheck --help
+```
+
+Each input line is a JSON object of the form:
+
+```json
+{"title": "...", "authors": ["..."], "venue": "...", "year": 2024, "doi": "..."}
+```
+
+The output JSONL contains the assigned label (`EXISTS` / `AMBIGUOUS` / `FABRICATED`), the best-match score, the canonical record retrieved from Crossref or Semantic Scholar, and the original input.
+
+### Python API
+
+```python
+from citecheck import verify_citation, verify_file
+
+result = verify_citation({
+    "title": "Attention Is All You Need",
+    "authors": ["Ashish Vaswani", "Noam Shazeer"],
+    "year": 2017,
+    "doi": "10.48550/arXiv.1706.03762",
+})
+print(result.label, result.confidence)
+
+# Batch
+records = verify_file("examples/sample_references.jsonl", "out.jsonl")
+```
+
 ## Overview
 
 LLMs frequently fabricate academic citations when asked to produce referenced text. This project quantifies that behavior across four models and five prompting conditions, using 144 research claims spanning six domain groups.
@@ -22,7 +75,12 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 
 ```
 .
-├── src/                        # Core library
+├── pyproject.toml              # Installable package metadata + CLI entry point
+├── requirements.txt            # Pinned dependencies for reproducibility
+├── src/citecheck/              # Core library (importable + CLI)
+│   ├── __init__.py             # Public API re-exports + __version__
+│   ├── cli.py                  # `citecheck` argparse CLI (verify, info, --version)
+│   ├── verify.py               # High-level verify_citation / verify_file API
 │   ├── schema.py               # Dataclasses: Citation, MatchResult, VerificationResult
 │   ├── prompts.py              # Prompt templates for 5 experimental conditions
 │   ├── parser.py               # Regex-based citation block parser
@@ -31,6 +89,10 @@ LLMs frequently fabricate academic citations when asked to produce referenced te
 │   ├── label.py                # Label assignment (EXISTS / AMBIGUOUS / FABRICATED)
 │   ├── aggregate.py            # Run-level metric aggregation
 │   └── clients.py              # Crossref and Semantic Scholar API clients with caching
+├── tests/
+│   └── test_smoke.py           # Smoke tests (offline, mocks API clients)
+├── examples/
+│   └── sample_references.jsonl # 5 example citations (2 real, 3 fabricated)
 ├── scripts/
 │   ├── build_runs_from_claims.py   # Step 1: Generate prompts from claims CSV
 │   ├── generate_runs.py            # Step 2: Call LLMs and collect outputs
@@ -202,19 +264,16 @@ Each claim includes a research question, domain label, suggested number of paper
 
 ## Dependencies
 
-- Python 3.9+
-- `openai`, `anthropic` (LLM API clients)
-- `requests` (HTTP for Crossref / Semantic Scholar)
-- `rapidfuzz` (fuzzy string matching)
-- `tqdm` (progress bars)
-- `numpy`, `pandas` (analysis)
-- `matplotlib` (figure generation)
+The recommended install is `pip install -e .` (see [Install](#install) above), which pulls everything `citecheck` itself needs (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). For the full LLM-generation experiment add the optional extras:
 
-Install:
+| Group | Adds | Needed for |
+|-------|------|------------|
+| Core (always) | `requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas` | `citecheck verify`, `scripts/verify_runs.py`, most of `analysis/` |
+| `[llm]` | `openai`, `anthropic` | `scripts/generate_runs.py` |
+| Plotting | `matplotlib` | `analysis/plot_fig2a_boxplot.py` |
+| `[dev]` | `pytest` | `pytest tests/` |
 
-```bash
-pip install openai anthropic requests rapidfuzz tqdm numpy pandas matplotlib
-```
+`requirements.txt` lists everything pinned for reproducibility (`pip install -r requirements.txt`).
 
 ## Environment Variables
 
@@ -244,6 +303,15 @@ Each line contains all fields from the input run plus:
 - `num_citations`: number of citations parsed
 - `exists_rate`, `fabricated_rate`, `ambiguous_rate`: label proportions
 - `temporal_violation_rate`: fraction of citations outside the specified time window
+
+## Tests
+
+```bash
+pip install -e ".[dev]"
+pytest tests/
+```
+
+The smoke tests are offline — the API clients are monkey-patched, so no network access is required.
 
 ## License
 

@@ -7,10 +7,11 @@ from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
+SRC_DIR = os.path.join(ROOT_DIR, "src")
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
 
-from src.prompts import render_prompt
+from citecheck.prompts import render_prompt
 
 OUT_PATH = "data/gpt-4o_full_runs.jsonl"
 CLAIMS_PATH = "data/claims.csv"

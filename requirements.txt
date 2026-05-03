@@ -1,0 +1,10 @@
+requests>=2.31,<3
+rapidfuzz>=3.0,<4
+tqdm>=4.65
+numpy>=1.24
+pandas>=2.0
+# Optional, only required to run scripts/generate_runs.py:
+openai>=1.0
+anthropic>=0.20
+# Optional, only required to render Figure 2a from analysis/plot_fig2a_boxplot.py:
+matplotlib>=3.7
