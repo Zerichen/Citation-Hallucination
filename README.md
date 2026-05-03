@@ -103,13 +103,15 @@ python scripts/verify_runs.py --runs out/gpt-4o_full_runs_result.jsonl --out_dir
 For each citation in the model output:
 1. Parse the structured citation block (title, authors, venue, year, DOI)
 2. Normalize all text fields for comparison
-3. Query Crossref (DOI lookup + title search) and Semantic Scholar (title search)
-4. Score candidates using a weighted combination: title similarity (60%), author overlap (20%), year match (15%), venue similarity (5%)
+3. Query Crossref (DOI lookup + title search) and Semantic Scholar (title search). **Raw API responses are cached to disk** under `cache/{crossref_doi,crossref_title,s2_title}.jsonl` before normalization, so reported labels can be regenerated from the cached snapshot without re-hitting the live APIs.
+4. Score candidates using a weighted combination: title similarity (60%), author overlap (20%), year match (15%), venue similarity (5%). The DOI is used as a direct lookup path rather than as a weighted scoring signal.
 5. Assign a label based on the best match score:
    - **EXISTS** (score >= 0.85): citation matches a real paper
    - **AMBIGUOUS** (score >= 0.60): partial match, possibly a real paper with metadata errors
    - **FABRICATED** (score < 0.60): no convincing match found
 6. Flag temporal violations for time-constrained conditions
+
+> **Label naming:** the data files in this repository use `AMBIGUOUS` (the pipeline's internal label name), while the paper uses `Unresolved` for the same class. The two refer to the identical $0.60 \le s < 0.85$ score range.
 
 To verify all model outputs at once, omit `--runs`:
 
@@ -171,12 +173,17 @@ python scripts/sample_for_manual_validation.py \
 
 Performs stratified sampling by `(model, label)` to ensure representation across all models and outcome categories (EXISTS, AMBIGUOUS, FABRICATED). The output CSV includes the pipeline's automated label and blank columns for the human annotator (`human_label`, `agree`, `reasoning`).
 
-Two batches are provided:
+Two batches are provided (200 citations total, no overlap):
 
 | File | N | Seed | Status |
 |------|---|------|--------|
-| `manual_validation_100.csv` | 100 | 42 | Annotated (batch 1) — 75% agreement, Cohen's κ = 0.627 |
-| `manual_validation_200_batch2.csv` | 100 | 137 | Annotated (batch 2, zero overlap with batch 1) — combined Cohen's κ = 0.52 |
+| `manual_validation_100.csv` | 100 | 42 | Annotated (batch 1) — 75% agreement, Cohen's κ = 0.63 |
+| `manual_validation_200_batch2.csv` | 100 | 137 | Annotated (batch 2) — per-batch κ = 0.38 (driven by 52% pipeline-AMBIGUOUS sample share vs 35% in batch 1) |
+
+Combined audit (n=200) summary, used in the paper:
+- Overall agreement: 68% &nbsp;&nbsp; Cohen's κ = 0.52 (moderate)
+- Per-class precision: 0.93 EXISTS, 0.41 AMBIGUOUS, 0.86 FABRICATED
+- Of 87 pipeline-AMBIGUOUS citations: 44 (50.6%) reclassified as FABRICATED, 36 (41.4%) confirmed AMBIGUOUS, 7 (8.0%) reclassified as EXISTS
 
 ## Dataset
 
