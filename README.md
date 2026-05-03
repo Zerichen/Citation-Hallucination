@@ -10,11 +10,14 @@ The verification logic is shipped as a small installable Python package, **`cite
 pip install -e .
 ```
 
-Requires Python 3.9+. Pulls only the verification dependencies (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). To run the full LLM-generation experiment under `scripts/generate_runs.py` you also need the optional extras:
+Requires Python 3.9+. The base install pulls only the verification dependencies (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). Optional extras are available via the `pip install -e ".[<group>]"` syntax:
 
-```bash
-pip install -e ".[llm]"   # adds openai, anthropic
-```
+| Command | Adds | Needed for |
+|---|---|---|
+| `pip install -e .` | (core only) | `citecheck verify`, `scripts/verify_runs.py`, most of `analysis/` |
+| `pip install -e ".[dev]"` | `pytest` | `pytest tests/` |
+| `pip install -e ".[llm]"` | `openai`, `anthropic` | `scripts/generate_runs.py` (LLM calls) |
+| `pip install -e ".[dev,llm]"` | both | full reproduction + tests |
 
 ## Quick start
 
@@ -264,16 +267,7 @@ Each claim includes a research question, domain label, suggested number of paper
 
 ## Dependencies
 
-The recommended install is `pip install -e .` (see [Install](#install) above), which pulls everything `citecheck` itself needs (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). For the full LLM-generation experiment add the optional extras:
-
-| Group | Adds | Needed for |
-|-------|------|------------|
-| Core (always) | `requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas` | `citecheck verify`, `scripts/verify_runs.py`, most of `analysis/` |
-| `[llm]` | `openai`, `anthropic` | `scripts/generate_runs.py` |
-| Plotting | `matplotlib` | `analysis/plot_fig2a_boxplot.py` |
-| `[dev]` | `pytest` | `pytest tests/` |
-
-`requirements.txt` lists everything pinned for reproducibility (`pip install -r requirements.txt`).
+See the [Install](#install) section for the recommended `pip install -e .` setup and the optional `[dev]` / `[llm]` extras. `matplotlib` is needed only for `analysis/plot_fig2a_boxplot.py`. `requirements.txt` lists everything pinned for reproducibility (`pip install -r requirements.txt`).
 
 ## Environment Variables
 
