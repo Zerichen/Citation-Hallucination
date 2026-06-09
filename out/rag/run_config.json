@@ -1,0 +1,23 @@
+{
+  "model": "claude-sonnet-4-5-20250929",
+  "temperature": 0.0,
+  "max_tokens": 2048,
+  "system_prompt": "You are a research assistant.",
+  "conditions": [
+    "baseline",
+    "temporal"
+  ],
+  "top_k": 5,
+  "n_papers": {
+    "baseline": 5,
+    "temporal": 5
+  },
+  "retriever": "crossref",
+  "crossref_base": "https://api.crossref.org/works",
+  "mailto": "zerichenn@gmail.com",
+  "n_topics": 144,
+  "n_runs_planned": 288,
+  "started_at": "2026-06-08T21:26:02.741240+00:00",
+  "closed_book_source": "out/verify/run_metrics.jsonl",
+  "claims_source": "data/claims.csv"
+}

@@ -1,0 +1,1 @@
+Claude+RAG vs. Claude closed-book: Base Δ=+0.318 [0.25, 0.38], Temp Δ=+0.699 [0.65, 0.75]. RAG more than fully closes the Temporal gap (RAG-Temporal existence 0.818 exceeds even closed-book Baseline 0.381).

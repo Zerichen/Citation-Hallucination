@@ -1,0 +1,135 @@
+{
+  "model": "claude-sonnet-4-5-20250929",
+  "seed": 42,
+  "n_boot": 1000,
+  "n_topics": 144,
+  "cells": {
+    "rag_base": {
+      "n_topics": 144,
+      "avg_num_citations": 4.763888888888889,
+      "exists": {
+        "mean": 0.6988425925925925,
+        "ci_lo": 0.6516145833333334,
+        "ci_hi": 0.7439814814814815
+      },
+      "fabricated": {
+        "mean": 0.05416666666666667,
+        "ci_lo": 0.027777777777777776,
+        "ci_hi": 0.08333333333333333
+      },
+      "unresolved": {
+        "mean": 0.21921296296296297,
+        "ci_lo": 0.1821701388888889,
+        "ci_hi": 0.25972800925925926
+      },
+      "temporal_viol": null,
+      "n_abstain": 4,
+      "abstain_topics": [
+        "t126",
+        "t130",
+        "t132",
+        "t135"
+      ],
+      "exists_excl_abstain_mean": 0.7188095238095238
+    },
+    "rag_temp": {
+      "n_topics": 144,
+      "avg_num_citations": 4.673611111111111,
+      "exists": {
+        "mean": 0.818287037037037,
+        "ci_lo": 0.7768229166666666,
+        "ci_hi": 0.8590451388888888
+      },
+      "fabricated": {
+        "mean": 0.008333333333333335,
+        "ci_lo": 0.002777777777777778,
+        "ci_hi": 0.015277777777777779
+      },
+      "unresolved": {
+        "mean": 0.16643518518518519,
+        "ci_lo": 0.13055555555555554,
+        "ci_hi": 0.20718171296296295
+      },
+      "temporal_viol": {
+        "mean": 0.034722222222222224,
+        "ci_lo": 0.0125,
+        "ci_hi": 0.058333333333333334
+      },
+      "n_abstain": 1,
+      "abstain_topics": [
+        "t131"
+      ],
+      "exists_excl_abstain_mean": 0.824009324009324
+    },
+    "cb_base": {
+      "n_topics": 144,
+      "avg_num_citations": 5.0,
+      "exists": {
+        "mean": 0.38055555555555554,
+        "ci_lo": 0.33611111111111114,
+        "ci_hi": 0.4278125
+      },
+      "fabricated": {
+        "mean": 0.15694444444444444,
+        "ci_lo": 0.125,
+        "ci_hi": 0.18888888888888888
+      },
+      "unresolved": {
+        "mean": 0.46249999999999997,
+        "ci_lo": 0.4194444444444445,
+        "ci_hi": 0.5042013888888889
+      },
+      "temporal_viol": null,
+      "n_abstain": 0,
+      "abstain_topics": [],
+      "exists_excl_abstain_mean": 0.38055555555555554
+    },
+    "cb_temp": {
+      "n_topics": 144,
+      "avg_num_citations": 5.0,
+      "exists": {
+        "mean": 0.11944444444444446,
+        "ci_lo": 0.08888888888888889,
+        "ci_hi": 0.15555555555555556
+      },
+      "fabricated": {
+        "mean": 0.3472222222222222,
+        "ci_lo": 0.30135416666666665,
+        "ci_hi": 0.3902777777777778
+      },
+      "unresolved": {
+        "mean": 0.5333333333333333,
+        "ci_lo": 0.4930555555555556,
+        "ci_hi": 0.5750347222222222
+      },
+      "temporal_viol": {
+        "mean": 0.015277777777777779,
+        "ci_lo": 0.0041666666666666675,
+        "ci_hi": 0.029166666666666674
+      },
+      "n_abstain": 0,
+      "abstain_topics": [],
+      "exists_excl_abstain_mean": 0.11944444444444446
+    }
+  },
+  "deltas": [
+    {
+      "label": "Claude+RAG Base $-$ Claude Base",
+      "mean": 0.318287037037037,
+      "ci_lo": 0.2543749999999999,
+      "ci_hi": 0.3754629629629629
+    },
+    {
+      "label": "Claude+RAG Temp $-$ Claude Temp",
+      "mean": 0.6988425925925925,
+      "ci_lo": 0.649068287037037,
+      "ci_hi": 0.7463078703703705
+    },
+    {
+      "label": "Claude+RAG Temp $-$ Claude+RAG Base",
+      "mean": 0.11944444444444446,
+      "ci_lo": 0.07059606481481472,
+      "ci_hi": 0.16600115740740723
+    }
+  ]
+}
