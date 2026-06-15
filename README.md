@@ -1,36 +1,28 @@
 # Citation Hallucination Benchmark
 
-A systematic benchmark for measuring citation hallucination rates in large language models (LLMs). The pipeline prompts models to write citation-backed academic text under controlled conditions, then automatically verifies each citation against Crossref and Semantic Scholar.
+A systematic benchmark for measuring **citation hallucination** in large language models (LLMs) under deployment-motivated prompting constraints. The pipeline:
 
-The verification logic is shipped as a small installable Python package, **`citecheck`**, with a CLI and a programmatic API. The full LLM-prompting experiment from the paper still lives under `scripts/` and `analysis/`.
+1. Prompts four LLMs (Claude Sonnet 4.5, GPT-4o, LLaMA 3.1-8B, Qwen 2.5-14B) to write citation-backed academic text on 144 question-style claims spanning six domains, under five regimes (Baseline / Temporal / Survey / Non-Disclosure / Combo).
+2. Parses each generated reference and verifies it against **Crossref** and **Semantic Scholar** with a deterministic three-way label scheme:
+   - **Existing** (`EXISTS`): a real, indexed paper matches.
+   - **Unresolved** (`AMBIGUOUS`): partial match; cannot be confirmed without manual review.
+   - **Fabricated** (`FABRICATED`): no plausible match found.
+3. Ships a minimal **retrieval-augmented (RAG) baseline** for Claude Sonnet on Baseline + Temporal cells, to probe how much of the closed-book failure is recoverable by grounding (added for the DeLTA 2026 camera-ready in response to Reviewer R5).
+4. Releases the verification logic as a small installable Python package, **`citecheck`**, with a CLI and a programmatic API.
 
-## Install
+📄 Paper: *Do Deployment Constraints Make LLMs Hallucinate Citations? An Empirical Study Across Four Models and Five Prompting Regimes* (DeLTA 2026).
 
-```bash
-pip install -e .
-```
-
-Requires Python 3.9+. The base install pulls only the verification dependencies (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). Optional extras are available via the `pip install -e ".[<group>]"` syntax:
-
-| Command | Adds | Needed for |
-|---|---|---|
-| `pip install -e .` | (core only) | `citecheck verify`, `scripts/verify_runs.py`, most of `analysis/` |
-| `pip install -e ".[dev]"` | `pytest` | `pytest tests/` |
-| `pip install -e ".[llm]"` | `openai`, `anthropic` | `scripts/generate_runs.py` (LLM calls) |
-| `pip install -e ".[dev,llm]"` | both | full reproduction + tests |
+---
 
 ## Quick start
 
 ```bash
+git clone https://github.com/Zerichen/Citation-Hallucination
+cd Citation-Hallucination
+pip install -e .
+
 # Verify a JSONL file of citation records
 citecheck verify examples/sample_references.jsonl --output out/example_results.jsonl
-
-# Or pipe results to stdout
-citecheck verify examples/sample_references.jsonl
-
-# Show version / help
-citecheck --version
-citecheck --help
 ```
 
 Each input line is a JSON object of the form:
@@ -39,274 +31,307 @@ Each input line is a JSON object of the form:
 {"title": "...", "authors": ["..."], "venue": "...", "year": 2024, "doi": "..."}
 ```
 
-The output JSONL contains the assigned label (`EXISTS` / `AMBIGUOUS` / `FABRICATED`), the best-match score, the canonical record retrieved from Crossref or Semantic Scholar, and the original input.
+The output JSONL contains the assigned label, the best-match score, and the canonical record retrieved from Crossref or Semantic Scholar.
 
 ### Python API
 
 ```python
-from citecheck import verify_citation, verify_file
+from citecheck import verify_citation
 
 result = verify_citation({
     "title": "Attention Is All You Need",
-    "authors": ["Ashish Vaswani", "Noam Shazeer"],
+    "authors": ["Vaswani"],
+    "venue": "NeurIPS",
     "year": 2017,
-    "doi": "10.48550/arXiv.1706.03762",
 })
-print(result.label, result.confidence)
-
-# Batch
-records = verify_file("examples/sample_references.jsonl", "out.jsonl")
+# result.label = "EXISTS", result.confidence = 0.97
 ```
 
-## Overview
+---
 
-LLMs frequently fabricate academic citations when asked to produce referenced text. This project quantifies that behavior across four models and five prompting conditions, using 144 research claims spanning six domain groups.
-
-**Models tested:** Claude Sonnet (Anthropic), GPT-4o (OpenAI), LLaMA 3.1-8B (Meta), Qwen 2.5-14B (Alibaba)
-
-**Conditions:**
-
-| Condition | Description |
-|-----------|-------------|
-| `baseline` | Write a paragraph with 5 citations |
-| `temporal` | Baseline + all papers must fall within a specified time window |
-| `survey` | Write a related-work section with 8 citations |
-| `privacy` (Non-Disc.) | Baseline + instruction not to rely on memorized training data |
-| `combo` | Survey + temporal + privacy combined |
-
-## Repository Structure
-
-```
-.
-├── pyproject.toml              # Installable package metadata + CLI entry point
-├── requirements.txt            # Pinned dependencies for reproducibility
-├── src/citecheck/              # Core library (importable + CLI)
-│   ├── __init__.py             # Public API re-exports + __version__
-│   ├── cli.py                  # `citecheck` argparse CLI (verify, info, --version)
-│   ├── verify.py               # High-level verify_citation / verify_file API
-│   ├── schema.py               # Dataclasses: Citation, MatchResult, VerificationResult
-│   ├── prompts.py              # Prompt templates for 5 experimental conditions
-│   ├── parser.py               # Regex-based citation block parser
-│   ├── normalize.py            # Text normalization (titles, authors, venues, DOIs)
-│   ├── match.py                # Fuzzy matching with weighted scoring
-│   ├── label.py                # Label assignment (EXISTS / AMBIGUOUS / FABRICATED)
-│   ├── aggregate.py            # Run-level metric aggregation
-│   └── clients.py              # Crossref and Semantic Scholar API clients with caching
-├── tests/
-│   └── test_smoke.py           # Smoke tests (offline, mocks API clients)
-├── examples/
-│   └── sample_references.jsonl # 5 example citations (2 real, 3 fabricated)
-├── scripts/
-│   ├── build_runs_from_claims.py   # Step 1: Generate prompts from claims CSV
-│   ├── generate_runs.py            # Step 2: Call LLMs and collect outputs
-│   ├── verify_runs.py              # Step 3: Verify citations against academic databases
-│   └── sample_for_manual_validation.py  # Stratified sampling for human annotation
-├── analysis/
-│   ├── summarize_metrics.py        # Step 4: Bootstrap CIs and LaTeX table generation
-│   ├── compute_dual_metrics.py     # Claim-level and citation-level metric aggregation
-│   ├── export_fig2a_data.py        # Export per-claim verification fractions for Figure 2a
-│   ├── plot_fig2a_boxplot.py       # Generate Figure 2a boxplot from exported CSV
-│   └── domain_metrics.py           # Domain-stratified existence/fabricated/ambiguous rates
-├── manual_validation_100.csv        # 100-citation stratified sample, human-annotated (batch 1)
-├── manual_validation_200_batch2.csv # 100 additional citations, zero overlap (batch 2, annotated)
-├── data/
-│   ├── claims.csv                  # 144 research claims (input)
-│   └── *_full_runs.jsonl           # Generated prompts per model
-├── appendix/
-│   ├── claims_candidate_pool.csv   # Full candidate pool (240 claims)
-│   └── domain_counts_120.csv       # Domain distribution across 6 major fields
-└── out/
-    ├── *_full_runs_result.jsonl     # Raw model outputs
-    ├── verify/
-    │   ├── citations.jsonl          # Citation-level verification results
-    │   └── run_metrics.jsonl        # Run-level aggregated metrics
-    └── analysis/
-        ├── summary_table.csv        # Summary statistics
-        ├── summary_table.tex        # LaTeX table for paper inclusion
-        ├── doi_completeness.csv     # DOI completeness rates by model and condition
-        └── fig2a_frac_existing.csv  # Per-claim verification fractions (Figure 2a source data)
-```
-
-## Pipeline
-
-The pipeline has four stages, each implemented as a standalone script:
-
-```
-claims.csv ──▶ build_runs_from_claims.py ──▶ generate_runs.py ──▶ verify_runs.py ──▶ summarize_metrics.py
-   (144           (720 prompts/model)        (LLM responses)     (citation-level      (bootstrap CIs,
-   claims)                                                        verification)         LaTeX table)
-```
-
-### Step 1: Build Prompts
+## Install
 
 ```bash
-python scripts/build_runs_from_claims.py
+pip install -e .
 ```
 
-Reads `data/claims.csv` and generates 5 prompt variants per claim (one per condition). Output: `data/<model>_full_runs.jsonl`.
+Requires Python 3.9+. The base install pulls only the verification dependencies (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). Optional extras:
 
-### Step 2: Generate Model Outputs
+| Command | Adds | Needed for |
+|---|---|---|
+| `pip install -e .` | (core only) | `citecheck verify`, `scripts/verify_runs.py`, most of `analysis/` |
+| `pip install -e ".[dev]"` | `pytest` | `pytest tests/` |
+| `pip install -e ".[llm]"` | `openai`, `anthropic` | `scripts/generate_runs.py`, `scripts/run_rag.py` (LLM calls) |
+| `pip install -e ".[dev,llm]"` | both | full reproduction + tests |
+
+---
+
+## How verification works
+
+### Scoring formula (`src/citecheck/match.py`)
+
+Each parsed citation is scored against every candidate retrieved from Crossref / Semantic Scholar:
+
+```
+s = 0.60 · title_similarity        (token-set ratio)
+  + 0.20 · author_overlap          (last-name set overlap)
+  + 0.15 · year_match              (1.0 exact, 0.5 off-by-one, 0 else)
+  + 0.05 · venue_similarity        (partial ratio)
+```
+
+Title gets the highest weight because it is the most discriminative field in practice. Weights are defined in [`src/citecheck/match.py`](src/citecheck/match.py).
+
+### Label thresholds (`src/citecheck/label.py`)
+
+```python
+EXISTS_TH = 0.85   # ≥ 0.85 → Existing
+AMBIG_TH  = 0.60   # 0.60 ≤ s < 0.85 → Unresolved (AMBIGUOUS)
+                   # s < 0.60 or no candidate → Fabricated
+```
+
+To **re-run the labeling with different thresholds** (e.g., to reproduce the threshold-sensitivity analysis in §5 of the paper), use the dedicated script:
+
+```bash
+python scripts/threshold_sensitivity.py
+#   → out/analysis/threshold_sensitivity.json
+```
+
+It re-labels the existing per-citation scores in `out/verify/citations.jsonl` under four perturbations and recomputes model rankings + paired-bootstrap Δ's — no API calls or LLM re-runs needed. The four perturbations reported in the paper are:
+
+| Perturbation | `EXISTS_TH` | `AMBIG_TH` | What it tests |
+|---|---|---|---|
+| (a) | 0.80 | 0.60 | More permissive Existing cut |
+| (b) | 0.90 | 0.60 | More restrictive Existing cut |
+| (c) | 0.85 | 0.65 | Shrink the Unresolved band |
+| (d) | 0.85 | 0.55 | Widen the Unresolved band |
+
+Result (from the paper): 0 sign flips across 84 perturbation-comparisons; 17 of 18 statistically meaningful Δ's preserve significance.
+
+### Naming note
+
+The data files use `EXISTS` / `AMBIGUOUS` / `FABRICATED`; the paper uses *Existing* / *Unresolved* / *Fabricated*. They refer to the same label classes.
+
+---
+
+## Closed-book experiment (full reproduction)
+
+The five-regime, four-model study from §3–§5 of the paper.
+
+### 1. Generate model outputs
 
 ```bash
 # Set API keys
-export OPENAI_API_KEY="..."
-export ANTHROPIC_API_KEY="..."
-export TOGETHER_API_KEY="..."       # for Llama
-export SILICONFLOW_API_KEY="..."    # for Qwen
+export ANTHROPIC_API_KEY=sk-ant-...
+export OPENAI_API_KEY=sk-...
 
-python scripts/generate_runs.py --topics data/gpt-4o_full_runs.jsonl --out out/gpt-4o_full_runs_result.jsonl
+# Build the prompts for each (claim, condition) pair
+python scripts/build_runs_from_claims.py --claims data/claims.csv
+
+# Call the LLMs (writes out/<model>_full_runs.jsonl)
+python scripts/generate_runs.py
 ```
 
-Supports `--resume` to skip completed runs and `--conditions baseline,temporal` to filter conditions.
+Each run uses temperature 0, max_tokens 2048, and one prompt template per condition. The full design yields **144 × 5 × 4 = 2,880 runs producing 17,443 individual citations**.
 
-### Step 3: Verify Citations
+### 2. Verify citations
 
 ```bash
-python scripts/verify_runs.py --runs out/gpt-4o_full_runs_result.jsonl --out_dir out/verify
+python scripts/verify_runs.py
 ```
 
-For each citation in the model output:
-1. Parse the structured citation block (title, authors, venue, year, DOI)
-2. Normalize all text fields for comparison
-3. Query Crossref (DOI lookup + title search) and Semantic Scholar (title search). **Raw API responses are cached to disk** under `cache/{crossref_doi,crossref_title,s2_title}.jsonl` before normalization, so reported labels can be regenerated from the cached snapshot without re-hitting the live APIs.
-4. Score candidates using a weighted combination: title similarity (60%), author overlap (20%), year match (15%), venue similarity (5%). The DOI is used as a direct lookup path rather than as a weighted scoring signal.
-5. Assign a label based on the best match score:
-   - **EXISTS** (score >= 0.85): citation matches a real paper
-   - **AMBIGUOUS** (score >= 0.60): partial match, possibly a real paper with metadata errors
-   - **FABRICATED** (score < 0.60): no convincing match found
-6. Flag temporal violations for time-constrained conditions
+Output:
+- `out/verify/citations.jsonl` — per-citation labels with best-match scores and supporting evidence
+- `out/verify/run_metrics.jsonl` — per-run aggregates (existence rate, fabrication rate, etc.)
 
-> **Label naming:** the data files in this repository use `AMBIGUOUS` (the pipeline's internal label name), while the paper uses `Unresolved` for the same class. The two refer to the identical $0.60 \le s < 0.85$ score range.
-
-To verify all model outputs at once, omit `--runs`:
+### 3. Aggregate + analyze
 
 ```bash
-python scripts/verify_runs.py --out_dir out/verify --clear
+python analysis/summarize_metrics.py
+python analysis/compute_dual_metrics.py
+python analysis/domain_metrics.py
+python analysis/plot_fig2a_boxplot.py
 ```
 
-### Step 4: Summarize Results
+Outputs land in `out/analysis/` (summary tables, per-domain breakdowns, boxplot data).
+
+---
+
+## Retrieval-Augmented (RAG) baseline
+
+A minimal RAG comparison added for the DeLTA 2026 camera-ready — Reviewer R5 asked for a grounded baseline to probe how much of the closed-book failure is recoverable through retrieval.
+
+**Scope (intentionally minimal):**
+
+| Axis | Closed-book | RAG |
+|---|---|---|
+| Models | Claude Sonnet 4.5, GPT-4o, LLaMA 3.1-8B, Qwen 2.5-14B | Claude Sonnet 4.5 only |
+| Conditions | 5 regimes | Baseline + Temporal only |
+| Claims | 144 | 144 (same set) |
+| Retrieval | none | Crossref top-5 by claim-keyword query (year-windowed under Temporal) |
+| Verification | existing pipeline | same pipeline, unchanged |
+
+### How `run_rag.py` works
+
+1. **Replays the same 144 claims** the closed-book study used (read back from `out/verify/run_metrics.jsonl`).
+2. **Builds a Crossref query** from each claim's `seed_anchors` (or falls back to the question keywords).
+3. **Fetches top-5 records** from `https://api.crossref.org/works` (free, no auth; sends `mailto` parameter as a polite identifier). Year-filtered under the Temporal condition.
+4. **Caches the raw Crossref responses** under `cache/crossref_rag/queries.jsonl` so the experiment can be reproduced offline.
+5. **Injects the 5 records** into the prompt before the citation-format block — everything else (system prompt, output schema, temperature 0, max_tokens 2048) is **byte-identical to closed-book**.
+6. **Writes outputs** in the same JSONL schema as the closed-book runs, plus a `retrieval` sidecar with the candidate records used.
 
 ```bash
-python analysis/summarize_metrics.py \
-    --in_jsonl out/verify/run_metrics.jsonl \
-    --out_csv out/analysis/summary_table.csv \
-    --out_tex out/analysis/summary_table.tex
+export ANTHROPIC_API_KEY=sk-ant-...
+python scripts/run_rag.py
+#   → out/rag/claude-sonnet-4-5-20250929_rag_runs.jsonl   (288 runs)
+#   → out/rag/run_config.json                              (reproducibility metadata)
+#   → cache/crossref_rag/queries.jsonl                     (cached responses)
 ```
 
-Computes per-model, per-condition means with 95% bootstrap confidence intervals (1000 resamples). Outputs both CSV and a LaTeX table ready for paper inclusion.
+### Verify the RAG runs
 
-### Export Figure Data
+The same verification pipeline that handles closed-book also handles RAG outputs:
 
 ```bash
-python analysis/export_fig2a_data.py
+python scripts/verify_runs.py --input out/rag/claude-sonnet-4-5-20250929_rag_runs.jsonl \
+                              --output out/verify/rag_citations.jsonl
+#   → 1,359 verified citations (out of 288 runs × ~5 cits/run)
 ```
 
-Exports a tidy CSV of per-claim verification fractions (`frac_existing = #Existing / #Parsed`) for all 2,880 runs (4 models × 5 conditions × 144 claims). The output at `out/analysis/fig2a_frac_existing.csv` is the source data for the boxplot in Figure 2a of the paper.
-
-### Plot Figure 2a
+### Analyze RAG vs. closed-book
 
 ```bash
-python analysis/plot_fig2a_boxplot.py \
-    --in_csv  out/analysis/fig2a_frac_existing.csv \
-    --out_png out/analysis/fig2a_frac_existing_boxplot.png
+python scripts/analyze_rag.py
+#   → out/rag/deliverables/rag_metrics.json    (cell rates + paired bootstrap Δs)
+#   → out/rag/deliverables/rag_results.md      (interpretation + tables)
+#   → out/rag/deliverables/rag_table_row.tex   (LaTeX rows for Table 3)
+#   → out/rag/deliverables/rag_paragraph.tex   (LaTeX paragraph for §5)
 ```
 
-Reads the exported CSV and generates a 1×5 horizontal strip of boxplots (one per condition, four models each). Requires `matplotlib` and `pandas`.
+### Headline numbers (from the paper)
 
-### Domain-Stratified Metrics
+| Cell | Existing ↑ | Fabricated ↓ | Δ vs. closed-book |
+|---|---|---|---|
+| Claude closed-book Baseline | 0.381 | 0.157 | — |
+| **Claude + RAG Baseline** | **0.699** | **0.054** | **+0.318 [0.254, 0.375]** |
+| Claude closed-book Temporal | 0.119 | 0.347 | — |
+| **Claude + RAG Temporal** | **0.818** | **0.008** | **+0.699 [0.649, 0.746]** |
 
-```bash
-python analysis/domain_metrics.py \
-    --citations out/verify/citations.jsonl \
-    --claims data/claims.csv \
-    --out_csv out/analysis/domain_metrics.csv
+Two caveats bound the interpretation:
+1. The injected candidates are by construction real Crossref records, so part of the gain reflects faithful reuse of supplied references rather than improved unaided recall.
+2. 5 of 288 RAG runs abstained (the model explicitly declined when no candidate looked adequate); counted as zero-existing — the conservative choice.
+
+---
+
+## Repository structure
+
+```
+Citation-Hallucination/
+├── src/citecheck/                # The installable package
+│   ├── prompts.py                # Prompt templates (closed-book + RAG variant)
+│   ├── clients.py                # Anthropic / OpenAI client wrappers + caching
+│   ├── verify.py                 # Top-level verify() entrypoint
+│   ├── label.py                  # ⭐ EXISTS_TH / AMBIG_TH thresholds
+│   ├── match.py                  # ⭐ Scoring formula (0.6 / 0.2 / 0.15 / 0.05)
+│   ├── parser.py                 # Citation parsing from raw model output
+│   ├── normalize.py              # Title/author/venue normalization
+│   ├── aggregate.py              # Bootstrap CI computation
+│   ├── schema.py                 # Pydantic models
+│   └── cli.py                    # `citecheck verify ...`
+│
+├── scripts/
+│   ├── build_runs_from_claims.py # Build (claim, condition) input tuples
+│   ├── generate_runs.py          # Closed-book LLM calls
+│   ├── run_rag.py                # ⭐ RAG generation (Crossref retrieval + Claude)
+│   ├── verify_runs.py            # Verify any model outputs (closed-book or RAG)
+│   ├── analyze_rag.py            # ⭐ RAG vs. closed-book analysis
+│   └── sample_for_manual_validation.py
+│
+├── analysis/
+│   ├── summarize_metrics.py      # Per-cell tables for Table 2
+│   ├── compute_dual_metrics.py   # DOI completeness, count compliance, etc.
+│   ├── domain_metrics.py         # Per-domain existence rates (Figure 4)
+│   ├── plot_fig2a_boxplot.py     # Boxplot generation (Figure 3)
+│   └── export_fig2a_data.py
+│
+├── data/
+│   ├── claims.csv                # 144 claims (the experimental dataset)
+│   └── <model>_full_runs.jsonl   # Pre-generated closed-book outputs (committed)
+│
+├── out/
+│   ├── verify/
+│   │   ├── citations.jsonl       # 17,443 closed-book citation labels
+│   │   ├── run_metrics.jsonl     # Per-run aggregates (closed-book)
+│   │   ├── rag_citations.jsonl   # 1,359 RAG citation labels
+│   │   └── rag_run_metrics.jsonl # Per-run aggregates (RAG)
+│   ├── rag/
+│   │   ├── claude-sonnet-4-5-20250929_rag_runs.jsonl
+│   │   ├── run_config.json
+│   │   └── deliverables/
+│   │       ├── rag_metrics.json
+│   │       ├── rag_results.md
+│   │       ├── rag_table_row.tex
+│   │       └── rag_paragraph.tex
+│   └── analysis/
+│       ├── domain_metrics.csv
+│       ├── fig2a_frac_existing.csv
+│       └── ...
+│
+├── cache/
+│   ├── crossref_doi.jsonl        # Crossref DOI lookups (closed-book verify)
+│   ├── crossref_title.jsonl      # Crossref title searches (closed-book verify)
+│   ├── s2_title.jsonl            # Semantic Scholar title searches
+│   └── crossref_rag/             # Crossref keyword searches for RAG
+│
+├── manual_validation_*.csv       # Human-audit annotations (200 citations, 3 batches)
+├── appendix/                     # Full 240-item candidate pool, subdomain map
+├── examples/
+├── tests/
+├── pyproject.toml
+└── README.md
 ```
 
-Computes existence, fabricated, and ambiguous rates grouped by the six domain groups (SE & CS, Humanities, Interdisciplinary, Medicine & Health, Natural Sciences, Social Sciences), both aggregated across all models and broken down by model. Outputs a CSV with 95% bootstrap CIs. This is the source data for the domain-stratified analysis in the paper (Figure 3, Section 4).
+⭐ = files most relevant to the RAG baseline + threshold-sensitivity reproduction.
 
-### Manual Validation
+---
 
-To sample citations for human annotation:
+## Reproducibility
 
-```bash
-python scripts/sample_for_manual_validation.py \
-    --citations out/verify/citations.jsonl \
-    --out manual_validation_100.csv \
-    --n 100 \
-    --seed 42
+| Component | How it's pinned |
+|---|---|
+| Model versions | Exact identifiers logged in `out/<model>_full_runs.jsonl` and `out/rag/run_config.json` (`claude-sonnet-4-5-20250929`, `gpt-4o` API alias, `meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo`, `Qwen/Qwen2.5-14B-Instruct`) |
+| Crossref / Semantic Scholar responses | Cached to disk before normalization (`cache/`). Labels can be regenerated from cached snapshots without API access |
+| Bootstrap CIs | 1,000 cluster-bootstrap resamples, seed=42 |
+| Sampling | Fixed seeds throughout |
+| Decoding | temperature 0, max_tokens 2048 |
+
+---
+
+## Manual audit (label validation)
+
+A stratified 200-citation human audit was performed across two batches by two annotators with reconciliation:
+
+- `manual_validation_100.csv` — Batch 1 (n=100)
+- `manual_validation_200_batch2.csv` — Batch 2 (n=100)
+- `manual_validation_300_batch3.csv` — Batch 3 (additional annotations for replication)
+
+Combined pipeline-vs-human agreement: **68%, Cohen's κ = 0.52** (moderate). Per-class precision: 0.93 (Existing), 0.41 (Unresolved), 0.86 (Fabricated). Detail in §4 of the paper.
+
+---
+
+## Citation
+
+If you use this benchmark or the `citecheck` tool, please cite:
+
+```bibtex
+@inproceedings{zhao2026citation,
+  author    = {Zhao, Chen and Tang, Yuan and Qian, Yitian},
+  title     = {{Do Deployment Constraints Make LLMs Hallucinate Citations? An Empirical Study Across Four Models and Five Prompting Regimes}},
+  booktitle = {Proceedings of the 7th International Conference on Deep Learning Theory and Applications (DeLTA 2026)},
+  year      = {2026},
+  publisher = {Springer}
+}
 ```
-
-Performs stratified sampling by `(model, label)` to ensure representation across all models and outcome categories (EXISTS, AMBIGUOUS, FABRICATED). The output CSV includes the pipeline's automated label and blank columns for the human annotator (`human_label`, `agree`, `reasoning`).
-
-Two batches are provided (200 citations total, no overlap):
-
-| File | N | Seed | Status |
-|------|---|------|--------|
-| `manual_validation_100.csv` | 100 | 42 | Annotated (batch 1) — 75% agreement, Cohen's κ = 0.63 |
-| `manual_validation_200_batch2.csv` | 100 | 137 | Annotated (batch 2) — per-batch κ = 0.38 (driven by 52% pipeline-AMBIGUOUS sample share vs 35% in batch 1) |
-
-Combined audit (n=200) summary, used in the paper:
-- Overall agreement: 68% &nbsp;&nbsp; Cohen's κ = 0.52 (moderate)
-- Per-class precision: 0.93 EXISTS, 0.41 AMBIGUOUS, 0.86 FABRICATED
-- Of 87 pipeline-AMBIGUOUS citations: 44 (50.6%) reclassified as FABRICATED, 36 (41.4%) confirmed AMBIGUOUS, 7 (8.0%) reclassified as EXISTS
-
-## Dataset
-
-The benchmark uses 144 research claims balanced across 6 major academic fields (24 claims each):
-
-| Field | Domains |
-|-------|---------|
-| Computer Science | AI/ML, Data/HCI, Security, Software Engineering, Systems |
-| Humanities | Cultural Studies, History, Linguistics, Literature, Philosophy |
-| Interdisciplinary | Digital Society, Research Ethics, STS, Sustainability, Tech Policy |
-| Medicine & Health | Clinical Medicine, Epidemiology, Health Informatics, Mental Health, Pharmacology |
-| Natural Sciences | Biology, Chemistry, Earth Science, Environmental Science, Physics |
-| Social Sciences | Economics, Policy/Law/Education, Political Science, Psychology, Sociology |
-
-Each claim includes a research question, domain label, suggested number of papers, a temporal window (for the `temporal` and `combo` conditions), and seed anchor keywords to scope the topic.
-
-## Dependencies
-
-See the [Install](#install) section for the recommended `pip install -e .` setup and the optional `[dev]` / `[llm]` extras. `matplotlib` is needed only for `analysis/plot_fig2a_boxplot.py`. `requirements.txt` lists everything pinned for reproducibility (`pip install -r requirements.txt`).
-
-## Environment Variables
-
-| Variable | Purpose |
-|----------|---------|
-| `OPENAI_API_KEY` | OpenAI API key (GPT-4o) |
-| `ANTHROPIC_API_KEY` | Anthropic API key (Claude) |
-| `TOGETHER_API_KEY` | Together AI API key (Llama) |
-| `SILICONFLOW_API_KEY` | SiliconFlow API key (Qwen) |
-| `RESUME` | Set to `1` to enable resume mode in generate/verify scripts |
-
-## Output Schema
-
-### `citations.jsonl` (citation-level)
-
-Each line contains:
-- `citation_id`, `run_id`, `model`, `condition`, `topic_id`
-- `label`: EXISTS, AMBIGUOUS, or FABRICATED
-- `confidence`: best match score (0.0--1.0)
-- `error_type`: `fabricated`, `temporal`, or `null`
-- `parsed`: extracted metadata (title, authors, venue, year, DOI)
-- `canonical`: matched record metadata and source (Crossref or Semantic Scholar)
-
-### `run_metrics.jsonl` (run-level)
-
-Each line contains all fields from the input run plus:
-- `num_citations`: number of citations parsed
-- `exists_rate`, `fabricated_rate`, `ambiguous_rate`: label proportions
-- `temporal_violation_rate`: fraction of citations outside the specified time window
-
-## Tests
-
-```bash
-pip install -e ".[dev]"
-pytest tests/
-```
-
-The smoke tests are offline — the API clients are monkey-patched, so no network access is required.
 
 ## License
 
-This project is provided for research purposes.
+Apache 2.0.
