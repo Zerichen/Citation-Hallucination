@@ -1,0 +1,665 @@
+{
+  "perturbations": {
+    "(orig) 0.85/0.60": {
+      "exists_th": 0.85,
+      "ambig_th": 0.6,
+      "cell_existing_rates": {
+        "Claude Sonnet|Base": 0.38055555555555554,
+        "Claude Sonnet|Temp": 0.11944444444444445,
+        "Claude Sonnet|Surv": 0.4748263888888889,
+        "Claude Sonnet|N-D": 0.34893617021276596,
+        "Claude Sonnet|Combo": 0.10583941605839416,
+        "GPT-4o|Base": 0.23496503496503496,
+        "GPT-4o|Temp": 0.019444444444444445,
+        "GPT-4o|Surv": 0.1948764867337603,
+        "GPT-4o|N-D": 0.175,
+        "GPT-4o|Combo": 0.004703668861712135,
+        "LLaMA 3.1-8B|Base": 0.06834030683403068,
+        "LLaMA 3.1-8B|Temp": 0.011095700416088766,
+        "LLaMA 3.1-8B|Surv": 0.03755458515283843,
+        "LLaMA 3.1-8B|N-D": 0.0446927374301676,
+        "LLaMA 3.1-8B|Combo": 0.00782608695652174,
+        "Qwen 2.5-14B|Base": 0.09065550906555091,
+        "Qwen 2.5-14B|Temp": 0.013927576601671309,
+        "Qwen 2.5-14B|Surv": 0.019083969465648856,
+        "Qwen 2.5-14B|N-D": 0.07788595271210014,
+        "Qwen 2.5-14B|Combo": 0.0009191176470588235
+      }
+    },
+    "(a)    0.80/0.60": {
+      "exists_th": 0.8,
+      "ambig_th": 0.6,
+      "cell_existing_rates": {
+        "Claude Sonnet|Base": 0.43333333333333335,
+        "Claude Sonnet|Temp": 0.15555555555555556,
+        "Claude Sonnet|Surv": 0.5286458333333334,
+        "Claude Sonnet|N-D": 0.4156028368794326,
+        "Claude Sonnet|Combo": 0.14324817518248176,
+        "GPT-4o|Base": 0.27132867132867133,
+        "GPT-4o|Temp": 0.03194444444444444,
+        "GPT-4o|Surv": 0.2433668801463861,
+        "GPT-4o|N-D": 0.2222222222222222,
+        "GPT-4o|Combo": 0.00658513640639699,
+        "LLaMA 3.1-8B|Base": 0.08507670850767085,
+        "LLaMA 3.1-8B|Temp": 0.023578363384188627,
+        "LLaMA 3.1-8B|Surv": 0.050655021834061134,
+        "LLaMA 3.1-8B|N-D": 0.0712290502793296,
+        "LLaMA 3.1-8B|Combo": 0.01391304347826087,
+        "Qwen 2.5-14B|Base": 0.1199442119944212,
+        "Qwen 2.5-14B|Temp": 0.019498607242339833,
+        "Qwen 2.5-14B|Surv": 0.02862595419847328,
+        "Qwen 2.5-14B|N-D": 0.10570236439499305,
+        "Qwen 2.5-14B|Combo": 0.0027573529411764708
+      }
+    },
+    "(b)    0.90/0.60": {
+      "exists_th": 0.9,
+      "ambig_th": 0.6,
+      "cell_existing_rates": {
+        "Claude Sonnet|Base": 0.3263888888888889,
+        "Claude Sonnet|Temp": 0.09166666666666666,
+        "Claude Sonnet|Surv": 0.4322916666666667,
+        "Claude Sonnet|N-D": 0.30638297872340425,
+        "Claude Sonnet|Combo": 0.08394160583941605,
+        "GPT-4o|Base": 0.1972027972027972,
+        "GPT-4o|Temp": 0.0125,
+        "GPT-4o|Surv": 0.15827996340347666,
+        "GPT-4o|N-D": 0.1361111111111111,
+        "GPT-4o|Combo": 0.0037629350893697085,
+        "LLaMA 3.1-8B|Base": 0.03905160390516039,
+        "LLaMA 3.1-8B|Temp": 0.0013869625520110957,
+        "LLaMA 3.1-8B|Surv": 0.021834061135371178,
+        "LLaMA 3.1-8B|N-D": 0.027932960893854747,
+        "LLaMA 3.1-8B|Combo": 0.0034782608695652175,
+        "Qwen 2.5-14B|Base": 0.0599721059972106,
+        "Qwen 2.5-14B|Temp": 0.008356545961002786,
+        "Qwen 2.5-14B|Surv": 0.011450381679389313,
+        "Qwen 2.5-14B|N-D": 0.055632823365785816,
+        "Qwen 2.5-14B|Combo": 0.0
+      }
+    },
+    "(c)    0.85/0.65": {
+      "exists_th": 0.85,
+      "ambig_th": 0.65,
+      "cell_existing_rates": {
+        "Claude Sonnet|Base": 0.38055555555555554,
+        "Claude Sonnet|Temp": 0.11944444444444445,
+        "Claude Sonnet|Surv": 0.4748263888888889,
+        "Claude Sonnet|N-D": 0.34893617021276596,
+        "Claude Sonnet|Combo": 0.10583941605839416,
+        "GPT-4o|Base": 0.23496503496503496,
+        "GPT-4o|Temp": 0.019444444444444445,
+        "GPT-4o|Surv": 0.1948764867337603,
+        "GPT-4o|N-D": 0.175,
+        "GPT-4o|Combo": 0.004703668861712135,
+        "LLaMA 3.1-8B|Base": 0.06834030683403068,
+        "LLaMA 3.1-8B|Temp": 0.011095700416088766,
+        "LLaMA 3.1-8B|Surv": 0.03755458515283843,
+        "LLaMA 3.1-8B|N-D": 0.0446927374301676,
+        "LLaMA 3.1-8B|Combo": 0.00782608695652174,
+        "Qwen 2.5-14B|Base": 0.09065550906555091,
+        "Qwen 2.5-14B|Temp": 0.013927576601671309,
+        "Qwen 2.5-14B|Surv": 0.019083969465648856,
+        "Qwen 2.5-14B|N-D": 0.07788595271210014,
+        "Qwen 2.5-14B|Combo": 0.0009191176470588235
+      }
+    },
+    "(d)    0.85/0.55": {
+      "exists_th": 0.85,
+      "ambig_th": 0.55,
+      "cell_existing_rates": {
+        "Claude Sonnet|Base": 0.38055555555555554,
+        "Claude Sonnet|Temp": 0.11944444444444445,
+        "Claude Sonnet|Surv": 0.4748263888888889,
+        "Claude Sonnet|N-D": 0.34893617021276596,
+        "Claude Sonnet|Combo": 0.10583941605839416,
+        "GPT-4o|Base": 0.23496503496503496,
+        "GPT-4o|Temp": 0.019444444444444445,
+        "GPT-4o|Surv": 0.1948764867337603,
+        "GPT-4o|N-D": 0.175,
+        "GPT-4o|Combo": 0.004703668861712135,
+        "LLaMA 3.1-8B|Base": 0.06834030683403068,
+        "LLaMA 3.1-8B|Temp": 0.011095700416088766,
+        "LLaMA 3.1-8B|Surv": 0.03755458515283843,
+        "LLaMA 3.1-8B|N-D": 0.0446927374301676,
+        "LLaMA 3.1-8B|Combo": 0.00782608695652174,
+        "Qwen 2.5-14B|Base": 0.09065550906555091,
+        "Qwen 2.5-14B|Temp": 0.013927576601671309,
+        "Qwen 2.5-14B|Surv": 0.019083969465648856,
+        "Qwen 2.5-14B|N-D": 0.07788595271210014,
+        "Qwen 2.5-14B|Combo": 0.0009191176470588235
+      }
+    }
+  },
+  "input": "out/verify/citations.jsonl",
+  "n_bootstrap": 200,
+  "seed": 42,
+  "summary": {
+    "n_meaningful_orig": 18,
+    "sign_flips": 0,
+    "significance_changes": 2,
+    "n_perturbation_compare": 72
+  },
+  "deltas": {
+    "(orig) 0.85/0.60": {
+      "Prop vs Open": {
+        "mean": 0.05184090894159925,
+        "ci_lo": 0.03586050901516631,
+        "ci_hi": 0.07043578311166997,
+        "significant": true
+      },
+      "Temp-Base (Claude Sonnet)": {
+        "mean": -0.26087500000000025,
+        "ci_lo": -0.3194444444444445,
+        "ci_hi": -0.20694444444444446,
+        "significant": true
+      },
+      "Surv-Base (Claude Sonnet)": {
+        "mean": 0.0958828125,
+        "ci_lo": 0.045659722222222254,
+        "ci_hi": 0.14913194444444444,
+        "significant": true
+      },
+      "N-D-Base (Claude Sonnet)": {
+        "mean": -0.03141163796228763,
+        "ci_lo": -0.07612293144208038,
+        "ci_hi": 0.011081973581973548,
+        "significant": false
+      },
+      "Combo-Base (Claude Sonnet)": {
+        "mean": -0.2735475506895339,
+        "ci_lo": -0.3214111922141119,
+        "ci_hi": -0.23135644768856445,
+        "significant": true
+      },
+      "Temp-Base (GPT-4o)": {
+        "mean": -0.21689123126618082,
+        "ci_lo": -0.25796165884194056,
+        "ci_hi": -0.17351398601398602,
+        "significant": true
+      },
+      "Surv-Base (GPT-4o)": {
+        "mean": -0.03802987681272067,
+        "ci_lo": -0.08451566598705565,
+        "ci_hi": 0.018231768231768225,
+        "significant": false
+      },
+      "N-D-Base (GPT-4o)": {
+        "mean": -0.06136345348840309,
+        "ci_lo": -0.10138888888888889,
+        "ci_hi": -0.02668997668997669,
+        "significant": true
+      },
+      "Combo-Base (GPT-4o)": {
+        "mean": -0.23135276848273933,
+        "ci_lo": -0.2773417328658122,
+        "ci_hi": -0.1868867974131132,
+        "significant": true
+      },
+      "Temp-Base (LLaMA 3.1-8B)": {
+        "mean": -0.05904728617932247,
+        "ci_lo": -0.07974355741346033,
+        "ci_hi": -0.03650330252272,
+        "significant": true
+      },
+      "Surv-Base (LLaMA 3.1-8B)": {
+        "mean": -0.03206341165245917,
+        "ci_lo": -0.05135366872375737,
+        "ci_hi": -0.0135599080585153,
+        "significant": true
+      },
+      "N-D-Base (LLaMA 3.1-8B)": {
+        "mean": -0.024888889407906283,
+        "ci_lo": -0.043115270606791684,
+        "ci_hi": -0.005247275415636882,
+        "significant": true
+      },
+      "Combo-Base (LLaMA 3.1-8B)": {
+        "mean": -0.06238173148119903,
+        "ci_lo": -0.08374906686444711,
+        "ci_hi": -0.03799703812508003,
+        "significant": true
+      },
+      "Temp-Base (Qwen 2.5-14B)": {
+        "mean": -0.07870257422337257,
+        "ci_lo": -0.10567908706304084,
+        "ci_hi": -0.05289176893820196,
+        "significant": true
+      },
+      "Surv-Base (Qwen 2.5-14B)": {
+        "mean": -0.07348873037689814,
+        "ci_lo": -0.09660061136291768,
+        "ci_hi": -0.047697646859658036,
+        "significant": true
+      },
+      "N-D-Base (Qwen 2.5-14B)": {
+        "mean": -0.013879626008713637,
+        "ci_lo": -0.03646006094781416,
+        "ci_hi": 0.007984171322160144,
+        "significant": false
+      },
+      "Combo-Base (Qwen 2.5-14B)": {
+        "mean": -0.09192053517429655,
+        "ci_lo": -0.117138124362895,
+        "ci_hi": -0.06653362210051668,
+        "significant": true
+      }
+    },
+    "(a)    0.80/0.60": {
+      "Prop vs Open": {
+        "mean": 0.06797358641244278,
+        "ci_lo": 0.049314471438410584,
+        "ci_hi": 0.09008434062473063,
+        "significant": true
+      },
+      "Temp-Base (Claude Sonnet)": {
+        "mean": -0.27814583333333326,
+        "ci_lo": -0.3319444444444445,
+        "ci_hi": -0.22361111111111112,
+        "significant": true
+      },
+      "Surv-Base (Claude Sonnet)": {
+        "mean": 0.09640972222222223,
+        "ci_lo": 0.044618055555555536,
+        "ci_hi": 0.1501736111111111,
+        "significant": true
+      },
+      "N-D-Base (Claude Sonnet)": {
+        "mean": -0.018031795139001362,
+        "ci_lo": -0.061120823620823606,
+        "ci_hi": 0.028339243498817945,
+        "significant": false
+      },
+      "Combo-Base (Claude Sonnet)": {
+        "mean": -0.2891061866486206,
+        "ci_lo": -0.33978174603174605,
+        "ci_hi": -0.24323937908496732,
+        "significant": true
+      },
+      "Temp-Base (GPT-4o)": {
+        "mean": -0.24111756383358965,
+        "ci_lo": -0.28611111111111115,
+        "ci_hi": -0.1875,
+        "significant": true
+      },
+      "Surv-Base (GPT-4o)": {
+        "mean": -0.026928087951845345,
+        "ci_lo": -0.07512051980716833,
+        "ci_hi": 0.03050056561085973,
+        "significant": false
+      },
+      "N-D-Base (GPT-4o)": {
+        "mean": -0.05086756383358971,
+        "ci_lo": -0.10050860719874805,
+        "ci_hi": -0.003930260047281309,
+        "significant": true
+      },
+      "Combo-Base (GPT-4o)": {
+        "mean": -0.26640103210621985,
+        "ci_lo": -0.31559036989500566,
+        "ci_hi": -0.2123894972951577,
+        "significant": true
+      },
+      "Temp-Base (LLaMA 3.1-8B)": {
+        "mean": -0.06304206119826943,
+        "ci_lo": -0.08656799452937564,
+        "ci_hi": -0.03929146911638686,
+        "significant": true
+      },
+      "Surv-Base (LLaMA 3.1-8B)": {
+        "mean": -0.03545701865770311,
+        "ci_lo": -0.053339072639922956,
+        "ci_hi": -0.015550247944716697,
+        "significant": true
+      },
+      "N-D-Base (LLaMA 3.1-8B)": {
+        "mean": -0.014364588307131892,
+        "ci_lo": -0.03891563035395858,
+        "ci_hi": 0.009519770934159136,
+        "significant": false
+      },
+      "Combo-Base (LLaMA 3.1-8B)": {
+        "mean": -0.07324859667688835,
+        "ci_lo": -0.09607813226406323,
+        "ci_hi": -0.04863901122661726,
+        "significant": true
+      },
+      "Temp-Base (Qwen 2.5-14B)": {
+        "mean": -0.1015904071415794,
+        "ci_lo": -0.13243205231883548,
+        "ci_hi": -0.07676662017666203,
+        "significant": true
+      },
+      "Surv-Base (Qwen 2.5-14B)": {
+        "mean": -0.09225031944839047,
+        "ci_lo": -0.1214828897338403,
+        "ci_hi": -0.06192058413323488,
+        "significant": true
+      },
+      "N-D-Base (Qwen 2.5-14B)": {
+        "mean": -0.014717280427177303,
+        "ci_lo": -0.040469015608097667,
+        "ci_hi": 0.013618074899411942,
+        "significant": false
+      },
+      "Combo-Base (Qwen 2.5-14B)": {
+        "mean": -0.11876239470515629,
+        "ci_lo": -0.14867414330870193,
+        "ci_hi": -0.08973214803138654,
+        "significant": true
+      }
+    },
+    "(b)    0.90/0.60": {
+      "Prop vs Open": {
+        "mean": 0.04270704716024169,
+        "ci_lo": 0.028240785707580197,
+        "ci_hi": 0.05974119981781509,
+        "significant": true
+      },
+      "Temp-Base (Claude Sonnet)": {
+        "mean": -0.2349444444444444,
+        "ci_lo": -0.2930555555555555,
+        "ci_hi": -0.19027777777777777,
+        "significant": true
+      },
+      "Surv-Base (Claude Sonnet)": {
+        "mean": 0.10787239583333337,
+        "ci_lo": 0.06006944444444445,
+        "ci_hi": 0.15607638888888886,
+        "significant": true
+      },
+      "N-D-Base (Claude Sonnet)": {
+        "mean": -0.02011241078457376,
+        "ci_lo": -0.056294326241134784,
+        "ci_hi": 0.021872571872571855,
+        "significant": false
+      },
+      "Combo-Base (Claude Sonnet)": {
+        "mean": -0.24198243864649782,
+        "ci_lo": -0.2823863636363636,
+        "ci_hi": -0.19640151515151516,
+        "significant": true
+      },
+      "Temp-Base (GPT-4o)": {
+        "mean": -0.18602519002389717,
+        "ci_lo": -0.22971439749608763,
+        "ci_hi": -0.14800469483568077,
+        "significant": true
+      },
+      "Surv-Base (GPT-4o)": {
+        "mean": -0.036530274153617474,
+        "ci_lo": -0.08042915988121466,
+        "ci_hi": 0.015569117229633833,
+        "significant": false
+      },
+      "N-D-Base (GPT-4o)": {
+        "mean": -0.06148352335723058,
+        "ci_lo": -0.0960093896713615,
+        "ci_hi": -0.026388888888888906,
+        "significant": true
+      },
+      "Combo-Base (GPT-4o)": {
+        "mean": -0.19441119858798583,
+        "ci_lo": -0.24055944055944056,
+        "ci_hi": -0.15244755244755245,
+        "significant": true
+      },
+      "Temp-Base (LLaMA 3.1-8B)": {
+        "mean": -0.038598374160512566,
+        "ci_lo": -0.05446927374301676,
+        "ci_hi": -0.02232101348210135,
+        "significant": true
+      },
+      "Surv-Base (LLaMA 3.1-8B)": {
+        "mean": -0.017666314253725064,
+        "ci_lo": -0.033276868790315925,
+        "ci_hi": -0.0020082470715597663,
+        "significant": true
+      },
+      "N-D-Base (LLaMA 3.1-8B)": {
+        "mean": -0.011232658811738436,
+        "ci_lo": -0.026594668617046107,
+        "ci_hi": 0.005722967839959483,
+        "significant": false
+      },
+      "Combo-Base (LLaMA 3.1-8B)": {
+        "mean": -0.03648331137190661,
+        "ci_lo": -0.05140772271207054,
+        "ci_hi": -0.022091766172546115,
+        "significant": true
+      },
+      "Temp-Base (Qwen 2.5-14B)": {
+        "mean": -0.05306276417654005,
+        "ci_lo": -0.07357624360762437,
+        "ci_hi": -0.03479757423184656,
+        "significant": true
+      },
+      "Surv-Base (Qwen 2.5-14B)": {
+        "mean": -0.049786325038923905,
+        "ci_lo": -0.07017497628333509,
+        "ci_hi": -0.027804746494066883,
+        "significant": true
+      },
+      "N-D-Base (Qwen 2.5-14B)": {
+        "mean": -0.005141152212879578,
+        "ci_lo": -0.025279718647391113,
+        "ci_hi": 0.016162147420913195,
+        "significant": false
+      },
+      "Combo-Base (Qwen 2.5-14B)": {
+        "mean": -0.06148719323284763,
+        "ci_lo": -0.08066759388038942,
+        "ci_hi": -0.043235704323570434,
+        "significant": true
+      }
+    },
+    "(c)    0.85/0.65": {
+      "Prop vs Open": {
+        "mean": 0.05184090894159925,
+        "ci_lo": 0.03586050901516631,
+        "ci_hi": 0.07043578311166997,
+        "significant": true
+      },
+      "Temp-Base (Claude Sonnet)": {
+        "mean": -0.26087500000000025,
+        "ci_lo": -0.3194444444444445,
+        "ci_hi": -0.20694444444444446,
+        "significant": true
+      },
+      "Surv-Base (Claude Sonnet)": {
+        "mean": 0.0958828125,
+        "ci_lo": 0.045659722222222254,
+        "ci_hi": 0.14913194444444444,
+        "significant": true
+      },
+      "N-D-Base (Claude Sonnet)": {
+        "mean": -0.03141163796228763,
+        "ci_lo": -0.07612293144208038,
+        "ci_hi": 0.011081973581973548,
+        "significant": false
+      },
+      "Combo-Base (Claude Sonnet)": {
+        "mean": -0.2735475506895339,
+        "ci_lo": -0.3214111922141119,
+        "ci_hi": -0.23135644768856445,
+        "significant": true
+      },
+      "Temp-Base (GPT-4o)": {
+        "mean": -0.21689123126618082,
+        "ci_lo": -0.25796165884194056,
+        "ci_hi": -0.17351398601398602,
+        "significant": true
+      },
+      "Surv-Base (GPT-4o)": {
+        "mean": -0.03802987681272067,
+        "ci_lo": -0.08451566598705565,
+        "ci_hi": 0.018231768231768225,
+        "significant": false
+      },
+      "N-D-Base (GPT-4o)": {
+        "mean": -0.06136345348840309,
+        "ci_lo": -0.10138888888888889,
+        "ci_hi": -0.02668997668997669,
+        "significant": true
+      },
+      "Combo-Base (GPT-4o)": {
+        "mean": -0.23135276848273933,
+        "ci_lo": -0.2773417328658122,
+        "ci_hi": -0.1868867974131132,
+        "significant": true
+      },
+      "Temp-Base (LLaMA 3.1-8B)": {
+        "mean": -0.05904728617932247,
+        "ci_lo": -0.07974355741346033,
+        "ci_hi": -0.03650330252272,
+        "significant": true
+      },
+      "Surv-Base (LLaMA 3.1-8B)": {
+        "mean": -0.03206341165245917,
+        "ci_lo": -0.05135366872375737,
+        "ci_hi": -0.0135599080585153,
+        "significant": true
+      },
+      "N-D-Base (LLaMA 3.1-8B)": {
+        "mean": -0.024888889407906283,
+        "ci_lo": -0.043115270606791684,
+        "ci_hi": -0.005247275415636882,
+        "significant": true
+      },
+      "Combo-Base (LLaMA 3.1-8B)": {
+        "mean": -0.06238173148119903,
+        "ci_lo": -0.08374906686444711,
+        "ci_hi": -0.03799703812508003,
+        "significant": true
+      },
+      "Temp-Base (Qwen 2.5-14B)": {
+        "mean": -0.07870257422337257,
+        "ci_lo": -0.10567908706304084,
+        "ci_hi": -0.05289176893820196,
+        "significant": true
+      },
+      "Surv-Base (Qwen 2.5-14B)": {
+        "mean": -0.07348873037689814,
+        "ci_lo": -0.09660061136291768,
+        "ci_hi": -0.047697646859658036,
+        "significant": true
+      },
+      "N-D-Base (Qwen 2.5-14B)": {
+        "mean": -0.013879626008713637,
+        "ci_lo": -0.03646006094781416,
+        "ci_hi": 0.007984171322160144,
+        "significant": false
+      },
+      "Combo-Base (Qwen 2.5-14B)": {
+        "mean": -0.09192053517429655,
+        "ci_lo": -0.117138124362895,
+        "ci_hi": -0.06653362210051668,
+        "significant": true
+      }
+    },
+    "(d)    0.85/0.55": {
+      "Prop vs Open": {
+        "mean": 0.05184090894159925,
+        "ci_lo": 0.03586050901516631,
+        "ci_hi": 0.07043578311166997,
+        "significant": true
+      },
+      "Temp-Base (Claude Sonnet)": {
+        "mean": -0.26087500000000025,
+        "ci_lo": -0.3194444444444445,
+        "ci_hi": -0.20694444444444446,
+        "significant": true
+      },
+      "Surv-Base (Claude Sonnet)": {
+        "mean": 0.0958828125,
+        "ci_lo": 0.045659722222222254,
+        "ci_hi": 0.14913194444444444,
+        "significant": true
+      },
+      "N-D-Base (Claude Sonnet)": {
+        "mean": -0.03141163796228763,
+        "ci_lo": -0.07612293144208038,
+        "ci_hi": 0.011081973581973548,
+        "significant": false
+      },
+      "Combo-Base (Claude Sonnet)": {
+        "mean": -0.2735475506895339,
+        "ci_lo": -0.3214111922141119,
+        "ci_hi": -0.23135644768856445,
+        "significant": true
+      },
+      "Temp-Base (GPT-4o)": {
+        "mean": -0.21689123126618082,
+        "ci_lo": -0.25796165884194056,
+        "ci_hi": -0.17351398601398602,
+        "significant": true
+      },
+      "Surv-Base (GPT-4o)": {
+        "mean": -0.03802987681272067,
+        "ci_lo": -0.08451566598705565,
+        "ci_hi": 0.018231768231768225,
+        "significant": false
+      },
+      "N-D-Base (GPT-4o)": {
+        "mean": -0.06136345348840309,
+        "ci_lo": -0.10138888888888889,
+        "ci_hi": -0.02668997668997669,
+        "significant": true
+      },
+      "Combo-Base (GPT-4o)": {
+        "mean": -0.23135276848273933,
+        "ci_lo": -0.2773417328658122,
+        "ci_hi": -0.1868867974131132,
+        "significant": true
+      },
+      "Temp-Base (LLaMA 3.1-8B)": {
+        "mean": -0.05904728617932247,
+        "ci_lo": -0.07974355741346033,
+        "ci_hi": -0.03650330252272,
+        "significant": true
+      },
+      "Surv-Base (LLaMA 3.1-8B)": {
+        "mean": -0.03206341165245917,
+        "ci_lo": -0.05135366872375737,
+        "ci_hi": -0.0135599080585153,
+        "significant": true
+      },
+      "N-D-Base (LLaMA 3.1-8B)": {
+        "mean": -0.024888889407906283,
+        "ci_lo": -0.043115270606791684,
+        "ci_hi": -0.005247275415636882,
+        "significant": true
+      },
+      "Combo-Base (LLaMA 3.1-8B)": {
+        "mean": -0.06238173148119903,
+        "ci_lo": -0.08374906686444711,
+        "ci_hi": -0.03799703812508003,
+        "significant": true
+      },
+      "Temp-Base (Qwen 2.5-14B)": {
+        "mean": -0.07870257422337257,
+        "ci_lo": -0.10567908706304084,
+        "ci_hi": -0.05289176893820196,
+        "significant": true
+      },
+      "Surv-Base (Qwen 2.5-14B)": {
+        "mean": -0.07348873037689814,
+        "ci_lo": -0.09660061136291768,
+        "ci_hi": -0.047697646859658036,
+        "significant": true
+      },
+      "N-D-Base (Qwen 2.5-14B)": {
+        "mean": -0.013879626008713637,
+        "ci_lo": -0.03646006094781416,
+        "ci_hi": 0.007984171322160144,
+        "significant": false
+      },
+      "Combo-Base (Qwen 2.5-14B)": {
+        "mean": -0.09192053517429655,
+        "ci_lo": -0.117138124362895,
+        "ci_hi": -0.06653362210051668,
+        "significant": true
+      }
+    }
+  }
+}
