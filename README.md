@@ -1,16 +1,16 @@
 # Citation Hallucination Benchmark
 
-A systematic benchmark for measuring **citation hallucination** in large language models (LLMs) under deployment-motivated prompting constraints. The pipeline:
+A benchmark for measuring **citation hallucination** in LLMs under deployment-motivated prompting constraints.
 
-1. Prompts four LLMs (Claude Sonnet 4.5, GPT-4o, LLaMA 3.1-8B, Qwen 2.5-14B) to write citation-backed academic text on 144 question-style claims spanning six domains, under five regimes (Baseline / Temporal / Survey / Non-Disclosure / Combo).
-2. Parses each generated reference and verifies it against **Crossref** and **Semantic Scholar** with a deterministic three-way label scheme:
-   - **Existing** (`EXISTS`): a real, indexed paper matches.
-   - **Unresolved** (`AMBIGUOUS`): partial match; cannot be confirmed without manual review.
-   - **Fabricated** (`FABRICATED`): no plausible match found.
-3. Ships a minimal **retrieval-augmented (RAG) baseline** for Claude Sonnet on Baseline + Temporal cells, to probe how much of the closed-book failure is recoverable by grounding (added for the DeLTA 2026 camera-ready in response to Reviewer R5).
-4. Releases the verification logic as a small installable Python package, **`citecheck`**, with a CLI and a programmatic API.
+Four models (Claude Sonnet 4.5, GPT-4o, LLaMA 3.1-8B, Qwen 2.5-14B) write citation-backed text on 144 claims across six domains, under five regimes (Baseline / Temporal / Survey / Non-Disclosure / Combo). Each generated reference is verified against **Crossref** and **Semantic Scholar** and labeled:
 
-📄 Paper: *Do Deployment Constraints Make LLMs Hallucinate Citations? An Empirical Study Across Four Models and Five Prompting Regimes* (DeLTA 2026).
+- **Existing** (`EXISTS`) — a real, indexed paper matches.
+- **Unresolved** (`AMBIGUOUS`) — partial match; not confirmable without manual review.
+- **Fabricated** (`FABRICATED`) — no plausible match.
+
+The repo also ships a minimal **retrieval-augmented (RAG) baseline** (Claude, Baseline + Temporal) added for the DeLTA 2026 camera-ready, and releases the verification logic as an installable package, **`citecheck`**.
+
+📄 *Do Deployment Constraints Make LLMs Hallucinate Citations? An Empirical Study Across Four Models and Five Prompting Regimes* (DeLTA 2026).
 
 ---
 
@@ -21,193 +21,135 @@ git clone https://github.com/Zerichen/Citation-Hallucination
 cd Citation-Hallucination
 pip install -e .
 
-# Verify a JSONL file of citation records
 citecheck verify examples/sample_references.jsonl --output out/example_results.jsonl
 ```
 
-Each input line is a JSON object of the form:
+Each input line is a citation record; each output line adds the label, best-match score, and the canonical record retrieved:
 
 ```json
 {"title": "...", "authors": ["..."], "venue": "...", "year": 2024, "doi": "..."}
 ```
 
-The output JSONL contains the assigned label, the best-match score, and the canonical record retrieved from Crossref or Semantic Scholar.
-
-### Python API
+Or from Python:
 
 ```python
 from citecheck import verify_citation
 
-result = verify_citation({
-    "title": "Attention Is All You Need",
-    "authors": ["Vaswani"],
-    "venue": "NeurIPS",
-    "year": 2017,
-})
-# result.label = "EXISTS", result.confidence = 0.97
+result = verify_citation({"title": "Attention Is All You Need",
+                          "authors": ["Vaswani"], "venue": "NeurIPS", "year": 2017})
+# result.label == "EXISTS", result.confidence == 0.97
 ```
 
----
+### Install variants
 
-## Install
-
-```bash
-pip install -e .
-```
-
-Requires Python 3.9+. The base install pulls only the verification dependencies (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`). Optional extras:
+Requires Python 3.9+. Base install pulls only verification deps (`requests`, `rapidfuzz`, `tqdm`, `numpy`, `pandas`).
 
 | Command | Adds | Needed for |
 |---|---|---|
-| `pip install -e .` | (core only) | `citecheck verify`, `scripts/verify_runs.py`, most of `analysis/` |
+| `pip install -e .` | (core only) | `citecheck verify`, `verify_runs.py`, most of `analysis/` |
 | `pip install -e ".[dev]"` | `pytest` | `pytest tests/` |
-| `pip install -e ".[llm]"` | `openai`, `anthropic` | `scripts/generate_runs.py`, `scripts/run_rag.py` (LLM calls) |
+| `pip install -e ".[llm]"` | `openai`, `anthropic` | `generate_runs.py`, `run_rag.py` (LLM calls) |
 | `pip install -e ".[dev,llm]"` | both | full reproduction + tests |
 
 ---
 
 ## How verification works
 
-### Scoring formula (`src/citecheck/match.py`)
-
-Each parsed citation is scored against every candidate retrieved from Crossref / Semantic Scholar:
+**Scoring** ([`src/citecheck/match.py`](src/citecheck/match.py)) — each citation is scored against every retrieved candidate:
 
 ```
-s = 0.60 · title_similarity        (token-set ratio)
-  + 0.20 · author_overlap          (last-name set overlap)
-  + 0.15 · year_match              (1.0 exact, 0.5 off-by-one, 0 else)
-  + 0.05 · venue_similarity        (partial ratio)
+s = 0.60 · title_similarity   (token-set ratio)
+  + 0.20 · author_overlap     (last-name set overlap)
+  + 0.15 · year_match         (1.0 exact, 0.5 off-by-one, else 0)
+  + 0.05 · venue_similarity   (partial ratio)
 ```
 
-Title gets the highest weight because it is the most discriminative field in practice. Weights are defined in [`src/citecheck/match.py`](src/citecheck/match.py).
+Title carries the most weight as the most discriminative field.
 
-### Label thresholds (`src/citecheck/label.py`)
+**Labels** ([`src/citecheck/label.py`](src/citecheck/label.py)):
 
 ```python
-EXISTS_TH = 0.85   # ≥ 0.85 → Existing
-AMBIG_TH  = 0.60   # 0.60 ≤ s < 0.85 → Unresolved (AMBIGUOUS)
-                   # s < 0.60 or no candidate → Fabricated
+EXISTS_TH = 0.85   # s ≥ 0.85           → Existing
+AMBIG_TH  = 0.60   # 0.60 ≤ s < 0.85    → Unresolved
+                   # s < 0.60 / no cand → Fabricated
 ```
 
-To **re-run the labeling with different thresholds** (e.g., to reproduce the threshold-sensitivity analysis in §5 of the paper), use the dedicated script:
+> **Naming:** data files use `EXISTS` / `AMBIGUOUS` / `FABRICATED`; the paper uses *Existing* / *Unresolved* / *Fabricated*. Same classes.
 
-```bash
-python scripts/threshold_sensitivity.py
-#   → out/analysis/threshold_sensitivity.json
-```
+### Threshold sensitivity (§5)
 
-It re-labels the existing per-citation scores in `out/verify/citations.jsonl` under four perturbations and recomputes model rankings + paired-bootstrap Δ's — no API calls or LLM re-runs needed. The four perturbations reported in the paper are:
+`scripts/threshold_sensitivity.py` re-labels the frozen per-citation scores in `out/verify/citations.jsonl` under four threshold perturbations and recomputes rankings + paired-bootstrap Δ's — no API calls or LLM re-runs.
 
-| Perturbation | `EXISTS_TH` | `AMBIG_TH` | What it tests |
+| | `EXISTS_TH` | `AMBIG_TH` | Tests |
 |---|---|---|---|
 | (a) | 0.80 | 0.60 | More permissive Existing cut |
 | (b) | 0.90 | 0.60 | More restrictive Existing cut |
 | (c) | 0.85 | 0.65 | Shrink the Unresolved band |
 | (d) | 0.85 | 0.55 | Widen the Unresolved band |
 
-Result (from the paper): 0 sign flips across 84 perturbation-comparisons; 17 of 18 statistically meaningful Δ's preserve significance.
+```bash
+python scripts/threshold_sensitivity.py        # → out/analysis/threshold_sensitivity.json
+```
 
-### Naming note
-
-The data files use `EXISTS` / `AMBIGUOUS` / `FABRICATED`; the paper uses *Existing* / *Unresolved* / *Fabricated*. They refer to the same label classes.
+The output is committed as a frozen artifact ([`out/analysis/threshold_sensitivity.json`](out/analysis/threshold_sensitivity.json), bootstrap=200, seed=42). Headline: of **18** Δ's meaningful at the original thresholds, across all four perturbations there are **0** sign flips and **2** significance changes (72 perturbation-comparisons total) — rankings are stable to threshold choice.
 
 ---
 
-## Closed-book experiment (full reproduction)
-
-The five-regime, four-model study from §3–§5 of the paper.
-
-### 1. Generate model outputs
+## Full reproduction (closed-book, §3–§5)
 
 ```bash
-# Set API keys
 export ANTHROPIC_API_KEY=sk-ant-...
 export OPENAI_API_KEY=sk-...
 
-# Build the prompts for each (claim, condition) pair
+# 1. Build (claim, condition) prompts, then call the LLMs
 python scripts/build_runs_from_claims.py --claims data/claims.csv
+python scripts/generate_runs.py            # → out/<model>_full_runs.jsonl
 
-# Call the LLMs (writes out/<model>_full_runs.jsonl)
-python scripts/generate_runs.py
-```
-
-Each run uses temperature 0, max_tokens 2048, and one prompt template per condition. The full design yields **144 × 5 × 4 = 2,880 runs producing 17,443 individual citations**.
-
-### 2. Verify citations
-
-```bash
+# 2. Verify
 python scripts/verify_runs.py
-```
+#   → out/verify/citations.jsonl      per-citation labels + scores + evidence
+#   → out/verify/run_metrics.jsonl    per-run aggregates
 
-Output:
-- `out/verify/citations.jsonl` — per-citation labels with best-match scores and supporting evidence
-- `out/verify/run_metrics.jsonl` — per-run aggregates (existence rate, fabrication rate, etc.)
-
-### 3. Aggregate + analyze
-
-```bash
+# 3. Aggregate + analyze (→ out/analysis/)
 python analysis/summarize_metrics.py
 python analysis/compute_dual_metrics.py
 python analysis/domain_metrics.py
 python analysis/plot_fig2a_boxplot.py
 ```
 
-Outputs land in `out/analysis/` (summary tables, per-domain breakdowns, boxplot data).
+Each run: temperature 0, max_tokens 2048, one template per condition. Full design = **144 × 5 × 4 = 2,880 runs → 17,443 citations**.
 
 ---
 
-## Retrieval-Augmented (RAG) baseline
+## RAG baseline
 
-A minimal RAG comparison added for the DeLTA 2026 camera-ready — Reviewer R5 asked for a grounded baseline to probe how much of the closed-book failure is recoverable through retrieval.
-
-**Scope (intentionally minimal):**
+A minimal grounded comparison (Reviewer R5) probing how much closed-book failure is recoverable through retrieval. Intentionally narrow:
 
 | Axis | Closed-book | RAG |
 |---|---|---|
-| Models | Claude Sonnet 4.5, GPT-4o, LLaMA 3.1-8B, Qwen 2.5-14B | Claude Sonnet 4.5 only |
-| Conditions | 5 regimes | Baseline + Temporal only |
-| Claims | 144 | 144 (same set) |
-| Retrieval | none | Crossref top-5 by claim-keyword query (year-windowed under Temporal) |
-| Verification | existing pipeline | same pipeline, unchanged |
+| Models | all four | Claude Sonnet 4.5 only |
+| Conditions | 5 regimes | Baseline + Temporal |
+| Claims | 144 | 144 (same) |
+| Retrieval | none | Crossref top-5 by claim keywords (year-windowed under Temporal) |
+| Verification | pipeline | same pipeline, unchanged |
 
-### How `run_rag.py` works
-
-1. **Replays the same 144 claims** the closed-book study used (read back from `out/verify/run_metrics.jsonl`).
-2. **Builds a Crossref query** from each claim's `seed_anchors` (or falls back to the question keywords).
-3. **Fetches top-5 records** from `https://api.crossref.org/works` (free, no auth; sends `mailto` parameter as a polite identifier). Year-filtered under the Temporal condition.
-4. **Caches the raw Crossref responses** under `cache/crossref_rag/queries.jsonl` so the experiment can be reproduced offline.
-5. **Injects the 5 records** into the prompt before the citation-format block — everything else (system prompt, output schema, temperature 0, max_tokens 2048) is **byte-identical to closed-book**.
-6. **Writes outputs** in the same JSONL schema as the closed-book runs, plus a `retrieval` sidecar with the candidate records used.
+`run_rag.py` replays the same 144 claims (from `run_metrics.jsonl`), builds a Crossref query per claim's `seed_anchors`, fetches and caches the top-5 records, and injects them into an otherwise **byte-identical** prompt (same system prompt, schema, temperature 0, max_tokens 2048).
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
 python scripts/run_rag.py
 #   → out/rag/claude-sonnet-4-5-20250929_rag_runs.jsonl   (288 runs)
-#   → out/rag/run_config.json                              (reproducibility metadata)
-#   → cache/crossref_rag/queries.jsonl                     (cached responses)
-```
+#   → out/rag/run_config.json                             (repro metadata)
+#   → cache/crossref_rag/queries.jsonl                    (cached responses)
 
-### Verify the RAG runs
-
-The same verification pipeline that handles closed-book also handles RAG outputs:
-
-```bash
+# Verify (same pipeline) and analyze
 python scripts/verify_runs.py --input out/rag/claude-sonnet-4-5-20250929_rag_runs.jsonl \
-                              --output out/verify/rag_citations.jsonl
-#   → 1,359 verified citations (out of 288 runs × ~5 cits/run)
-```
-
-### Analyze RAG vs. closed-book
-
-```bash
+                              --output out/verify/rag_citations.jsonl   # 1,359 citations
 python scripts/analyze_rag.py
-#   → out/rag/deliverables/rag_metrics.json    (cell rates + paired bootstrap Δs)
-#   → out/rag/deliverables/rag_results.md      (interpretation + tables)
-#   → out/rag/deliverables/rag_table_row.tex   (LaTeX rows for Table 3)
-#   → out/rag/deliverables/rag_paragraph.tex   (LaTeX paragraph for §5)
+#   → out/rag/deliverables/{rag_metrics.json, rag_results.md, rag_table_row.tex, rag_paragraph.tex}
 ```
 
-### Headline numbers (from the paper)
+**Headline numbers:**
 
 | Cell | Existing ↑ | Fabricated ↓ | Δ vs. closed-book |
 |---|---|---|---|
@@ -216,81 +158,44 @@ python scripts/analyze_rag.py
 | Claude closed-book Temporal | 0.119 | 0.347 | — |
 | **Claude + RAG Temporal** | **0.818** | **0.008** | **+0.699 [0.649, 0.746]** |
 
-Two caveats bound the interpretation:
-1. The injected candidates are by construction real Crossref records, so part of the gain reflects faithful reuse of supplied references rather than improved unaided recall.
-2. 5 of 288 RAG runs abstained (the model explicitly declined when no candidate looked adequate); counted as zero-existing — the conservative choice.
+Two caveats: (1) injected candidates are by construction real Crossref records, so part of the gain reflects faithful reuse rather than improved unaided recall; (2) 5 of 288 RAG runs abstained (no adequate candidate) and are counted as zero-existing — the conservative choice.
 
 ---
 
 ## Repository structure
 
 ```
-Citation-Hallucination/
-├── src/citecheck/                # The installable package
-│   ├── prompts.py                # Prompt templates (closed-book + RAG variant)
-│   ├── clients.py                # Anthropic / OpenAI client wrappers + caching
-│   ├── verify.py                 # Top-level verify() entrypoint
-│   ├── label.py                  # ⭐ EXISTS_TH / AMBIG_TH thresholds
-│   ├── match.py                  # ⭐ Scoring formula (0.6 / 0.2 / 0.15 / 0.05)
-│   ├── parser.py                 # Citation parsing from raw model output
-│   ├── normalize.py              # Title/author/venue normalization
-│   ├── aggregate.py              # Bootstrap CI computation
-│   ├── schema.py                 # Pydantic models
-│   └── cli.py                    # `citecheck verify ...`
-│
-├── scripts/
-│   ├── build_runs_from_claims.py # Build (claim, condition) input tuples
-│   ├── generate_runs.py          # Closed-book LLM calls
-│   ├── run_rag.py                # ⭐ RAG generation (Crossref retrieval + Claude)
-│   ├── verify_runs.py            # Verify any model outputs (closed-book or RAG)
-│   ├── analyze_rag.py            # ⭐ RAG vs. closed-book analysis
-│   └── sample_for_manual_validation.py
-│
-├── analysis/
-│   ├── summarize_metrics.py      # Per-cell tables for Table 2
-│   ├── compute_dual_metrics.py   # DOI completeness, count compliance, etc.
-│   ├── domain_metrics.py         # Per-domain existence rates (Figure 4)
-│   ├── plot_fig2a_boxplot.py     # Boxplot generation (Figure 3)
-│   └── export_fig2a_data.py
-│
-├── data/
-│   ├── claims.csv                # 144 claims (the experimental dataset)
-│   └── <model>_full_runs.jsonl   # Pre-generated closed-book outputs (committed)
-│
-├── out/
-│   ├── verify/
-│   │   ├── citations.jsonl       # 17,443 closed-book citation labels
-│   │   ├── run_metrics.jsonl     # Per-run aggregates (closed-book)
-│   │   ├── rag_citations.jsonl   # 1,359 RAG citation labels
-│   │   └── rag_run_metrics.jsonl # Per-run aggregates (RAG)
-│   ├── rag/
-│   │   ├── claude-sonnet-4-5-20250929_rag_runs.jsonl
-│   │   ├── run_config.json
-│   │   └── deliverables/
-│   │       ├── rag_metrics.json
-│   │       ├── rag_results.md
-│   │       ├── rag_table_row.tex
-│   │       └── rag_paragraph.tex
-│   └── analysis/
-│       ├── domain_metrics.csv
-│       ├── fig2a_frac_existing.csv
-│       └── ...
-│
-├── cache/
-│   ├── crossref_doi.jsonl        # Crossref DOI lookups (closed-book verify)
-│   ├── crossref_title.jsonl      # Crossref title searches (closed-book verify)
-│   ├── s2_title.jsonl            # Semantic Scholar title searches
-│   └── crossref_rag/             # Crossref keyword searches for RAG
-│
-├── manual_validation_*.csv       # Human-audit annotations (200 citations, 3 batches)
-├── appendix/                     # Full 240-item candidate pool, subdomain map
-├── examples/
-├── tests/
-├── pyproject.toml
-└── README.md
+src/citecheck/         Installable package
+  match.py             ⭐ Scoring formula (0.6 / 0.2 / 0.15 / 0.05)
+  label.py             ⭐ EXISTS_TH / AMBIG_TH thresholds
+  prompts.py           Prompt templates (closed-book + RAG)
+  clients.py           Anthropic / OpenAI wrappers + caching
+  verify.py            Top-level verify() entrypoint
+  parser.py            Citation parsing from raw model output
+  normalize.py         Title/author/venue normalization
+  aggregate.py         Bootstrap CI computation
+  schema.py · cli.py   Pydantic models · `citecheck verify`
+
+scripts/
+  build_runs_from_claims.py   Build (claim, condition) tuples
+  generate_runs.py            Closed-book LLM calls
+  run_rag.py                  ⭐ RAG generation (Crossref + Claude)
+  verify_runs.py              Verify any outputs (closed-book or RAG)
+  analyze_rag.py              ⭐ RAG vs. closed-book analysis
+  threshold_sensitivity.py    ⭐ §5 threshold re-labeling
+
+analysis/              Per-cell / per-domain tables + figures (Tables 2, Figs 3–4)
+
+data/                  claims.csv (144 claims) + pre-generated closed-book runs
+out/verify/            citations.jsonl, run_metrics.jsonl (+ rag_*)
+out/rag/               RAG runs, run_config.json, deliverables/
+out/analysis/          summary tables, figure data, threshold_sensitivity.json
+cache/                 Crossref / Semantic Scholar responses (offline repro)
+manual_validation_*.csv   Human-audit annotations (300 citations, 3 batches)
+appendix/ examples/ tests/ pyproject.toml
 ```
 
-⭐ = files most relevant to the RAG baseline + threshold-sensitivity reproduction.
+⭐ = most relevant to the RAG baseline + threshold-sensitivity reproduction.
 
 ---
 
@@ -298,29 +203,22 @@ Citation-Hallucination/
 
 | Component | How it's pinned |
 |---|---|
-| Model versions | Exact identifiers logged in `out/<model>_full_runs.jsonl` and `out/rag/run_config.json` (`claude-sonnet-4-5-20250929`, `gpt-4o` API alias, `meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo`, `Qwen/Qwen2.5-14B-Instruct`) |
-| Crossref / Semantic Scholar responses | Cached to disk before normalization (`cache/`). Labels can be regenerated from cached snapshots without API access |
-| Bootstrap CIs | 1,000 cluster-bootstrap resamples, seed=42 |
-| Sampling | Fixed seeds throughout |
+| Model versions | Logged in `out/<model>_full_runs.jsonl` and `out/rag/run_config.json` (`claude-sonnet-4-5-20250929`, `gpt-4o`, `meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo`, `Qwen/Qwen2.5-14B-Instruct`) |
+| Crossref / S2 responses | Cached to `cache/` before normalization; labels regenerate from snapshots without API access |
+| Bootstrap CIs | 1,000 cluster-bootstrap resamples (200 for threshold sensitivity), seed=42 |
 | Decoding | temperature 0, max_tokens 2048 |
 
 ---
 
-## Manual audit (label validation)
+## Manual audit
 
-A stratified 200-citation human audit was performed across two batches by two annotators with reconciliation:
+Stratified 200-citation human audit, two annotators with reconciliation: `manual_validation_100.csv` (batch 1) + `manual_validation_200_batch2.csv` (batch 2), with `manual_validation_300_batch3.csv` adding replication annotations.
 
-- `manual_validation_100.csv` — Batch 1 (n=100)
-- `manual_validation_200_batch2.csv` — Batch 2 (n=100)
-- `manual_validation_300_batch3.csv` — Batch 3 (additional annotations for replication)
-
-Combined pipeline-vs-human agreement: **68%, Cohen's κ = 0.52** (moderate). Per-class precision: 0.93 (Existing), 0.41 (Unresolved), 0.86 (Fabricated). Detail in §4 of the paper.
+Pipeline-vs-human agreement: **68%, Cohen's κ = 0.52** (moderate). Per-class precision: 0.93 (Existing), 0.41 (Unresolved), 0.86 (Fabricated). Detail in §4.
 
 ---
 
 ## Citation
-
-If you use this benchmark or the `citecheck` tool, please cite:
 
 ```bibtex
 @inproceedings{zhao2026citation,
