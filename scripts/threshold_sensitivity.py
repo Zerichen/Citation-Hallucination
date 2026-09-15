@@ -181,7 +181,7 @@ def main():
     print("=" * 70)
     key_deltas = []
     for c in CONDITIONS:
-        key_deltas.append(("Prop vs Open", c,
+        key_deltas.append((f"Prop vs Open ({c})", c,
                            lambda r, c_=c: r["model"] in PROPRIETARY and r["condition"] == c_,
                            lambda r, c_=c: r["model"] in OPEN_WEIGHT and r["condition"] == c_))
     for m in ALL_MODELS:
@@ -209,20 +209,27 @@ def main():
             print(f"    {name:<35} Δ={mean:+.3f} [{lo:+.3f},{hi:+.3f}] {sig}")
         print()
 
-    # 4. Cross-perturbation sign/significance stability
-    if n_meaningful_orig > 0:
-        for name, *_ in key_deltas:
-            orig = delta_results["(orig) 0.85/0.60"].get(name)
-            if not orig or not orig["significant"]:
+    # 4. Cross-perturbation sign/significance stability.
+    #    Sign stability is checked over EVERY contrast (a sign flip matters
+    #    whether or not the original CI excluded zero); significance stability
+    #    is only defined for contrasts that were significant to begin with.
+    n_sign_compare = 0
+    n_sig_compare = 0
+    for name, *_ in key_deltas:
+        orig = delta_results["(orig) 0.85/0.60"].get(name)
+        if not orig:
+            continue
+        for tag in PERTURBATIONS:
+            if tag.startswith("(orig)"):
                 continue
-            for tag in PERTURBATIONS:
-                if tag.startswith("(orig)"):
-                    continue
-                perturbed = delta_results[tag].get(name)
-                if not perturbed:
-                    continue
-                if (orig["mean"] > 0) != (perturbed["mean"] > 0):
-                    sign_flips += 1
+            perturbed = delta_results[tag].get(name)
+            if not perturbed:
+                continue
+            n_sign_compare += 1
+            if (orig["mean"] > 0) != (perturbed["mean"] > 0):
+                sign_flips += 1
+            if orig["significant"]:
+                n_sig_compare += 1
                 if not perturbed["significant"]:
                     significance_changes += 1
 
@@ -230,14 +237,27 @@ def main():
     print("SUMMARY")
     print("=" * 70)
     print(f"Meaningful Δ's at original thresholds:        {n_meaningful_orig} of {len(key_deltas)}")
-    print(f"Sign flips across 4 perturbations:            {sign_flips}")
-    print(f"Significance changes across 4 perturbations:  {significance_changes}")
+    print(f"Sign flips:                                   {sign_flips} of {n_sign_compare} comparisons")
+    print(f"Significance changes:                         {significance_changes} of {n_sig_compare} comparisons")
+    n_lost = len({
+        name for name, *_ in key_deltas
+        if delta_results["(orig) 0.85/0.60"].get(name, {}).get("significant")
+        and any(
+            not delta_results[t][name]["significant"]
+            for t in PERTURBATIONS if not t.startswith("(orig)")
+        )
+    })
+    print(f"Contrasts significant under ALL perturbations: {n_meaningful_orig - n_lost} of {n_meaningful_orig}")
 
     results["summary"] = {
-        "n_meaningful_orig":      n_meaningful_orig,
-        "sign_flips":             sign_flips,
-        "significance_changes":   significance_changes,
-        "n_perturbation_compare": (len(PERTURBATIONS) - 1) * n_meaningful_orig,
+        "n_contrasts":                len(key_deltas),
+        "n_meaningful_orig":          n_meaningful_orig,
+        "sign_flips":                 sign_flips,
+        "n_sign_comparisons":         n_sign_compare,
+        "significance_changes":       significance_changes,
+        "n_significance_comparisons": n_sig_compare,
+        "n_contrasts_losing_significance": n_lost,
+        "n_significant_under_all_perturbations": n_meaningful_orig - n_lost,
     }
     results["deltas"] = delta_results
 
