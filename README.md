@@ -59,7 +59,8 @@ Requires Python 3.9+. Base install pulls only verification deps (`requests`, `ra
 
 ```
 s = 0.60 · title_similarity   (token-set ratio)
-  + 0.20 · author_overlap     (last-name set overlap)
+  + 0.20 · author_overlap     (last-name overlap / min(2, n_authors);
+                                 saturates at 2 matching surnames)
   + 0.15 · year_match         (1.0 exact, 0.5 off-by-one, else 0)
   + 0.05 · venue_similarity   (partial ratio)
 ```
@@ -91,7 +92,7 @@ AMBIG_TH  = 0.60   # 0.60 ≤ s < 0.85    → Unresolved
 python scripts/threshold_sensitivity.py        # → out/analysis/threshold_sensitivity.json
 ```
 
-The output is committed as a frozen artifact ([`out/analysis/threshold_sensitivity.json`](out/analysis/threshold_sensitivity.json), bootstrap=200, seed=42). Headline: of **18** Δ's meaningful at the original thresholds, across all four perturbations there are **0** sign flips and **2** significance changes (72 perturbation-comparisons total) — rankings are stable to threshold choice.
+The output is committed as a frozen artifact ([`out/analysis/threshold_sensitivity.json`](out/analysis/threshold_sensitivity.json), bootstrap=1000, seed=42). Headline: **21** contrasts, of which **18** are meaningful at the original thresholds. Across all four perturbations there are **0** sign flips (84 sign comparisons, all 21 contrasts) and **2** significance changes (72 comparisons, the 18 meaningful ones), affecting a single contrast — so **17 of 18** stay significant under every perturbation. Rankings are stable to threshold choice.
 
 ---
 
